@@ -1,0 +1,34 @@
+{
+  "name": "iroun",
+  "version": "0.0.1",
+  "description": "A JavaScript-based name analyzer for all javascript developers in the world.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pistis/iroun.git"
+  },
+  "engines": {
+    "node": ">=8.9.0"
+  },
+  "keywords": [
+    "name",
+    "analysis",
+    "acorn"
+  ],
+  "author": {
+    "name": "pistis",
+    "email": "vamalboro@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pistis/iroun/issues"
+  },
+  "homepage": "https://github.com/pistis/iroun#readme",
+  "dependencies": {
+    "acorn": "^6.1.1",
+    "acorn-walk": "^6.1.1"
+  }
+}
