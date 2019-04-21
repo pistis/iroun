@@ -10,7 +10,7 @@ A JavaScript-based name analyzer for all javascript developers in the world.
 ```js
 const { extract } = require('iroun')
 
-const names = extract(`${path}`)  // source code directory path
+const names = extract(`${path}`)  // javascript file path
 console.log(JSON.stringify(names, null, 2))
 ```
 ```json
@@ -53,10 +53,13 @@ output is
 ```
 
 ### Making the word cloud
+> This is sample code for a single Javascript file.
+> You can extract the names of all your project files and create word clouds!
+
 ```js
 const { extract } = require('iroun')
 
-const names = extract(`${path}`)  // source code directory path
+const names = extract(`${path}`)  // javascript file path
 
 const nameAndFrequency = Object.create(null)
 const updateName = function (name) {
