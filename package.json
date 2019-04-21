@@ -30,5 +30,8 @@
   "dependencies": {
     "acorn": "^6.1.1",
     "acorn-walk": "^6.1.1"
+  },
+  "devDependencies": {
+    "acorn-loose": "^6.0.0"
   }
 }
