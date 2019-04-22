@@ -3,9 +3,9 @@ const acorn = require('acorn')
 // const acornLoose = require("acorn-loose");
 const walk = require('acorn-walk')
 
-const updateName = function (names, name) {
-  names[name] = (names[name] || 0) + 1;
-};
+const updateName = function(names, name) {
+  names[name] = (names[name] || 0) + 1
+}
 
 /**
  * After parsing the javascript file,
@@ -42,12 +42,12 @@ const updateName = function (names, name) {
   }
 }
  */
-const extract = function (file) {
+const extract = function(file) {
   const program = fs.readFileSync(file, 'utf-8')
 
   const ast = acorn.parse(program, {
     sourceType: 'module',
-    ecmaVersion: 9
+    ecmaVersion: 9,
   })
 
   const names = Object.create(null)
@@ -103,7 +103,11 @@ const extract = function (file) {
     // extract variable name
     VariableDeclarator(node, state) {
       const { type, name } = node.id
-      if (type !== 'Identifier' || (node.init && node.init.type.indexOf('Function') !== -1)) return
+      if (
+        type !== 'Identifier' ||
+        (node.init && node.init.type.indexOf('Function') !== -1)
+      )
+        return
       updateName(variableNames, name)
     },
     // extract parameter name
@@ -141,12 +145,12 @@ const extract = function (file) {
       if (type === 'Identifier') {
         updateName(attributeNames, name)
       }
-    }
+    },
   })
 
   return names
 }
 
 module.exports = {
-  extract
+  extract,
 }
