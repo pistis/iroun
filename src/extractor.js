@@ -127,10 +127,9 @@ const extract = function(file) {
     },
     // extract argument name
     CallExpression(node, state) {
-      const { arguments } = node
-      if (!arguments || arguments.length === 0) return
+      if (!node.arguments || node.arguments.length === 0) return
 
-      arguments.forEach((param) => {
+      node.arguments.forEach((param) => {
         if (param.type === 'Identifier') {
           updateName(argumentNames, param.name)
         } // TODO : if is MemberExpression, need to proceed like window.Vue

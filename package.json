@@ -4,7 +4,7 @@
   "description": "A JavaScript-based name analyzer for all javascript developers in the world.",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -31,5 +31,34 @@
     "acorn": "^6.1.1",
     "acorn-walk": "^6.1.1",
     "acorn-loose": "^6.0.0"
+  },
+  "devDependencies": {
+    "jest": "^24.7.1"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "coverageDirectory": "<rootDir>/report/jest/",
+    "coverageReporters": [
+      "html",
+      "text",
+      "json"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!**/node_modules/**"
+    ],
+    "verbose": true,
+    "moduleDirectories": [
+      "node_modules"
+    ],
+    "moduleFileExtensions": [
+      "js"
+    ],
+    "testPathIgnorePatterns": [
+      "<rootDir>/node_modules/"
+    ],
+    "testMatch": [
+      "<rootDir>/__tests__/spec/*.spec.js?(x)"
+    ]
   }
 }
