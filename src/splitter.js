@@ -1,4 +1,4 @@
-const makeWordList = function(tokens) {
+const resolveWords = function(tokens) {
   const words = []
   let word = ''
   tokens.forEach((token) => {
@@ -28,7 +28,7 @@ const splitCamelCase = function(name) {
     .trim()
     .split(' ')
 
-  return makeWordList(tokens)
+  return resolveWords(tokens)
 }
 
 const splitPascalCase = function(name) {
@@ -37,7 +37,7 @@ const splitPascalCase = function(name) {
     .trim()
     .split(' ')
 
-  return makeWordList(tokens)
+  return resolveWords(tokens)
 }
 
 const splitSnakeCase = function(name) {
@@ -46,13 +46,13 @@ const splitSnakeCase = function(name) {
     .trim()
     .split(' ')
 
-  return makeWordList(tokens)
+  return resolveWords(tokens)
 }
 
 const split = function(name) {
   if (!name) return []
   if (name.indexOf('_') !== -1) {
-    return splitSnakeCase(name)
+    return name.split('_')
   } else if (/^[a-z]/.test(name)) {
     return splitCamelCase(name)
   } else if (/^[A-Z]/.test(name)) {

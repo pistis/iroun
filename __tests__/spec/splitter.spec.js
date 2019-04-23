@@ -143,7 +143,7 @@ describe('split test', () => {
   })
 
   // PascalCase
-  describe('splitCamelCase test', () => {
+  describe('splitPascalCase test', () => {
     test('2 words', () => {
       const words = splitPascalCase('CamelCase')
       expect(words.length).toBe(2)
