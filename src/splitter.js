@@ -41,20 +41,16 @@ const splitPascalCase = function(name) {
 }
 
 const splitSnakeCase = function(name) {
-  const tokens = name
+  return name
     .replace(/([_])/g, ' ')
     .trim()
     .split(' ')
-
-  return _resolveWords(tokens)
 }
 
 const split = function(name) {
   if (!name) return []
-  if (/^_/.test(name)) {
-    return [] // TODO : will split this case(start underline case)
-  } else if (name.indexOf('_') !== -1) {
-    return name.split('_')
+  if (name.indexOf('_') !== -1) {
+    return splitSnakeCase(name)
   } else if (/^[a-z]/.test(name)) {
     return splitCamelCase(name)
   } else if (/^[A-Z]/.test(name)) {
