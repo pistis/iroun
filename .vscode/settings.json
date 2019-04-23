@@ -1,4 +1,6 @@
 {
+    "eslint.autoFixOnSave": true,
+    "prettier.eslintIntegration": true,
     // Set the default
     "editor.formatOnSave": false,
     // Enable per-language
