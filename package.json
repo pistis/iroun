@@ -29,8 +29,9 @@
   "homepage": "https://github.com/pistis/iroun#readme",
   "dependencies": {
     "acorn": "^6.1.1",
+    "acorn-loose": "^6.0.0",
     "acorn-walk": "^6.1.1",
-    "acorn-loose": "^6.0.0"
+    "wordpos": "^1.2.0"
   },
   "devDependencies": {
     "jest": "^24.7.1"

@@ -1,4 +1,4 @@
-const resolveWords = function(tokens) {
+const _resolveWords = function(tokens) {
   const words = []
   let word = ''
   tokens.forEach((token) => {
@@ -28,7 +28,7 @@ const splitCamelCase = function(name) {
     .trim()
     .split(' ')
 
-  return resolveWords(tokens)
+  return _resolveWords(tokens)
 }
 
 const splitPascalCase = function(name) {
@@ -37,7 +37,7 @@ const splitPascalCase = function(name) {
     .trim()
     .split(' ')
 
-  return resolveWords(tokens)
+  return _resolveWords(tokens)
 }
 
 const splitSnakeCase = function(name) {
@@ -46,12 +46,14 @@ const splitSnakeCase = function(name) {
     .trim()
     .split(' ')
 
-  return resolveWords(tokens)
+  return _resolveWords(tokens)
 }
 
 const split = function(name) {
   if (!name) return []
-  if (name.indexOf('_') !== -1) {
+  if (/^_/.test(name)) {
+    return [] // TODO : will split this case(start underline case)
+  } else if (name.indexOf('_') !== -1) {
     return name.split('_')
   } else if (/^[a-z]/.test(name)) {
     return splitCamelCase(name)

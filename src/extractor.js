@@ -3,7 +3,7 @@ const acorn = require('acorn')
 // const acornLoose = require("acorn-loose");
 const walk = require('acorn-walk')
 
-const updateName = function(names, name) {
+const _updateName = function(names, name) {
   names[name] = (names[name] || 0) + 1
 }
 
@@ -69,14 +69,14 @@ const extract = function(file) {
     // extract class name
     ClassDeclaration(node, state) {
       const { name } = node.id
-      updateName(classNames, name)
+      _updateName(classNames, name)
     },
     // extract method name
     MethodDefinition(node, state) {
       if (node.kind !== 'method') return
       const { type, name } = node.key
       if (type !== 'Identifier') return
-      updateName(methodNames, name)
+      _updateName(methodNames, name)
     },
     // extract method name and parameter name
     // TODO : duplicated logic FunctionDeclaration and ArrowFunctionExpression
@@ -84,17 +84,17 @@ const extract = function(file) {
       if (node.id) {
         const { type, name } = node.id
         if (type === 'Identifier') {
-          updateName(methodNames, name)
+          _updateName(methodNames, name)
         }
       }
       const { params } = node
       if (params && params.length > 0) {
         params.forEach((param) => {
           if (param.type === 'Identifier') {
-            updateName(parameterNames, param.name)
+            _updateName(parameterNames, param.name)
           } else if (param.type === 'AssignmentPattern') {
             if (param.left && param.left.type === 'Identifier') {
-              updateName(parameterNames, param.left.name)
+              _updateName(parameterNames, param.left.name)
             }
           }
         })
@@ -108,7 +108,7 @@ const extract = function(file) {
         (node.init && node.init.type.indexOf('Function') !== -1)
       )
         return
-      updateName(variableNames, name)
+      _updateName(variableNames, name)
     },
     // extract parameter name
     ArrowFunctionExpression(node, state) {
@@ -117,10 +117,10 @@ const extract = function(file) {
 
       params.forEach((param) => {
         if (param.type === 'Identifier') {
-          updateName(parameterNames, param.name)
+          _updateName(parameterNames, param.name)
         } else if (param.type === 'AssignmentPattern') {
           if (param.left && param.left.type === 'Identifier') {
-            updateName(parameterNames, param.left.name)
+            _updateName(parameterNames, param.left.name)
           }
         }
       })
@@ -131,7 +131,7 @@ const extract = function(file) {
 
       node.arguments.forEach((param) => {
         if (param.type === 'Identifier') {
-          updateName(argumentNames, param.name)
+          _updateName(argumentNames, param.name)
         } // TODO : if is MemberExpression, need to proceed like window.Vue
       })
     },
@@ -142,7 +142,7 @@ const extract = function(file) {
       if (left.type !== 'MemberExpression') return
       const { type, name } = left.property
       if (type === 'Identifier') {
-        updateName(attributeNames, name)
+        _updateName(attributeNames, name)
       }
     },
   })
