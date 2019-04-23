@@ -1,6 +1,6 @@
 {
   "name": "iroun",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "A JavaScript-based name analyzer for all javascript developers in the world.",
   "main": "src/index.js",
   "scripts": {
@@ -14,9 +14,14 @@
     "node": ">=8.9.0"
   },
   "keywords": [
-    "name",
+    "iroun",
+    "variables",
+    "naming",
     "analysis",
-    "acorn"
+    "acorn",
+    "ast",
+    "wordpos",
+    "wordnet"
   ],
   "author": {
     "name": "pistis",
