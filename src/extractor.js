@@ -104,11 +104,16 @@ const extract = function(file) {
     VariableDeclarator(node, state) {
       const { type, name } = node.id
       if (
-        type !== 'Identifier' ||
+        type === 'Identifier' &&
+        (node.init && node.init.type.indexOf('Function') === -1)
+      ) {
+        _updateName(variableNames, name)
+      } else if (
+        type === 'Identifier' &&
         (node.init && node.init.type.indexOf('Function') !== -1)
-      )
-        return
-      _updateName(variableNames, name)
+      ) {
+        _updateName(methodNames, name)
+      }
     },
     // extract parameter name
     ArrowFunctionExpression(node, state) {
