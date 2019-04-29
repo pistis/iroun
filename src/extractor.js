@@ -141,13 +141,23 @@ const extract = function(file) {
       })
     },
     // extract attribute name
-    // TODO : Class 뿐만 아니라 모든 Object의 attr(property)를 뽑는다.
     AssignmentExpression(node, state) {
       const { left } = node
       if (left.type !== 'MemberExpression') return
       const { type, name } = left.property
       if (type === 'Identifier') {
         _updateName(attributeNames, name)
+      }
+    },
+    // attr of object
+    Property(node, state) {
+      const { key, value } = node
+      if (key.type !== 'Identifier') return
+
+      if (value.type.indexOf('Function') !== -1) {
+        _updateName(methodNames, key.name)
+      } else {
+        _updateName(attributeNames, key.name)
       }
     },
   })
