@@ -36,6 +36,8 @@
     "acorn": "^6.1.1",
     "acorn-loose": "^6.0.0",
     "acorn-walk": "^6.1.1",
+    "flow-parser": "^0.98.0",
+    "vue-template-compiler": "^2.6.10",
     "wordpos": "^1.2.0"
   },
   "devDependencies": {

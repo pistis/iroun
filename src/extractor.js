@@ -1,5 +1,8 @@
 const fs = require('fs')
+const path = require('path')
 const acorn = require('acorn')
+const flowParser = require('flow-parser')
+const vueTemplateCompiler = require('vue-template-compiler')
 // const acornLoose = require("acorn-loose");
 const walk = require('acorn-walk')
 
@@ -42,13 +45,26 @@ const _updateName = function(names, name) {
   }
 }
  */
-const extract = function(file) {
-  const program = fs.readFileSync(file, 'utf-8')
-
-  const ast = acorn.parse(program, {
-    sourceType: 'module',
-    ecmaVersion: 9,
-  })
+const extract = function(program) {
+  let ast
+  if (program.indexOf('@flow') !== -1) {
+    // facebook/flow
+    ast = flowParser.parse(program, {
+      esproposal_class_instance_fields: true,
+      esproposal_class_static_fields: true,
+      esproposal_decorators: true,
+      esproposal_export_star_as: true,
+      esproposal_optional_chaining: true,
+      esproposal_nullish_coalescing: true,
+      tokens: false,
+      types: true,
+    })
+  } else {
+    ast = acorn.parse(program, {
+      sourceType: 'module',
+      ecmaVersion: 9,
+    })
+  }
 
   const names = Object.create(null)
   const classNames = Object.create(null)
@@ -65,30 +81,70 @@ const extract = function(file) {
   names['argumentNames'] = argumentNames
   names['attributeNames'] = attributeNames
 
-  walk.simple(ast, {
-    // extract class name
-    ClassDeclaration(node, state) {
-      const { name } = node.id
-      _updateName(classNames, name)
+  // for facebook/flow
+  const visitor = walk.make({
+    ClassProperty: function(node, st, c) {
+      // nothing
     },
-    // extract method name
-    MethodDefinition(node, state) {
-      if (node.kind !== 'method') return
-      const { type, name } = node.key
-      if (type !== 'Identifier') return
-      _updateName(methodNames, name)
-    },
-    // extract method name and parameter name
-    // TODO : duplicated logic FunctionDeclaration and ArrowFunctionExpression
-    FunctionDeclaration(node, state) {
-      if (node.id) {
+  })
+
+  walk.simple(
+    ast,
+    {
+      // extract class name
+      ClassDeclaration(node, state) {
+        const { name } = node.id
+        _updateName(classNames, name)
+      },
+      // extract method name
+      MethodDefinition(node, state) {
+        if (node.kind !== 'method') return
+        const { type, name } = node.key
+        if (type !== 'Identifier') return
+        _updateName(methodNames, name)
+      },
+      // extract method name and parameter name
+      // TODO : duplicated logic FunctionDeclaration and ArrowFunctionExpression
+      FunctionDeclaration(node, state) {
+        if (node.id) {
+          const { type, name } = node.id
+          if (type === 'Identifier') {
+            _updateName(methodNames, name)
+          }
+        }
+        const { params } = node
+        if (params && params.length > 0) {
+          params.forEach((param) => {
+            if (param.type === 'Identifier') {
+              _updateName(parameterNames, param.name)
+            } else if (param.type === 'AssignmentPattern') {
+              if (param.left && param.left.type === 'Identifier') {
+                _updateName(parameterNames, param.left.name)
+              }
+            }
+          })
+        }
+      },
+      // extract variable name
+      VariableDeclarator(node, state) {
         const { type, name } = node.id
-        if (type === 'Identifier') {
+        if (
+          type === 'Identifier' &&
+          (node.init && node.init.type.indexOf('Function') === -1)
+        ) {
+          _updateName(variableNames, name)
+        } else if (
+          type === 'Identifier' &&
+          (node.init && node.init.type.indexOf('Function') !== -1)
+        ) {
           _updateName(methodNames, name)
         }
-      }
-      const { params } = node
-      if (params && params.length > 0) {
+      },
+      // extract parameter name
+      ArrowFunctionExpression(node, state) {
+        const { params } = node
+        if (!params || params.length === 0) return
+
         params.forEach((param) => {
           if (param.type === 'Identifier') {
             _updateName(parameterNames, param.name)
@@ -98,73 +154,76 @@ const extract = function(file) {
             }
           }
         })
-      }
-    },
-    // extract variable name
-    VariableDeclarator(node, state) {
-      const { type, name } = node.id
-      if (
-        type === 'Identifier' &&
-        (node.init && node.init.type.indexOf('Function') === -1)
-      ) {
-        _updateName(variableNames, name)
-      } else if (
-        type === 'Identifier' &&
-        (node.init && node.init.type.indexOf('Function') !== -1)
-      ) {
-        _updateName(methodNames, name)
-      }
-    },
-    // extract parameter name
-    ArrowFunctionExpression(node, state) {
-      const { params } = node
-      if (!params || params.length === 0) return
+      },
+      // extract argument name
+      CallExpression(node, state) {
+        if (!node.arguments || node.arguments.length === 0) return
 
-      params.forEach((param) => {
-        if (param.type === 'Identifier') {
-          _updateName(parameterNames, param.name)
-        } else if (param.type === 'AssignmentPattern') {
-          if (param.left && param.left.type === 'Identifier') {
-            _updateName(parameterNames, param.left.name)
-          }
+        node.arguments.forEach((param) => {
+          if (param.type === 'Identifier') {
+            _updateName(argumentNames, param.name)
+          } // TODO : if is MemberExpression, need to proceed like window.Vue
+        })
+      },
+      // extract attribute name
+      AssignmentExpression(node, state) {
+        const { left } = node
+        if (left.type !== 'MemberExpression') return
+        const { type, name } = left.property
+        if (type === 'Identifier') {
+          _updateName(attributeNames, name)
         }
-      })
-    },
-    // extract argument name
-    CallExpression(node, state) {
-      if (!node.arguments || node.arguments.length === 0) return
+      },
+      // attr of object
+      Property(node, state) {
+        const { key, value } = node
+        if (key.type !== 'Identifier') return
 
-      node.arguments.forEach((param) => {
-        if (param.type === 'Identifier') {
-          _updateName(argumentNames, param.name)
-        } // TODO : if is MemberExpression, need to proceed like window.Vue
-      })
-    },
-    // extract attribute name
-    AssignmentExpression(node, state) {
-      const { left } = node
-      if (left.type !== 'MemberExpression') return
-      const { type, name } = left.property
-      if (type === 'Identifier') {
-        _updateName(attributeNames, name)
-      }
-    },
-    // attr of object
-    Property(node, state) {
-      const { key, value } = node
-      if (key.type !== 'Identifier') return
+        if (value.type.indexOf('Function') !== -1) {
+          _updateName(methodNames, key.name)
+        } else {
+          _updateName(attributeNames, key.name)
+        }
+      },
+      ClassProperty(node, state) {
+        const { type, name } = node.key
+        if (type !== 'Identifier') return
+        const { typeAnnotation } = node
+        if (!typeAnnotation.typeAnnotation) {
+          // console.log('TA : ', name, node)
+          return
+        }
+        if (!typeAnnotation.typeAnnotation.id) {
+          // console.log('ID : ', name, typeAnnotation.typeAnnotation)
+          return
+        }
+        if (typeAnnotation.typeAnnotation.id.type !== 'Identifier') return
 
-      if (value.type.indexOf('Function') !== -1) {
-        _updateName(methodNames, key.name)
-      } else {
-        _updateName(attributeNames, key.name)
-      }
+        if (typeAnnotation.typeAnnotation.id.name.indexOf('Function') !== -1) {
+          _updateName(methodNames, name)
+        } else {
+          _updateName(attributeNames, name)
+        }
+      },
     },
-  })
+    visitor
+  )
 
   return names
 }
 
+const extractFromFile = function(file) {
+  const program = fs.readFileSync(file, 'utf-8')
+  const extname = path.extname(file)
+  if (extname === '.vue') {
+    const SFCDescriptor = vueTemplateCompiler.parseComponent(program)
+    return extract(SFCDescriptor.script.content)
+  } else if (extname === '.js') {
+    return extract(program)
+  }
+}
+
 module.exports = {
   extract,
+  extractFromFile,
 }
