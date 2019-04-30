@@ -82,10 +82,16 @@ const extract = function(program) {
   names['attributeNames'] = attributeNames
 
   // for facebook/flow
+  const noop = function() {}
   const visitor = walk.make({
-    ClassProperty: function(node, st, c) {
-      // nothing
-    },
+    // facebook/flow specific AST Type
+    // TODO : this type must be analyze
+    ClassProperty: noop,
+    DeclareTypeAlias: noop,
+    TypeCastExpression: noop,
+    TypeAlias: noop,
+    InterfaceDeclaration: noop,
+    DeclareVariable: noop,
   })
 
   walk.simple(
@@ -190,11 +196,9 @@ const extract = function(program) {
         if (type !== 'Identifier') return
         const { typeAnnotation } = node
         if (!typeAnnotation.typeAnnotation) {
-          // console.log('TA : ', name, node)
           return
         }
         if (!typeAnnotation.typeAnnotation.id) {
-          // console.log('ID : ', name, typeAnnotation.typeAnnotation)
           return
         }
         if (typeAnnotation.typeAnnotation.id.type !== 'Identifier') return
