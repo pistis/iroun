@@ -38,6 +38,9 @@
     "acorn-loose": "^6.0.0",
     "acorn-walk": "^6.1.1",
     "flow-parser": "^0.98.0",
+    "mkdirp": "^0.5.1",
+    "ora": "^3.4.0",
+    "rimraf": "^2.6.3",
     "stopwords-json": "^1.2.0",
     "vue-template-compiler": "^2.6.10",
     "wordpos": "^1.2.0"

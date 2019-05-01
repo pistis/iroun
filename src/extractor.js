@@ -92,6 +92,8 @@ const extract = function(program) {
     TypeAlias: noop,
     InterfaceDeclaration: noop,
     DeclareVariable: noop,
+    SpreadProperty: noop,
+    OpaqueType: noop,
   })
 
   walk.simple(
