@@ -45,6 +45,10 @@ const repositories = [
     path: '../.resources/knockout/src',
     output: '../database/words/knockout.txt',
   },
+  {
+    path: '../.resources/angular/packages/core/src',
+    output: '../database/words/angular-core.txt',
+  },
 ]
 
 repositories.forEach((repo) => {

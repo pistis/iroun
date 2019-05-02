@@ -14,7 +14,7 @@ const getFilesOfDirectory = function(dir, filelist = []) {
 
 const getJavascriptFileList = function(fileList) {
   return fileList
-    .filter((file) => file.match(/\.js$|.vue$/g))
+    .filter((file) => file.match(/\.js$|.vue$|.ts$/g))
     .filter((file) => file.indexOf('test') === -1)
 }
 

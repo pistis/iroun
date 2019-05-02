@@ -40,6 +40,7 @@ const makeWordFile = function(dir, output) {
       addWords(names.argumentNames)
       addWords(names.attributeNames)
     } catch (e) {
+      // console.log(file, e)
       errors.push({
         file: file,
         msg: e,

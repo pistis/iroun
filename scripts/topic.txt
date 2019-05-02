@@ -4,23 +4,39 @@
     "tfidf": 0
   },
   {
-    "word": "called",
+    "word": "exps",
     "tfidf": 2.791759469228055
   },
   {
-    "word": "ieph",
+    "word": "invocation",
     "tfidf": 2.791759469228055
   },
   {
-    "word": "locate",
+    "word": "middle",
     "tfidf": 2.791759469228055
   },
   {
-    "word": "vmodel",
+    "word": "ternary",
     "tfidf": 2.791759469228055
   },
   {
-    "word": "reflow",
+    "word": "leading",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "functions",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "cloak",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "eof",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "detect",
     "tfidf": 2.791759469228055
   },
   {
@@ -32,239 +48,7 @@
     "tfidf": 2.791759469228055
   },
   {
-    "word": "eof",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "phrasing",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "backend",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "bailed",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "duplicate",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "interpolation",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "reactivate",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "raf",
-    "tfidf": 2.791759469228055
-  },
-  {
     "word": "roots",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "postpatch",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "reason",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "completed",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "f2",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "exps",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "f1",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "prepatch",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "uniq",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "invocation",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "asserted",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "explicable",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "perf",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "strats",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "neck",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "copies",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "bail",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "interpolate",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "segment",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "handling",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "ff",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "phantom",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "chrome",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "ios",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "android",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "middle",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "edge",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "e9",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "unit",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "ternary",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "cloak",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "performance",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "flushing",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "circular",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "cap",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "runner",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "hints",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "functions",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "http",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "observing",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "indices",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "mapper",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "equiv",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "falsy",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "present",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "unitary",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "starting",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "ctors",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "registers",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "richtext",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "animate",
     "tfidf": 2.791759469228055
   },
   {
@@ -272,59 +56,7 @@
     "tfidf": 2.791759469228055
   },
   {
-    "word": "reverse",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "iesvg",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "detect",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "outlet",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "curly",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "square",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "optimized",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "constraints",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "unoptimizable",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "pass",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "siblings",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "decoding",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "qname",
-    "tfidf": 2.791759469228055
-  },
-  {
-    "word": "ncname",
+    "word": "paren",
     "tfidf": 2.791759469228055
   },
   {
@@ -332,15 +64,255 @@
     "tfidf": 2.791759469228055
   },
   {
-    "word": "leading",
+    "word": "ncname",
     "tfidf": 2.791759469228055
   },
   {
-    "word": "paren",
+    "word": "qname",
     "tfidf": 2.791759469228055
   },
   {
-    "word": "removal",
+    "word": "decoding",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "constraints",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "outlet",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "iesvg",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "registers",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "ctors",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "present",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "observing",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "circular",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "flushing",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "performance",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "e9",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "edge",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "android",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "ios",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "chrome",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "phantom",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "ff",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "handling",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "bail",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "copies",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "strats",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "perf",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "explicable",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "asserted",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "prepatch",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "f1",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "f2",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "completed",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "reason",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "postpatch",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "reactivate",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "duplicate",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "bailed",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "backend",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "phrasing",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "reflow",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "vmodel",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "ieph",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "raf",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "unit",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "http",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "falsy",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "unitary",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "richtext",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "pass",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "runner",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "interpolation",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "segment",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "siblings",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "unoptimizable",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "optimized",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "starting",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "mapper",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "indices",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "hints",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "interpolate",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "neck",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "uniq",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "called",
+    "tfidf": 2.791759469228055
+  },
+  {
+    "word": "ident",
     "tfidf": 4.772588722239782
   },
   {
@@ -348,15 +320,7 @@
     "tfidf": 4.772588722239782
   },
   {
-    "word": "acorn",
-    "tfidf": 4.772588722239782
-  },
-  {
-    "word": "resource",
-    "tfidf": 4.772588722239782
-  },
-  {
-    "word": "charset",
+    "word": "shallow",
     "tfidf": 4.772588722239782
   },
   {
@@ -368,23 +332,7 @@
     "tfidf": 4.772588722239782
   },
   {
-    "word": "escodegen",
-    "tfidf": 4.772588722239782
-  },
-  {
-    "word": "sfc",
-    "tfidf": 4.772588722239782
-  },
-  {
-    "word": "ends",
-    "tfidf": 4.772588722239782
-  },
-  {
-    "word": "undef",
-    "tfidf": 4.772588722239782
-  },
-  {
-    "word": "ident",
+    "word": "removal",
     "tfidf": 4.772588722239782
   },
   {
@@ -392,84 +340,32 @@
     "tfidf": 4.772588722239782
   },
   {
+    "word": "ends",
+    "tfidf": 4.772588722239782
+  },
+  {
+    "word": "animate",
+    "tfidf": 4.772588722239782
+  },
+  {
+    "word": "escodegen",
+    "tfidf": 4.772588722239782
+  },
+  {
     "word": "serializer",
     "tfidf": 4.772588722239782
   },
   {
-    "word": "shallow",
+    "word": "resource",
     "tfidf": 4.772588722239782
   },
   {
-    "word": "composing",
-    "tfidf": 5.58351893845611
+    "word": "sfc",
+    "tfidf": 4.772588722239782
   },
   {
-    "word": "reactivated",
-    "tfidf": 5.58351893845611
-  },
-  {
-    "word": "enumerated",
-    "tfidf": 5.58351893845611
-  },
-  {
-    "word": "vshow",
-    "tfidf": 5.58351893845611
-  },
-  {
-    "word": "devtools",
-    "tfidf": 5.58351893845611
-  },
-  {
-    "word": "slash",
-    "tfidf": 5.58351893845611
-  },
-  {
-    "word": "trees",
-    "tfidf": 5.58351893845611
-  },
-  {
-    "word": "timestamp",
-    "tfidf": 5.58351893845611
-  },
-  {
-    "word": "optimizable",
-    "tfidf": 5.58351893845611
-  },
-  {
-    "word": "transforms",
-    "tfidf": 5.58351893845611
-  },
-  {
-    "word": "creating",
-    "tfidf": 5.58351893845611
-  },
-  {
-    "word": "encoded",
-    "tfidf": 5.58351893845611
-  },
-  {
-    "word": "promises",
-    "tfidf": 5.58351893845611
-  },
-  {
-    "word": "injections",
-    "tfidf": 5.58351893845611
-  },
-  {
-    "word": "plugins",
-    "tfidf": 5.58351893845611
-  },
-  {
-    "word": "creator",
-    "tfidf": 5.58351893845611
-  },
-  {
-    "word": "installed",
-    "tfidf": 5.58351893845611
-  },
-  {
-    "word": "tips",
-    "tfidf": 5.58351893845611
+    "word": "undef",
+    "tfidf": 4.772588722239782
   },
   {
     "word": "iterator1",
@@ -480,59 +376,15 @@
     "tfidf": 5.58351893845611
   },
   {
-    "word": "desc",
+    "word": "transforms",
     "tfidf": 5.58351893845611
   },
   {
-    "word": "sealed",
+    "word": "creator",
     "tfidf": 5.58351893845611
   },
   {
-    "word": "reactive",
-    "tfidf": 5.58351893845611
-  },
-  {
-    "word": "stable",
-    "tfidf": 5.58351893845611
-  },
-  {
-    "word": "leaving",
-    "tfidf": 5.58351893845611
-  },
-  {
-    "word": "augment",
-    "tfidf": 5.58351893845611
-  },
-  {
-    "word": "patchable",
-    "tfidf": 5.58351893845611
-  },
-  {
-    "word": "prune",
-    "tfidf": 5.58351893845611
-  },
-  {
-    "word": "cumulated",
-    "tfidf": 5.58351893845611
-  },
-  {
-    "word": "strat",
-    "tfidf": 5.58351893845611
-  },
-  {
-    "word": "loose",
-    "tfidf": 5.58351893845611
-  },
-  {
-    "word": "translation",
-    "tfidf": 5.58351893845611
-  },
-  {
-    "word": "bug",
-    "tfidf": 5.58351893845611
-  },
-  {
-    "word": "operators",
+    "word": "tips",
     "tfidf": 5.58351893845611
   },
   {
@@ -540,23 +392,119 @@
     "tfidf": 5.58351893845611
   },
   {
+    "word": "encoded",
+    "tfidf": 5.58351893845611
+  },
+  {
+    "word": "slash",
+    "tfidf": 5.58351893845611
+  },
+  {
     "word": "forbidden",
     "tfidf": 5.58351893845611
   },
   {
-    "word": "stats",
+    "word": "bug",
     "tfidf": 5.58351893845611
   },
   {
-    "word": "lang",
-    "tfidf": 6.295836866004329
+    "word": "cumulated",
+    "tfidf": 5.58351893845611
+  },
+  {
+    "word": "prune",
+    "tfidf": 5.58351893845611
+  },
+  {
+    "word": "sealed",
+    "tfidf": 5.58351893845611
+  },
+  {
+    "word": "installed",
+    "tfidf": 5.58351893845611
+  },
+  {
+    "word": "plugins",
+    "tfidf": 5.58351893845611
+  },
+  {
+    "word": "injections",
+    "tfidf": 5.58351893845611
+  },
+  {
+    "word": "trees",
+    "tfidf": 5.58351893845611
+  },
+  {
+    "word": "augment",
+    "tfidf": 5.58351893845611
+  },
+  {
+    "word": "timestamp",
+    "tfidf": 5.58351893845611
+  },
+  {
+    "word": "devtools",
+    "tfidf": 5.58351893845611
+  },
+  {
+    "word": "strat",
+    "tfidf": 5.58351893845611
+  },
+  {
+    "word": "stable",
+    "tfidf": 5.58351893845611
+  },
+  {
+    "word": "patchable",
+    "tfidf": 5.58351893845611
+  },
+  {
+    "word": "creating",
+    "tfidf": 5.58351893845611
+  },
+  {
+    "word": "reactivated",
+    "tfidf": 5.58351893845611
+  },
+  {
+    "word": "translation",
+    "tfidf": 5.58351893845611
+  },
+  {
+    "word": "leaving",
+    "tfidf": 5.58351893845611
+  },
+  {
+    "word": "composing",
+    "tfidf": 5.58351893845611
+  },
+  {
+    "word": "enumerated",
+    "tfidf": 5.58351893845611
+  },
+  {
+    "word": "desc",
+    "tfidf": 5.58351893845611
+  },
+  {
+    "word": "optimizable",
+    "tfidf": 5.58351893845611
+  },
+  {
+    "word": "promises",
+    "tfidf": 5.58351893845611
+  },
+  {
+    "word": "vshow",
+    "tfidf": 5.58351893845611
+  },
+  {
+    "word": "loose",
+    "tfidf": 5.58351893845611
   },
   {
     "word": "waiting",
-    "tfidf": 6.295836866004329
-  },
-  {
-    "word": "needed",
     "tfidf": 6.295836866004329
   },
   {
@@ -564,31 +512,23 @@
     "tfidf": 6.295836866004329
   },
   {
-    "word": "mutation",
+    "word": "charset",
     "tfidf": 6.295836866004329
   },
   {
-    "word": "tab",
-    "tfidf": 7.158883083359672
+    "word": "acorn",
+    "tfidf": 6.295836866004329
   },
   {
-    "word": "accept",
-    "tfidf": 7.158883083359672
-  },
-  {
-    "word": "numeric",
-    "tfidf": 7.158883083359672
-  },
-  {
-    "word": "ops",
-    "tfidf": 7.158883083359672
-  },
-  {
-    "word": "timing",
-    "tfidf": 7.158883083359672
+    "word": "needed",
+    "tfidf": 6.295836866004329
   },
   {
     "word": "division",
+    "tfidf": 7.158883083359672
+  },
+  {
+    "word": "newline",
     "tfidf": 7.158883083359672
   },
   {
@@ -604,31 +544,7 @@
     "tfidf": 7.158883083359672
   },
   {
-    "word": "format",
-    "tfidf": 7.158883083359672
-  },
-  {
-    "word": "rewrite",
-    "tfidf": 7.158883083359672
-  },
-  {
     "word": "validator",
-    "tfidf": 7.158883083359672
-  },
-  {
-    "word": "editable",
-    "tfidf": 7.158883083359672
-  },
-  {
-    "word": "newline",
-    "tfidf": 7.158883083359672
-  },
-  {
-    "word": "unsafe",
-    "tfidf": 7.158883083359672
-  },
-  {
-    "word": "vendor",
     "tfidf": 7.158883083359672
   },
   {
@@ -636,39 +552,31 @@
     "tfidf": 7.158883083359672
   },
   {
-    "word": "micro",
+    "word": "vendor",
     "tfidf": 7.158883083359672
   },
   {
-    "word": "character",
-    "tfidf": 7.501874949415599
+    "word": "ops",
+    "tfidf": 7.158883083359672
   },
   {
-    "word": "expects",
-    "tfidf": 8.375278407684165
+    "word": "unsafe",
+    "tfidf": 7.158883083359672
   },
   {
-    "word": "alive",
-    "tfidf": 8.375278407684165
+    "word": "numeric",
+    "tfidf": 7.158883083359672
   },
   {
-    "word": "absent",
-    "tfidf": 8.375278407684165
+    "word": "equiv",
+    "tfidf": 7.158883083359672
   },
   {
-    "word": "functional",
-    "tfidf": 8.375278407684165
+    "word": "editable",
+    "tfidf": 7.158883083359672
   },
   {
-    "word": "classify",
-    "tfidf": 8.375278407684165
-  },
-  {
-    "word": "compilation",
-    "tfidf": 8.375278407684165
-  },
-  {
-    "word": "support",
+    "word": "guard",
     "tfidf": 8.375278407684165
   },
   {
@@ -676,7 +584,7 @@
     "tfidf": 8.375278407684165
   },
   {
-    "word": "guard",
+    "word": "important",
     "tfidf": 8.375278407684165
   },
   {
@@ -684,7 +592,7 @@
     "tfidf": 8.375278407684165
   },
   {
-    "word": "important",
+    "word": "alive",
     "tfidf": 8.375278407684165
   },
   {
@@ -696,11 +604,43 @@
     "tfidf": 8.375278407684165
   },
   {
+    "word": "classify",
+    "tfidf": 8.375278407684165
+  },
+  {
+    "word": "absent",
+    "tfidf": 8.375278407684165
+  },
+  {
+    "word": "functional",
+    "tfidf": 8.375278407684165
+  },
+  {
     "word": "blocker",
     "tfidf": 8.375278407684165
   },
   {
-    "word": "moved",
+    "word": "expects",
+    "tfidf": 8.375278407684165
+  },
+  {
+    "word": "support",
+    "tfidf": 8.375278407684165
+  },
+  {
+    "word": "compilation",
+    "tfidf": 8.375278407684165
+  },
+  {
+    "word": "tab",
+    "tfidf": 8.394449154672438
+  },
+  {
+    "word": "supports",
+    "tfidf": 8.394449154672438
+  },
+  {
+    "word": "micro",
     "tfidf": 8.394449154672438
   },
   {
@@ -708,7 +648,7 @@
     "tfidf": 8.394449154672438
   },
   {
-    "word": "basic",
+    "word": "moved",
     "tfidf": 8.394449154672438
   },
   {
@@ -716,7 +656,15 @@
     "tfidf": 8.394449154672438
   },
   {
-    "word": "supports",
+    "word": "accept",
+    "tfidf": 8.394449154672438
+  },
+  {
+    "word": "rewrite",
+    "tfidf": 8.394449154672438
+  },
+  {
+    "word": "basic",
     "tfidf": 8.394449154672438
   },
   {
@@ -728,15 +676,11 @@
     "tfidf": 9.3773436867695
   },
   {
-    "word": "fix",
+    "word": "character",
     "tfidf": 9.3773436867695
   },
   {
-    "word": "hyphenate",
-    "tfidf": 9.545177444479563
-  },
-  {
-    "word": "blocks",
+    "word": "provided",
     "tfidf": 9.545177444479563
   },
   {
@@ -744,7 +688,7 @@
     "tfidf": 9.545177444479563
   },
   {
-    "word": "tar",
+    "word": "subs",
     "tfidf": 9.545177444479563
   },
   {
@@ -752,31 +696,7 @@
     "tfidf": 9.545177444479563
   },
   {
-    "word": "updating",
-    "tfidf": 9.545177444479563
-  },
-  {
-    "word": "classes",
-    "tfidf": 9.545177444479563
-  },
-  {
-    "word": "provided",
-    "tfidf": 9.545177444479563
-  },
-  {
     "word": "handled",
-    "tfidf": 9.545177444479563
-  },
-  {
-    "word": "ap",
-    "tfidf": 9.545177444479563
-  },
-  {
-    "word": "span",
-    "tfidf": 9.545177444479563
-  },
-  {
-    "word": "primitive",
     "tfidf": 9.545177444479563
   },
   {
@@ -784,23 +704,23 @@
     "tfidf": 9.545177444479563
   },
   {
-    "word": "subs",
+    "word": "tar",
     "tfidf": 9.545177444479563
   },
   {
-    "word": "total",
+    "word": "locate",
     "tfidf": 9.545177444479563
   },
   {
-    "word": "parens",
+    "word": "primitive",
     "tfidf": 9.545177444479563
   },
   {
-    "word": "quote",
-    "tfidf": 10.493061443340547
+    "word": "hyphenate",
+    "tfidf": 9.545177444479563
   },
   {
-    "word": "del",
+    "word": "format",
     "tfidf": 10.493061443340547
   },
   {
@@ -808,11 +728,19 @@
     "tfidf": 10.493061443340547
   },
   {
+    "word": "classes",
+    "tfidf": 10.493061443340547
+  },
+  {
+    "word": "span",
+    "tfidf": 10.493061443340547
+  },
+  {
     "word": "wait",
     "tfidf": 10.493061443340547
   },
   {
-    "word": "ob",
+    "word": "camelized",
     "tfidf": 11.16703787691222
   },
   {
@@ -820,15 +748,7 @@
     "tfidf": 11.16703787691222
   },
   {
-    "word": "branch1",
-    "tfidf": 11.16703787691222
-  },
-  {
-    "word": "recycle",
-    "tfidf": 11.16703787691222
-  },
-  {
-    "word": "camelized",
+    "word": "ob",
     "tfidf": 11.16703787691222
   },
   {
@@ -836,7 +756,7 @@
     "tfidf": 11.16703787691222
   },
   {
-    "word": "elseif",
+    "word": "branch1",
     "tfidf": 11.16703787691222
   },
   {
@@ -844,19 +764,43 @@
     "tfidf": 11.16703787691222
   },
   {
+    "word": "recycle",
+    "tfidf": 11.16703787691222
+  },
+  {
     "word": "interval",
     "tfidf": 11.16703787691222
+  },
+  {
+    "word": "del",
+    "tfidf": 11.2528124241234
   },
   {
     "word": "refresh",
     "tfidf": 11.2528124241234
   },
   {
-    "word": "evaluated",
+    "word": "lang",
+    "tfidf": 11.2528124241234
+  },
+  {
+    "word": "reverse",
     "tfidf": 11.931471805599454
   },
   {
-    "word": "unbind",
+    "word": "keyword",
+    "tfidf": 11.931471805599454
+  },
+  {
+    "word": "operators",
+    "tfidf": 11.931471805599454
+  },
+  {
+    "word": "curly",
+    "tfidf": 11.931471805599454
+  },
+  {
+    "word": "elseif",
     "tfidf": 11.931471805599454
   },
   {
@@ -872,19 +816,11 @@
     "tfidf": 11.931471805599454
   },
   {
-    "word": "caching",
+    "word": "unbind",
     "tfidf": 11.931471805599454
   },
   {
-    "word": "stringify",
-    "tfidf": 11.931471805599454
-  },
-  {
-    "word": "keyword",
-    "tfidf": 11.931471805599454
-  },
-  {
-    "word": "consumers",
+    "word": "cap",
     "tfidf": 11.931471805599454
   },
   {
@@ -892,11 +828,27 @@
     "tfidf": 11.931471805599454
   },
   {
-    "word": "concat",
-    "tfidf": 12.591673732008656
+    "word": "evaluated",
+    "tfidf": 11.931471805599454
+  },
+  {
+    "word": "consumers",
+    "tfidf": 11.931471805599454
+  },
+  {
+    "word": "caching",
+    "tfidf": 11.931471805599454
   },
   {
     "word": "ctrl",
+    "tfidf": 12.591673732008656
+  },
+  {
+    "word": "updating",
+    "tfidf": 12.591673732008656
+  },
+  {
+    "word": "concat",
     "tfidf": 12.591673732008656
   },
   {
@@ -904,11 +856,7 @@
     "tfidf": 12.591673732008658
   },
   {
-    "word": "control",
-    "tfidf": 12.591673732008658
-  },
-  {
-    "word": "counter",
+    "word": "tick",
     "tfidf": 12.591673732008658
   },
   {
@@ -916,35 +864,51 @@
     "tfidf": 12.591673732008658
   },
   {
-    "word": "tick",
+    "word": "control",
     "tfidf": 12.591673732008658
   },
   {
-    "word": "repeat",
+    "word": "ap",
     "tfidf": 12.591673732008658
   },
   {
-    "word": "pop",
-    "tfidf": 13.128281161477299
-  },
-  {
-    "word": "single",
-    "tfidf": 13.128281161477299
+    "word": "total",
+    "tfidf": 12.591673732008658
   },
   {
     "word": "shift",
     "tfidf": 13.128281161477299
   },
   {
-    "word": "equal",
+    "word": "mutation",
+    "tfidf": 13.128281161477299
+  },
+  {
+    "word": "fix",
+    "tfidf": 13.128281161477299
+  },
+  {
+    "word": "repeat",
+    "tfidf": 13.1282811614773
+  },
+  {
+    "word": "single",
     "tfidf": 13.545177444479563
   },
   {
-    "word": "durations",
+    "word": "pop",
+    "tfidf": 13.545177444479563
+  },
+  {
+    "word": "tip",
     "tfidf": 13.958797346140274
   },
   {
-    "word": "received",
+    "word": "expect",
+    "tfidf": 13.958797346140274
+  },
+  {
+    "word": "asset",
     "tfidf": 13.958797346140274
   },
   {
@@ -956,32 +920,16 @@
     "tfidf": 13.958797346140274
   },
   {
-    "word": "expect",
+    "word": "received",
+    "tfidf": 13.958797346140274
+  },
+  {
+    "word": "durations",
     "tfidf": 13.958797346140274
   },
   {
     "word": "recyclable",
     "tfidf": 13.958797346140274
-  },
-  {
-    "word": "asset",
-    "tfidf": 13.958797346140274
-  },
-  {
-    "word": "tip",
-    "tfidf": 13.958797346140274
-  },
-  {
-    "word": "dedupe",
-    "tfidf": 14.317766166719345
-  },
-  {
-    "word": "links",
-    "tfidf": 14.317766166719345
-  },
-  {
-    "word": "capitalize",
-    "tfidf": 14.317766166719345
   },
   {
     "word": "parameter",
@@ -992,7 +940,11 @@
     "tfidf": 14.317766166719345
   },
   {
-    "word": "delimiter",
+    "word": "dedupe",
+    "tfidf": 14.317766166719345
+  },
+  {
+    "word": "capitalize",
     "tfidf": 14.317766166719345
   },
   {
@@ -1000,8 +952,20 @@
     "tfidf": 14.317766166719345
   },
   {
-    "word": "marker",
+    "word": "delimiter",
     "tfidf": 14.317766166719345
+  },
+  {
+    "word": "links",
+    "tfidf": 14.317766166719345
+  },
+  {
+    "word": "stats",
+    "tfidf": 14.317766166719345
+  },
+  {
+    "word": "parens",
+    "tfidf": 14.690286020676766
   },
   {
     "word": "console",
@@ -1012,43 +976,19 @@
     "tfidf": 14.690286020676766
   },
   {
-    "word": "tail",
+    "word": "marker",
     "tfidf": 14.690286020676767
   },
   {
-    "word": "full",
+    "word": "counter",
     "tfidf": 15.003749898831199
-  },
-  {
-    "word": "copy",
-    "tfidf": 15.389965007326868
   },
   {
     "word": "cid",
     "tfidf": 16.704060527839236
   },
   {
-    "word": "scripts",
-    "tfidf": 16.704060527839236
-  },
-  {
-    "word": "stylesheet",
-    "tfidf": 16.75055681536833
-  },
-  {
-    "word": "basedir",
-    "tfidf": 16.75055681536833
-  },
-  {
-    "word": "vnodes",
-    "tfidf": 16.75055681536833
-  },
-  {
     "word": "pad",
-    "tfidf": 16.75055681536833
-  },
-  {
-    "word": "cbs",
     "tfidf": 16.75055681536833
   },
   {
@@ -1056,19 +996,11 @@
     "tfidf": 16.75055681536833
   },
   {
-    "word": "invoker",
+    "word": "delimiters",
     "tfidf": 16.75055681536833
   },
   {
-    "word": "delays",
-    "tfidf": 16.75055681536833
-  },
-  {
-    "word": "cancelled",
-    "tfidf": 16.75055681536833
-  },
-  {
-    "word": "prefetch",
+    "word": "cbs",
     "tfidf": 16.75055681536833
   },
   {
@@ -1076,11 +1008,31 @@
     "tfidf": 16.75055681536833
   },
   {
-    "word": "delimiters",
+    "word": "invoker",
     "tfidf": 16.75055681536833
   },
   {
-    "word": "head",
+    "word": "vnodes",
+    "tfidf": 16.75055681536833
+  },
+  {
+    "word": "cancelled",
+    "tfidf": 16.75055681536833
+  },
+  {
+    "word": "delays",
+    "tfidf": 16.75055681536833
+  },
+  {
+    "word": "basedir",
+    "tfidf": 16.75055681536833
+  },
+  {
+    "word": "prefetch",
+    "tfidf": 16.75055681536833
+  },
+  {
+    "word": "generated",
     "tfidf": 16.788898309344876
   },
   {
@@ -1092,7 +1044,7 @@
     "tfidf": 16.788898309344876
   },
   {
-    "word": "trim",
+    "word": "dx",
     "tfidf": 16.788898309344876
   },
   {
@@ -1100,19 +1052,11 @@
     "tfidf": 16.788898309344876
   },
   {
-    "word": "dx",
-    "tfidf": 16.788898309344876
-  },
-  {
-    "word": "generated",
-    "tfidf": 16.788898309344876
+    "word": "copy",
+    "tfidf": 16.86558129729797
   },
   {
     "word": "activate",
-    "tfidf": 16.879218636185097
-  },
-  {
-    "word": "outer",
     "tfidf": 16.879218636185097
   },
   {
@@ -1120,15 +1064,19 @@
     "tfidf": 16.879218636185097
   },
   {
-    "word": "flatten",
-    "tfidf": 18.754687373538996
-  },
-  {
     "word": "special",
-    "tfidf": 18.754687373539
+    "tfidf": 18.624618986159398
   },
   {
-    "word": "refs",
+    "word": "outer",
+    "tfidf": 18.624618986159398
+  },
+  {
+    "word": "flatten",
+    "tfidf": 18.624618986159398
+  },
+  {
+    "word": "strip",
     "tfidf": 18.887510598012987
   },
   {
@@ -1136,23 +1084,7 @@
     "tfidf": 18.887510598012987
   },
   {
-    "word": "consumer",
-    "tfidf": 18.887510598012987
-  },
-  {
     "word": "created",
-    "tfidf": 18.887510598012987
-  },
-  {
-    "word": "started",
-    "tfidf": 18.887510598012987
-  },
-  {
-    "word": "strip",
-    "tfidf": 18.887510598012987
-  },
-  {
-    "word": "recursive",
     "tfidf": 18.887510598012987
   },
   {
@@ -1160,11 +1092,27 @@
     "tfidf": 18.887510598012987
   },
   {
-    "word": "batched",
-    "tfidf": 19.090354888959126
+    "word": "recursive",
+    "tfidf": 18.887510598012987
   },
   {
-    "word": "hyphenated",
+    "word": "refs",
+    "tfidf": 18.887510598012987
+  },
+  {
+    "word": "timing",
+    "tfidf": 18.887510598012987
+  },
+  {
+    "word": "scripts",
+    "tfidf": 18.887510598012987
+  },
+  {
+    "word": "consumer",
+    "tfidf": 18.887510598012987
+  },
+  {
+    "word": "ending",
     "tfidf": 19.090354888959126
   },
   {
@@ -1172,23 +1120,19 @@
     "tfidf": 19.090354888959126
   },
   {
+    "word": "hyphenated",
+    "tfidf": 19.090354888959126
+  },
+  {
     "word": "renderable",
     "tfidf": 19.090354888959126
   },
   {
-    "word": "mark",
+    "word": "batched",
     "tfidf": 19.090354888959126
   },
   {
-    "word": "ending",
-    "tfidf": 19.090354888959126
-  },
-  {
-    "word": "optimizability",
-    "tfidf": 19.542316284596385
-  },
-  {
-    "word": "processed",
+    "word": "stacked",
     "tfidf": 19.542316284596385
   },
   {
@@ -1196,20 +1140,16 @@
     "tfidf": 19.542316284596385
   },
   {
-    "word": "stacked",
+    "word": "perform",
     "tfidf": 19.542316284596385
   },
   {
-    "word": "perform",
+    "word": "optimizability",
     "tfidf": 19.542316284596385
   },
   {
     "word": "auto",
     "tfidf": 20.006954509524927
-  },
-  {
-    "word": "multiple",
-    "tfidf": 20.317766166719345
   },
   {
     "word": "serialize",
@@ -1220,15 +1160,15 @@
     "tfidf": 20.630156110892898
   },
   {
+    "word": "sandbox",
+    "tfidf": 20.630156110892898
+  },
+  {
     "word": "hit",
     "tfidf": 20.630156110892898
   },
   {
-    "word": "app",
-    "tfidf": 20.986122886681095
-  },
-  {
-    "word": "sandbox",
+    "word": "mark",
     "tfidf": 20.986122886681095
   },
   {
@@ -1236,12 +1176,20 @@
     "tfidf": 20.986122886681095
   },
   {
-    "word": "prevent",
-    "tfidf": 21.081976621622463
+    "word": "app",
+    "tfidf": 20.986122886681095
   },
   {
     "word": "preload",
-    "tfidf": 21.476649250079017
+    "tfidf": 20.986122886681095
+  },
+  {
+    "word": "started",
+    "tfidf": 20.986122886681095
+  },
+  {
+    "word": "prevent",
+    "tfidf": 21.081976621622463
   },
   {
     "word": "cased",
@@ -1256,12 +1204,12 @@
     "tfidf": 21.476649250079017
   },
   {
-    "word": "writable",
-    "tfidf": 21.890595231680273
+    "word": "partial",
+    "tfidf": 21.545951010257617
   },
   {
-    "word": "partial",
-    "tfidf": 22.010913347279292
+    "word": "full",
+    "tfidf": 22.01091334727929
   },
   {
     "word": "weex",
@@ -1280,39 +1228,27 @@
     "tfidf": 22.505624848246796
   },
   {
+    "word": "max",
+    "tfidf": 22.505624848246796
+  },
+  {
+    "word": "log",
+    "tfidf": 22.505624848246796
+  },
+  {
     "word": "task",
     "tfidf": 22.505624848246796
   },
   {
-    "word": "assignment",
-    "tfidf": 22.505624848246796
-  },
-  {
-    "word": "inline",
-    "tfidf": 22.505624848246796
-  },
-  {
-    "word": "extract",
-    "tfidf": 22.5056248482468
-  },
-  {
-    "word": "max",
-    "tfidf": 23.084735175349206
-  },
-  {
-    "word": "bracket",
-    "tfidf": 23.084735175349206
-  },
-  {
-    "word": "alias",
-    "tfidf": 23.084735175349206
-  },
-  {
-    "word": "log",
-    "tfidf": 23.084735175349206
+    "word": "rest",
+    "tfidf": 23.084735175349202
   },
   {
     "word": "cloned",
+    "tfidf": 23.084735175349206
+  },
+  {
+    "word": "stringify",
     "tfidf": 23.084735175349206
   },
   {
@@ -1328,11 +1264,11 @@
     "tfidf": 23.0849475109903
   },
   {
-    "word": "ensure",
+    "word": "toggle",
     "tfidf": 23.084947510990304
   },
   {
-    "word": "toggle",
+    "word": "ensure",
     "tfidf": 23.084947510990304
   },
   {
@@ -1340,11 +1276,15 @@
     "tfidf": 23.704060527839232
   },
   {
-    "word": "rest",
+    "word": "multiple",
+    "tfidf": 23.704060527839236
+  },
+  {
+    "word": "dirs",
     "tfidf": 23.862943611198908
   },
   {
-    "word": "maps",
+    "word": "processed",
     "tfidf": 23.862943611198908
   },
   {
@@ -1352,19 +1292,15 @@
     "tfidf": 23.862943611198908
   },
   {
-    "word": "dirs",
-    "tfidf": 23.862943611198908
-  },
-  {
     "word": "composition",
     "tfidf": 23.862943611198908
   },
   {
-    "word": "hash",
+    "word": "maps",
     "tfidf": 23.862943611198908
   },
   {
-    "word": "matches",
+    "word": "quote",
     "tfidf": 24.381093585600695
   },
   {
@@ -1372,32 +1308,16 @@
     "tfidf": 24.3810935856007
   },
   {
-    "word": "conditions",
-    "tfidf": 25.125835223052494
-  },
-  {
     "word": "inactive",
     "tfidf": 25.125835223052494
-  },
-  {
-    "word": "conditional",
-    "tfidf": 25.183347464017313
   },
   {
     "word": "observe",
     "tfidf": 25.183347464017316
   },
   {
-    "word": "chunk",
-    "tfidf": 25.183347464017316
-  },
-  {
     "word": "updated",
     "tfidf": 25.183347464017316
-  },
-  {
-    "word": "noop",
-    "tfidf": 25.298371945946954
   },
   {
     "word": "enumerable",
@@ -1408,35 +1328,47 @@
     "tfidf": 25.39720770839918
   },
   {
-    "word": "camelize",
-    "tfidf": 26.2492379723188
-  },
-  {
-    "word": "lines",
-    "tfidf": 26.2492379723188
+    "word": "simple",
+    "tfidf": 26.162940512455677
   },
   {
     "word": "actual",
     "tfidf": 26.2492379723188
   },
   {
+    "word": "camelize",
+    "tfidf": 26.2492379723188
+  },
+  {
+    "word": "tail",
+    "tfidf": 26.256562322954593
+  },
+  {
     "word": "mounted",
     "tfidf": 26.256562322954597
   },
   {
-    "word": "size",
-    "tfidf": 26.256562322954597
+    "word": "post",
+    "tfidf": 26.2565623229546
+  },
+  {
+    "word": "noop",
+    "tfidf": 26.70383705405512
   },
   {
     "word": "configurable",
     "tfidf": 27.041323521487396
   },
   {
-    "word": "column",
-    "tfidf": 27.090354888959123
+    "word": "inline",
+    "tfidf": 27.090354888959126
   },
   {
-    "word": "simple",
+    "word": "assignment",
+    "tfidf": 27.090354888959126
+  },
+  {
+    "word": "href",
     "tfidf": 27.090354888959126
   },
   {
@@ -1444,20 +1376,8 @@
     "tfidf": 27.281959752685424
   },
   {
-    "word": "post",
-    "tfidf": 27.281959752685424
-  },
-  {
-    "word": "globals",
+    "word": "head",
     "tfidf": 27.281959752685427
-  },
-  {
-    "word": "skip",
-    "tfidf": 27.701937013188363
-  },
-  {
-    "word": "stop",
-    "tfidf": 27.701937013188363
   },
   {
     "word": "force",
@@ -1468,23 +1388,19 @@
     "tfidf": 27.91759469228055
   },
   {
-    "word": "normal",
-    "tfidf": 27.91759469228055
+    "word": "skip",
+    "tfidf": 28.10930216216329
   },
   {
     "word": "wrapped",
     "tfidf": 28.132031060308496
   },
   {
-    "word": "href",
-    "tfidf": 28.1320310603085
-  },
-  {
     "word": "latest",
     "tfidf": 28.1320310603085
   },
   {
-    "word": "build",
+    "word": "hash",
     "tfidf": 28.63553233343869
   },
   {
@@ -1492,12 +1408,32 @@
     "tfidf": 28.63553233343869
   },
   {
+    "word": "plain",
+    "tfidf": 28.63553233343869
+  },
+  {
+    "word": "build",
+    "tfidf": 28.63553233343869
+  },
+  {
     "word": "hydrating",
     "tfidf": 28.63553233343869
   },
   {
-    "word": "plain",
+    "word": "normal",
     "tfidf": 28.63553233343869
+  },
+  {
+    "word": "stylesheet",
+    "tfidf": 28.63553233343869
+  },
+  {
+    "word": "matches",
+    "tfidf": 28.783502069519074
+  },
+  {
+    "word": "real",
+    "tfidf": 28.783502069519074
   },
   {
     "word": "matching",
@@ -1508,6 +1444,10 @@
     "tfidf": 29.240933513921053
   },
   {
+    "word": "lines",
+    "tfidf": 29.380572041353535
+  },
+  {
     "word": "modified",
     "tfidf": 29.380572041353535
   },
@@ -1516,19 +1456,31 @@
     "tfidf": 29.380572041353535
   },
   {
-    "word": "ids",
-    "tfidf": 30.007499797662398
+    "word": "manifest",
+    "tfidf": 29.380572041353535
   },
   {
-    "word": "real",
-    "tfidf": 30.007499797662398
+    "word": "writable",
+    "tfidf": 29.558038919848865
+  },
+  {
+    "word": "globals",
+    "tfidf": 30.007499797662394
   },
   {
     "word": "rendering",
     "tfidf": 30.007499797662398
   },
   {
-    "word": "xlink",
+    "word": "ids",
+    "tfidf": 30.007499797662398
+  },
+  {
+    "word": "conditional",
+    "tfidf": 30.0074997976624
+  },
+  {
+    "word": "column",
     "tfidf": 30.476649250079017
   },
   {
@@ -1536,19 +1488,19 @@
     "tfidf": 30.709354161508603
   },
   {
-    "word": "arr",
-    "tfidf": 30.779930014653736
+    "word": "conditions",
+    "tfidf": 31.02182669455858
   },
   {
     "word": "proxy",
     "tfidf": 31.02182669455858
   },
   {
-    "word": "sequence",
+    "word": "comp",
     "tfidf": 31.02182669455858
   },
   {
-    "word": "manifest",
+    "word": "blocks",
     "tfidf": 31.02182669455858
   },
   {
@@ -1556,7 +1508,7 @@
     "tfidf": 31.479184330021642
   },
   {
-    "word": "resolved",
+    "word": "optimize",
     "tfidf": 31.479184330021646
   },
   {
@@ -1564,27 +1516,39 @@
     "tfidf": 31.479184330021646
   },
   {
+    "word": "resolved",
+    "tfidf": 31.479184330021646
+  },
+  {
     "word": "evaluate",
     "tfidf": 31.882968535016293
   },
   {
-    "word": "wrapper",
-    "tfidf": 32.16979643063896
+    "word": "bracket",
+    "tfidf": 31.882968535016296
   },
   {
-    "word": "line",
-    "tfidf": 32.16979643063896
+    "word": "extract",
+    "tfidf": 32.16979643063897
   },
   {
-    "word": "include",
-    "tfidf": 32.16979643063896
+    "word": "push",
+    "tfidf": 32.19205181129452
   },
   {
-    "word": "bundle",
+    "word": "stop",
+    "tfidf": 32.31892651538642
+  },
+  {
+    "word": "output",
+    "tfidf": 32.31892651538642
+  },
+  {
+    "word": "decode",
     "tfidf": 33.40812105567847
   },
   {
-    "word": "optimize",
+    "word": "bundle",
     "tfidf": 33.40812105567847
   },
   {
@@ -1592,15 +1556,15 @@
     "tfidf": 33.50111363073666
   },
   {
-    "word": "comp",
-    "tfidf": 33.50111363073666
-  },
-  {
     "word": "lifecycle",
     "tfidf": 33.57779661868975
   },
   {
-    "word": "push",
+    "word": "sequence",
+    "tfidf": 33.57779661868975
+  },
+  {
+    "word": "query",
     "tfidf": 33.73116259459594
   },
   {
@@ -1608,52 +1572,24 @@
     "tfidf": 33.758437272370195
   },
   {
-    "word": "filter",
-    "tfidf": 33.7584372723702
-  },
-  {
-    "word": "space",
+    "word": "include",
     "tfidf": 33.85792301611911
   },
   {
-    "word": "query",
-    "tfidf": 33.857923016119116
-  },
-  {
-    "word": "offset",
-    "tfidf": 33.86294361119891
-  },
-  {
-    "word": "output",
-    "tfidf": 33.86294361119891
-  },
-  {
-    "word": "svg",
-    "tfidf": 33.86294361119891
-  },
-  {
-    "word": "definition",
-    "tfidf": 35.396919516851796
-  },
-  {
-    "word": "normalized",
-    "tfidf": 35.63390600972409
-  },
-  {
-    "word": "promise",
-    "tfidf": 35.6339060097241
+    "word": "xlink",
+    "tfidf": 33.8629436111989
   },
   {
     "word": "ms",
     "tfidf": 35.67640890735786
   },
   {
-    "word": "lower",
+    "word": "extension",
     "tfidf": 35.67640890735787
   },
   {
-    "word": "extension",
-    "tfidf": 35.67640890735787
+    "word": "hooks",
+    "tfidf": 35.79441541679836
   },
   {
     "word": "ext",
@@ -1664,52 +1600,56 @@
     "tfidf": 35.79441541679836
   },
   {
-    "word": "hooks",
-    "tfidf": 35.79441541679836
-  },
-  {
-    "word": "unknown",
-    "tfidf": 35.79441541679836
-  },
-  {
-    "word": "decode",
-    "tfidf": 36.292873099964716
-  },
-  {
     "word": "define",
     "tfidf": 36.93591601758448
+  },
+  {
+    "word": "modifier",
+    "tfidf": 37.509374747078
+  },
+  {
+    "word": "symbol",
+    "tfidf": 37.509374747078
+  },
+  {
+    "word": "lower",
+    "tfidf": 37.509374747078
   },
   {
     "word": "timer",
     "tfidf": 37.775021196025975
   },
   {
-    "word": "symbol",
+    "word": "unknown",
     "tfidf": 37.775021196025975
   },
   {
-    "word": "modifier",
-    "tfidf": 37.775021196025975
+    "word": "wrap",
+    "tfidf": 37.94755791892044
   },
   {
     "word": "token",
     "tfidf": 37.94755791892044
   },
   {
-    "word": "patch",
-    "tfidf": 38.18070977791825
-  },
-  {
     "word": "inject",
     "tfidf": 38.18070977791825
   },
   {
-    "word": "wrap",
-    "tfidf": 40.013909019049855
+    "word": "patch",
+    "tfidf": 38.18070977791825
   },
   {
-    "word": "handlers",
-    "tfidf": 40.01390901904986
+    "word": "compiled",
+    "tfidf": 39.3848434844319
+  },
+  {
+    "word": "promise",
+    "tfidf": 39.3848434844319
+  },
+  {
+    "word": "explicit",
+    "tfidf": 39.3848434844319
   },
   {
     "word": "states",
@@ -1724,92 +1664,88 @@
     "tfidf": 40.63553233343869
   },
   {
-    "word": "validate",
-    "tfidf": 40.6355323334387
+    "word": "reserved",
+    "tfidf": 40.758488135136766
   },
   {
-    "word": "iterator",
-    "tfidf": 41.260312221785796
+    "word": "markup",
+    "tfidf": 41.26031222178579
   },
   {
     "word": "errors",
     "tfidf": 41.260312221785796
   },
   {
-    "word": "cached",
+    "word": "iterator",
     "tfidf": 41.260312221785796
   },
   {
-    "word": "compiled",
-    "tfidf": 41.97224577336219
+    "word": "defer",
+    "tfidf": 41.260312221785796
+  },
+  {
+    "word": "definition",
+    "tfidf": 41.55290551978254
+  },
+  {
+    "word": "placeholder",
+    "tfidf": 41.55290551978254
+  },
+  {
+    "word": "offset",
+    "tfidf": 41.55290551978254
   },
   {
     "word": "reject",
     "tfidf": 41.97224577336219
   },
   {
-    "word": "explicit",
-    "tfidf": 41.97224577336219
+    "word": "deep",
+    "tfidf": 42.32867951399863
   },
   {
-    "word": "group",
+    "word": "svg",
     "tfidf": 42.32867951399863
+  },
+  {
+    "word": "cached",
+    "tfidf": 42.32867951399864
   },
   {
     "word": "factory",
     "tfidf": 42.32867951399864
   },
   {
-    "word": "meta",
-    "tfidf": 42.328679513998644
+    "word": "size",
+    "tfidf": 42.32867951399864
   },
   {
     "word": "version",
-    "tfidf": 42.493508390908765
+    "tfidf": 42.563576044582355
   },
   {
-    "word": "reserved",
-    "tfidf": 43.091902020515235
+    "word": "trim",
+    "tfidf": 43.135780959139694
   },
   {
     "word": "registered",
     "tfidf": 43.135780959139694
   },
   {
-    "word": "deep",
-    "tfidf": 43.135780959139694
-  },
-  {
-    "word": "placeholder",
-    "tfidf": 44.021826694558584
-  },
-  {
-    "word": "defer",
-    "tfidf": 44.0708580620303
-  },
-  {
     "word": "merged",
     "tfidf": 44.070858062030304
   },
   {
-    "word": "markup",
-    "tfidf": 44.070858062030304
+    "word": "scoped",
+    "tfidf": 45.01124969649359
   },
   {
-    "word": "bound",
-    "tfidf": 44.630898521247914
+    "word": "square",
+    "tfidf": 45.33959286127792
   },
   {
-    "word": "empty",
-    "tfidf": 44.97488345946125
-  },
-  {
-    "word": "values",
-    "tfidf": 44.97488345946127
-  },
-  {
-    "word": "action",
-    "tfidf": 45.71497387511852
+    "word": "normalized",
+    "tfidf": 45.714973875118524
   },
   {
     "word": "existing",
@@ -1820,24 +1756,28 @@
     "tfidf": 46.16947035069841
   },
   {
-    "word": "clone",
-    "tfidf": 47.40812105567847
+    "word": "bound",
+    "tfidf": 46.1698950219806
+  },
+  {
+    "word": "handlers",
+    "tfidf": 46.38034856756942
   },
   {
     "word": "tree",
     "tfidf": 47.40812105567847
   },
   {
-    "word": "clear",
-    "tfidf": 47.70889152271329
+    "word": "clone",
+    "tfidf": 47.40812105567847
   },
   {
     "word": "ignore",
     "tfidf": 47.70889152271329
   },
   {
-    "word": "condition",
-    "tfidf": 47.725887222397816
+    "word": "action",
+    "tfidf": 47.708891522713294
   },
   {
     "word": "traverse",
@@ -1848,16 +1788,24 @@
     "tfidf": 48.26808263936652
   },
   {
-    "word": "scoped",
-    "tfidf": 48.26808263936652
+    "word": "alias",
+    "tfidf": 48.7621871712014
   },
   {
-    "word": "append",
-    "tfidf": 49.247888023445974
+    "word": "filter",
+    "tfidf": 49.10126823623841
   },
   {
-    "word": "helpers",
-    "tfidf": 50.11218158351771
+    "word": "meta",
+    "tfidf": 49.101268236238425
+  },
+  {
+    "word": "replace",
+    "tfidf": 50.00252334152296
+  },
+  {
+    "word": "unary",
+    "tfidf": 50.366694928034626
   },
   {
     "word": "capture",
@@ -1868,15 +1816,39 @@
     "tfidf": 50.596743891893915
   },
   {
+    "word": "alt",
+    "tfidf": 50.6376559085553
+  },
+  {
+    "word": "clear",
+    "tfidf": 50.78688452417866
+  },
+  {
+    "word": "append",
+    "tfidf": 50.78688452417866
+  },
+  {
+    "word": "space",
+    "tfidf": 50.78688452417867
+  },
+  {
     "word": "invalid",
     "tfidf": 50.794415416798365
   },
   {
-    "word": "extend",
-    "tfidf": 52.325881024911354
+    "word": "original",
+    "tfidf": 51.50728289807123
   },
   {
     "word": "find",
+    "tfidf": 52.002209000002075
+  },
+  {
+    "word": "empty",
+    "tfidf": 52.00220900000208
+  },
+  {
+    "word": "extend",
     "tfidf": 52.325881024911354
   },
   {
@@ -1884,11 +1856,11 @@
     "tfidf": 52.46530721670275
   },
   {
-    "word": "parsed",
+    "word": "sync",
     "tfidf": 52.487562597358306
   },
   {
-    "word": "sync",
+    "word": "parsed",
     "tfidf": 52.487562597358306
   },
   {
@@ -1904,71 +1876,43 @@
     "tfidf": 52.498475944637605
   },
   {
-    "word": "replace",
-    "tfidf": 53.20447005572795
+    "word": "values",
+    "tfidf": 53.40767410811026
   },
   {
-    "word": "fns",
-    "tfidf": 54.18070977791825
-  },
-  {
-    "word": "pending",
-    "tfidf": 54.18070977791825
+    "word": "user",
+    "tfidf": 54.0826470429748
   },
   {
     "word": "ns",
-    "tfidf": 54.56391950537085
-  },
-  {
-    "word": "alt",
-    "tfidf": 54.56391950537085
+    "tfidf": 54.3885933832631
   },
   {
     "word": "util",
     "tfidf": 54.56391950537085
   },
   {
-    "word": "original",
-    "tfidf": 54.81313921621841
-  },
-  {
-    "word": "mount",
-    "tfidf": 54.81313921621842
-  },
-  {
-    "word": "unary",
-    "tfidf": 54.884770305757485
+    "word": "directives",
+    "tfidf": 54.88477030575749
   },
   {
     "word": "msg",
     "tfidf": 54.88477030575749
   },
   {
-    "word": "directives",
-    "tfidf": 54.88477030575749
+    "word": "group",
+    "tfidf": 55.87385695847819
   },
   {
-    "word": "regex",
-    "tfidf": 55.40387402637673
-  },
-  {
-    "word": "valid",
-    "tfidf": 55.8738569584782
-  },
-  {
-    "word": "apply",
-    "tfidf": 55.8738569584782
-  },
-  {
-    "word": "animation",
-    "tfidf": 56.264062120617
+    "word": "call",
+    "tfidf": 56.65801118787835
   },
   {
     "word": "client",
     "tfidf": 57.56700413903814
   },
   {
-    "word": "user",
+    "word": "regex",
     "tfidf": 57.62406943243474
   },
   {
@@ -1980,12 +1924,24 @@
     "tfidf": 58.48186702784209
   },
   {
+    "word": "pre",
+    "tfidf": 58.4818670278421
+  },
+  {
+    "word": "arr",
+    "tfidf": 58.4818670278421
+  },
+  {
+    "word": "helpers",
+    "tfidf": 58.76114408270706
+  },
+  {
     "word": "duration",
     "tfidf": 58.76114408270708
   },
   {
-    "word": "check",
-    "tfidf": 59.23337533278192
+    "word": "line",
+    "tfidf": 59.26015131959809
   },
   {
     "word": "flush",
@@ -1996,32 +1952,36 @@
     "tfidf": 60.01499959532479
   },
   {
+    "word": "apply",
+    "tfidf": 60.02086352857478
+  },
+  {
     "word": "trigger",
     "tfidf": 60.02086352857478
   },
   {
-    "word": "call",
+    "word": "deps",
     "tfidf": 60.43499964865107
   },
   {
-    "word": "expected",
-    "tfidf": 60.859756371375184
-  },
-  {
-    "word": "pre",
-    "tfidf": 60.95329850015803
-  },
-  {
-    "word": "read",
+    "word": "fns",
     "tfidf": 60.953298500158034
+  },
+  {
+    "word": "expected",
+    "tfidf": 61.890468332678694
+  },
+  {
+    "word": "validate",
+    "tfidf": 62.64644568071798
   },
   {
     "word": "buffer",
     "tfidf": 62.95836866004329
   },
   {
-    "word": "deps",
-    "tfidf": 63.098856530040166
+    "word": "hydrate",
+    "tfidf": 63.76593707003259
   },
   {
     "word": "batch",
@@ -2036,60 +1996,52 @@
     "tfidf": 64.33959286127794
   },
   {
-    "word": "statement",
-    "tfidf": 64.42994775023705
+    "word": "prefix",
+    "tfidf": 65.02768562366751
   },
   {
-    "word": "match",
-    "tfidf": 66.05686008108373
+    "word": "check",
+    "tfidf": 65.67178569504082
   },
   {
-    "word": "hydrate",
-    "tfidf": 67.1555932373795
-  },
-  {
-    "word": "initial",
-    "tfidf": 67.39232873725541
+    "word": "reactive",
+    "tfidf": 66.81624211135694
   },
   {
     "word": "display",
     "tfidf": 67.46232518919189
   },
   {
-    "word": "js",
-    "tfidf": 67.71584603223823
-  },
-  {
     "word": "runtime",
     "tfidf": 69.20253647247684
   },
   {
-    "word": "slots",
-    "tfidf": 69.25420552604761
+    "word": "len",
+    "tfidf": 69.25484253297091
   },
   {
     "word": "elem",
     "tfidf": 69.39234328209429
   },
   {
-    "word": "prefix",
-    "tfidf": 69.53483191239616
+    "word": "pending",
+    "tfidf": 69.41903440295775
+  },
+  {
+    "word": "ancestor",
+    "tfidf": 69.41903440295776
+  },
+  {
+    "word": "process",
+    "tfidf": 70.27325540540822
   },
   {
     "word": "delay",
     "tfidf": 70.7938390337036
   },
   {
-    "word": "internal",
-    "tfidf": 70.79383903370362
-  },
-  {
     "word": "compiler",
     "tfidf": 71.26781201944819
-  },
-  {
-    "word": "dep",
-    "tfidf": 71.2678120194482
   },
   {
     "word": "merge",
@@ -2100,43 +2052,63 @@
     "tfidf": 71.35281781471573
   },
   {
-    "word": "scope",
-    "tfidf": 72.33283553443627
+    "word": "js",
+    "tfidf": 71.67872051351638
   },
   {
-    "word": "message",
-    "tfidf": 72.80532876407766
+    "word": "valid",
+    "tfidf": 72.33283553443628
   },
   {
-    "word": "previous",
+    "word": "dep",
+    "tfidf": 72.80532876407764
+  },
+  {
+    "word": "rendered",
     "tfidf": 73.08418562162454
-  },
-  {
-    "word": "ancestor",
-    "tfidf": 73.14328075680208
   },
   {
     "word": "virtual",
     "tfidf": 73.14328075680208
   },
   {
-    "word": "dirty",
-    "tfidf": 73.87183203516898
-  },
-  {
-    "word": "len",
-    "tfidf": 74.49847594463759
+    "word": "slots",
+    "tfidf": 73.45143010338384
   },
   {
     "word": "modifiers",
-    "tfidf": 75.37750566915749
+    "tfidf": 73.97512519471661
   },
   {
-    "word": "process",
+    "word": "previous",
+    "tfidf": 74.48965072973272
+  },
+  {
+    "word": "wrapper",
     "tfidf": 75.41082853590166
   },
   {
-    "word": "destroy",
+    "word": "statement",
+    "tfidf": 75.55004239205195
+  },
+  {
+    "word": "equal",
+    "tfidf": 76.19162312519755
+  },
+  {
+    "word": "chunk",
+    "tfidf": 76.8942182315099
+  },
+  {
+    "word": "dirty",
+    "tfidf": 76.94982503663435
+  },
+  {
+    "word": "read",
+    "tfidf": 76.94982503663435
+  },
+  {
+    "word": "pos",
     "tfidf": 77.88477030575748
   },
   {
@@ -2144,15 +2116,11 @@
     "tfidf": 78.48882153736702
   },
   {
-    "word": "rendered",
-    "tfidf": 78.48882153736703
-  },
-  {
     "word": "mixin",
     "tfidf": 78.76968696886378
   },
   {
-    "word": "ctx",
+    "word": "animation",
     "tfidf": 78.7696869688638
   },
   {
@@ -2168,6 +2136,18 @@
     "tfidf": 79.74726696938816
   },
   {
+    "word": "mount",
+    "tfidf": 80.11151116216537
+  },
+  {
+    "word": "compile",
+    "tfidf": 80.64515570621768
+  },
+  {
+    "word": "ctx",
+    "tfidf": 80.6451557062177
+  },
+  {
     "word": "callbacks",
     "tfidf": 81.56681453883242
   },
@@ -2176,88 +2156,76 @@
     "tfidf": 81.84587925805627
   },
   {
-    "word": "pos",
-    "tfidf": 82.52062444357159
+    "word": "initial",
+    "tfidf": 82.76250897557682
+  },
+  {
+    "word": "destroy",
+    "tfidf": 82.96421184743733
   },
   {
     "word": "removed",
     "tfidf": 82.96421184743733
   },
   {
+    "word": "listeners",
+    "tfidf": 83.10581103956508
+  },
+  {
     "word": "prev",
-    "tfidf": 82.96421184743733
+    "tfidf": 83.10581103956508
   },
   {
     "word": "ch",
     "tfidf": 83.75278407684165
   },
   {
-    "word": "compile",
-    "tfidf": 83.94449154672438
-  },
-  {
-    "word": "listeners",
-    "tfidf": 84.65735902799727
-  },
-  {
-    "word": "insert",
-    "tfidf": 85.73337159459804
-  },
-  {
-    "word": "css",
-    "tfidf": 86.18380404103046
+    "word": "legacy",
+    "tfidf": 88.04365338911717
   },
   {
     "word": "notify",
     "tfidf": 88.04365338911717
   },
   {
+    "word": "condition",
+    "tfidf": 88.1417161240606
+  },
+  {
     "word": "styles",
-    "tfidf": 88.14703065563329
+    "tfidf": 89.7368005696771
   },
   {
-    "word": "directive",
-    "tfidf": 88.29289136143595
-  },
-  {
-    "word": "selected",
-    "tfidf": 88.85006299917289
-  },
-  {
-    "word": "script",
+    "word": "walk",
     "tfidf": 89.73680056967711
   },
   {
-    "word": "observer",
-    "tfidf": 92.33894070139681
+    "word": "selected",
+    "tfidf": 90.13774507162466
   },
   {
-    "word": "ast",
-    "tfidf": 92.33894070139681
+    "word": "directive",
+    "tfidf": 90.2403284127287
   },
   {
     "word": "cb",
     "tfidf": 92.33894070139681
   },
   {
-    "word": "whitespace",
-    "tfidf": 92.33894070139682
+    "word": "observer",
+    "tfidf": 92.33894070139681
   },
   {
-    "word": "leave",
-    "tfidf": 92.33894070139682
+    "word": "count",
+    "tfidf": 93.40340298672241
   },
   {
-    "word": "ssr",
-    "tfidf": 93.06548008367574
-  },
-  {
-    "word": "walk",
+    "word": "ast",
     "tfidf": 93.77343686769498
   },
   {
-    "word": "block",
-    "tfidf": 93.773436867695
+    "word": "whitespace",
+    "tfidf": 93.77343686769498
   },
   {
     "word": "config",
@@ -2272,16 +2240,28 @@
     "tfidf": 95.41778304542659
   },
   {
-    "word": "legacy",
-    "tfidf": 95.6489056050489
+    "word": "match",
+    "tfidf": 95.57162735135518
   },
   {
     "word": "hook",
     "tfidf": 95.6489056050489
   },
   {
-    "word": "pattern",
-    "tfidf": 96.53616527873304
+    "word": "timeout",
+    "tfidf": 95.76804610031031
+  },
+  {
+    "word": "passive",
+    "tfidf": 96.50938929191689
+  },
+  {
+    "word": "reg",
+    "tfidf": 96.95677954615928
+  },
+  {
+    "word": "global",
+    "tfidf": 96.97709245946334
   },
   {
     "word": "proto",
@@ -2292,51 +2272,59 @@
     "tfidf": 97.83806880591553
   },
   {
-    "word": "identifier",
-    "tfidf": 98.63477756740114
-  },
-  {
-    "word": "count",
-    "tfidf": 99.15151957878712
-  },
-  {
     "word": "entry",
     "tfidf": 99.39984307975669
   },
   {
-    "word": "global",
+    "word": "css",
+    "tfidf": 100.03477254762464
+  },
+  {
+    "word": "internal",
     "tfidf": 100.03477254762467
   },
   {
-    "word": "passive",
-    "tfidf": 101.27531181711058
+    "word": "insert",
+    "tfidf": 101.19348778378784
   },
   {
-    "word": "timeout",
-    "tfidf": 101.72688372369068
+    "word": "leave",
+    "tfidf": 101.27531181711059
+  },
+  {
+    "word": "range",
+    "tfidf": 101.58883083359672
+  },
+  {
+    "word": "ssr",
+    "tfidf": 102.6106575281553
   },
   {
     "word": "vue",
     "tfidf": 102.61065752815531
   },
   {
-    "word": "enter",
-    "tfidf": 102.83200214473737
+    "word": "reference",
+    "tfidf": 102.83200214473736
   },
   {
-    "word": "reg",
-    "tfidf": 103.28197801415668
+    "word": "identifier",
+    "tfidf": 103.15078055446449
   },
   {
-    "word": "list",
-    "tfidf": 105.58992994104602
+    "word": "ref",
+    "tfidf": 106.19075855055539
   },
   {
     "word": "namespace",
-    "tfidf": 107.72975505128808
+    "tfidf": 106.8153482162205
   },
   {
-    "word": "left",
+    "word": "list",
+    "tfidf": 106.87761201349781
+  },
+  {
+    "word": "script",
     "tfidf": 107.7297550512881
   },
   {
@@ -2348,24 +2336,12 @@
     "tfidf": 108.36141955583652
   },
   {
-    "word": "stack",
-    "tfidf": 109.26875155202077
-  },
-  {
-    "word": "src",
-    "tfidf": 110.05456673639645
-  },
-  {
-    "word": "range",
-    "tfidf": 110.65265550388008
+    "word": "err",
+    "tfidf": 108.77718676652619
   },
   {
     "word": "resolve",
     "tfidf": 110.74065823085316
-  },
-  {
-    "word": "content",
-    "tfidf": 110.80774805275345
   },
   {
     "word": "observable",
@@ -2376,43 +2352,31 @@
     "tfidf": 111.2264512994098
   },
   {
-    "word": "reference",
-    "tfidf": 112.15583497263486
+    "word": "src",
+    "tfidf": 111.7477139169564
+  },
+  {
+    "word": "stack",
+    "tfidf": 115.24813886486949
+  },
+  {
+    "word": "pattern",
+    "tfidf": 116.2790617159418
+  },
+  {
+    "word": "helper",
+    "tfidf": 118.15453045329569
+  },
+  {
+    "word": "enter",
+    "tfidf": 123.78093666535739
   },
   {
     "word": "transition",
-    "tfidf": 113.32506358807792
+    "tfidf": 123.81812503141848
   },
   {
-    "word": "str",
-    "tfidf": 114.60370444820849
-  },
-  {
-    "word": "ref",
-    "tfidf": 115.1340082780763
-  },
-  {
-    "word": "error",
-    "tfidf": 116.31021733789038
-  },
-  {
-    "word": "map",
-    "tfidf": 117.04983412260151
-  },
-  {
-    "word": "err",
-    "tfidf": 117.52228816541414
-  },
-  {
-    "word": "source",
-    "tfidf": 121.77912034977732
-  },
-  {
-    "word": "opts",
-    "tfidf": 121.90546792800349
-  },
-  {
-    "word": "owner",
+    "word": "async",
     "tfidf": 125.08639462162664
   },
   {
@@ -2420,63 +2384,87 @@
     "tfidf": 126.50840657695312
   },
   {
-    "word": "slot",
-    "tfidf": 128.01534960875466
+    "word": "owner",
+    "tfidf": 127.48052517272629
   },
   {
-    "word": "helper",
-    "tfidf": 130.1139618974228
+    "word": "error",
+    "tfidf": 128.26734248477632
+  },
+  {
+    "word": "opts",
+    "tfidf": 131.28281161477298
   },
   {
     "word": "exp",
     "tfidf": 133.1582803521269
   },
   {
-    "word": "async",
-    "tfidf": 133.89269556374376
+    "word": "nested",
+    "tfidf": 134.92465037838377
   },
   {
     "word": "custom",
-    "tfidf": 133.9189355349852
+    "tfidf": 135.20661760743698
   },
   {
-    "word": "keys",
-    "tfidf": 139.06966382479234
+    "word": "map",
+    "tfidf": 135.9669790313048
+  },
+  {
+    "word": "dir",
+    "tfidf": 138.83806880591553
+  },
+  {
+    "word": "content",
+    "tfidf": 139.14104570270828
+  },
+  {
+    "word": "source",
+    "tfidf": 140.22446763166224
   },
   {
     "word": "computed",
     "tfidf": 140.53121598647544
   },
   {
-    "word": "transform",
-    "tfidf": 143.91751034759537
-  },
-  {
-    "word": "nested",
-    "tfidf": 144.66567106887257
-  },
-  {
-    "word": "init",
-    "tfidf": 146.795756259503
-  },
-  {
-    "word": "dynamic",
-    "tfidf": 150.69009906983513
-  },
-  {
     "word": "change",
-    "tfidf": 150.82165707180332
+    "tfidf": 140.54651081081644
   },
   {
-    "word": "parse",
-    "tfidf": 150.82165707180332
-  },
-  {
-    "word": "dir",
-    "tfidf": 151.91296772566588
+    "word": "keys",
+    "tfidf": 141.6450279696959
   },
   {
     "word": "arg",
+    "tfidf": 144.24322992886246
+  },
+  {
+    "word": "parse",
+    "tfidf": 144.76290613514092
+  },
+  {
+    "word": "remove",
+    "tfidf": 148.9205586475793
+  },
+  {
+    "word": "cache",
+    "tfidf": 148.97930145946543
+  },
+  {
+    "word": "transform",
+    "tfidf": 150.69009906983513
+  },
+  {
+    "word": "base",
+    "tfidf": 150.82165707180332
+  },
+  {
+    "word": "warn",
+    "tfidf": 151.79023167568175
+  },
+  {
+    "word": "str",
     "tfidf": 151.94648454931013
   },
   {
@@ -2488,88 +2476,80 @@
     "tfidf": 153.23416662176194
   },
   {
+    "word": "generate",
+    "tfidf": 153.89965007326867
+  },
+  {
+    "word": "init",
+    "tfidf": 155.8095307666655
+  },
+  {
+    "word": "left",
+    "tfidf": 157.41209210811442
+  },
+  {
     "word": "comment",
-    "tfidf": 153.7884364630198
+    "tfidf": 157.46268779207492
   },
   {
     "word": "obj",
-    "tfidf": 154.88412394000804
+    "tfidf": 159.61341016718387
   },
   {
-    "word": "cache",
-    "tfidf": 155.43864657400138
+    "word": "preserve",
+    "tfidf": 165.79037080478065
   },
   {
-    "word": "bindings",
-    "tfidf": 155.769540611515
-  },
-  {
-    "word": "warn",
-    "tfidf": 156.9776430747341
-  },
-  {
-    "word": "remove",
-    "tfidf": 158.4310886103899
-  },
-  {
-    "word": "renderer",
-    "tfidf": 160.8489821531948
-  },
-  {
-    "word": "base",
-    "tfidf": 160.8489821531948
-  },
-  {
-    "word": "names",
-    "tfidf": 160.9602590564726
-  },
-  {
-    "word": "filename",
-    "tfidf": 161.59314622744444
-  },
-  {
-    "word": "method",
-    "tfidf": 163.53562320137615
-  },
-  {
-    "word": "generate",
-    "tfidf": 165.92842369487465
+    "word": "scope",
+    "tfidf": 172.8722082973042
   },
   {
     "word": "input",
-    "tfidf": 171.466743189196
+    "tfidf": 174.27767340541234
+  },
+  {
+    "word": "filename",
+    "tfidf": 174.4185925739127
+  },
+  {
+    "word": "res",
+    "tfidf": 176.29406131126657
+  },
+  {
+    "word": "method",
+    "tfidf": 177.3482335190932
+  },
+  {
+    "word": "dynamic",
+    "tfidf": 177.78045395879428
   },
   {
     "word": "val",
     "tfidf": 179.89953383784507
   },
   {
-    "word": "add",
-    "tfidf": 180.44388858027855
-  },
-  {
-    "word": "preserve",
-    "tfidf": 181.35837144511171
-  },
-  {
-    "word": "result",
-    "tfidf": 182.07751974626902
-  },
-  {
-    "word": "current",
-    "tfidf": 184.79193408823699
+    "word": "bindings",
+    "tfidf": 181.16674831991418
   },
   {
     "word": "events",
-    "tfidf": 190.5769467228636
+    "tfidf": 182.07751974626902
+  },
+  {
+    "word": "raw",
+    "tfidf": 192.5487198108185
+  },
+  {
+    "word": "names",
+    "tfidf": 193.1523108677671
   },
   {
     "word": "params",
-    "tfidf": 191.29781121009776
+    "tfidf": 195.04874868480556
   },
   {
-    "word": "res",
-    "tfidf": 195.17094284613418
+    "word": "result",
+    "tfidf": 195.08305687100253
   },
   {
     "word": "model",
@@ -2580,156 +2560,172 @@
     "tfidf": 197.2695551348023
   },
   {
-    "word": "idx",
-    "tfidf": 200.44872633407084
+    "word": "properties",
+    "tfidf": 200.06954509524934
   },
   {
-    "word": "raw",
-    "tfidf": 201.608541595982
+    "word": "idx",
+    "tfidf": 200.44872633407084
   },
   {
     "word": "components",
     "tfidf": 208.2571032088733
   },
   {
-    "word": "properties",
-    "tfidf": 213.33654475055314
+    "word": "slot",
+    "tfidf": 209.86122886681096
+  },
+  {
+    "word": "renderer",
+    "tfidf": 210.84252060037812
+  },
+  {
+    "word": "current",
+    "tfidf": 210.88020713598814
   },
   {
     "word": "module",
-    "tfidf": 216.722839111673
+    "tfidf": 218.53750310404155
   },
   {
-    "word": "fn",
-    "tfidf": 230.55270357482115
+    "word": "add",
+    "tfidf": 222.83733228287412
   },
   {
     "word": "elm",
     "tfidf": 231.71603594592855
   },
   {
-    "word": "html",
-    "tfidf": 236.93350133112767
-  },
-  {
-    "word": "update",
-    "tfidf": 238.05549156072885
-  },
-  {
-    "word": "nodes",
-    "tfidf": 238.9290683783879
-  },
-  {
     "word": "gen",
     "tfidf": 240.09131435361272
   },
   {
+    "word": "fn",
+    "tfidf": 251.83449159711233
+  },
+  {
+    "word": "html",
+    "tfidf": 253.67336827300082
+  },
+  {
+    "word": "attrs",
+    "tfidf": 260.0904086238241
+  },
+  {
     "word": "set",
-    "tfidf": 252.18663946159404
+    "tfidf": 261.96974185450074
+  },
+  {
+    "word": "update",
+    "tfidf": 267.4047987394489
   },
   {
     "word": "args",
-    "tfidf": 258.92842093787607
+    "tfidf": 270.7516365058156
   },
   {
-    "word": "handler",
-    "tfidf": 258.92842093787607
-  },
-  {
-    "word": "attribute",
-    "tfidf": 258.9284209378761
-  },
-  {
-    "word": "index",
-    "tfidf": 279.36192388633486
+    "word": "nodes",
+    "tfidf": 275.4711611892002
   },
   {
     "word": "container",
     "tfidf": 279.68755651352467
   },
   {
-    "word": "start",
-    "tfidf": 281.3925305169612
+    "word": "handler",
+    "tfidf": 284.9394951873431
   },
   {
-    "word": "attrs",
-    "tfidf": 284.44872633407084
-  },
-  {
-    "word": "end",
-    "tfidf": 288.44078422919887
-  },
-  {
-    "word": "expression",
-    "tfidf": 289.3313421377452
-  },
-  {
-    "word": "file",
-    "tfidf": 297.99390377855036
+    "word": "message",
+    "tfidf": 289.33134213774514
   },
   {
     "word": "cur",
     "tfidf": 304.2987818568759
   },
   {
+    "word": "file",
+    "tfidf": 304.76649250079015
+  },
+  {
     "word": "create",
-    "tfidf": 307
-  },
-  {
-    "word": "style",
-    "tfidf": 310.6077888919043
-  },
-  {
-    "word": "instance",
-    "tfidf": 316.3203107039823
+    "tfidf": 315
   },
   {
     "word": "item",
-    "tfidf": 343.81111334462537
+    "tfidf": 318.04449877757384
   },
   {
-    "word": "info",
-    "tfidf": 357.0611101517743
+    "word": "index",
+    "tfidf": 319.5813448349511
+  },
+  {
+    "word": "style",
+    "tfidf": 320.4460446486615
+  },
+  {
+    "word": "instance",
+    "tfidf": 325.01640171989925
+  },
+  {
+    "word": "expression",
+    "tfidf": 352.7717421351492
+  },
+  {
+    "word": "attribute",
+    "tfidf": 378.3428981740655
   },
   {
     "word": "render",
-    "tfidf": 360.55098028649866
-  },
-  {
-    "word": "prop",
-    "tfidf": 384.2545059580353
-  },
-  {
-    "word": "binding",
-    "tfidf": 387.7307043482275
+    "tfidf": 400.4691245325039
   },
   {
     "word": "callback",
-    "tfidf": 397.8937603876003
+    "tfidf": 400.4691245325039
+  },
+  {
+    "word": "info",
+    "tfidf": 400.80700775315063
   },
   {
     "word": "property",
-    "tfidf": 400.4691245325038
+    "tfidf": 404.3539724235325
+  },
+  {
+    "word": "end",
+    "tfidf": 410.77058111211807
+  },
+  {
+    "word": "start",
+    "tfidf": 416.177187991472
+  },
+  {
+    "word": "prop",
+    "tfidf": 417.35950954826603
+  },
+  {
+    "word": "block",
+    "tfidf": 440.7351532781664
   },
   {
     "word": "children",
-    "tfidf": 403.3684860270432
-  },
-  {
-    "word": "code",
-    "tfidf": 423.2240377014889
+    "tfidf": 452.55976481082894
   },
   {
     "word": "exports",
-    "tfidf": 494.39897672350406
+    "tfidf": 460.15995371907337
   },
   {
-    "word": "child",
-    "tfidf": 523.768449659722
+    "word": "binding",
+    "tfidf": 465.6154746539851
   },
   {
     "word": "dom",
-    "tfidf": 527.0494155405617
+    "tfidf": 490.60686960412846
+  },
+  {
+    "word": "id",
+    "tfidf": 497.8512106612504
   },
   {
     "word": "root",
@@ -2740,75 +2736,79 @@
     "tfidf": 537.244745899036
   },
   {
-    "word": "id",
-    "tfidf": 537.9563083412494
+    "word": "state",
+    "tfidf": 547.8537340027733
   },
   {
     "word": "target",
-    "tfidf": 553.3264885795708
+    "tfidf": 562.7850610339224
   },
   {
-    "word": "options",
-    "tfidf": 565.2459160346075
+    "word": "child",
+    "tfidf": 569.8789903746862
   },
   {
     "word": "vm",
     "tfidf": 570.324352307654
   },
   {
-    "word": "type",
-    "tfidf": 577.733179581019
-  },
-  {
-    "word": "data",
-    "tfidf": 584.8121208204208
-  },
-  {
-    "word": "attr",
-    "tfidf": 593.1062756216454
-  },
-  {
-    "word": "state",
-    "tfidf": 593.5254215105653
-  },
-  {
     "word": "template",
-    "tfidf": 611.3773220270515
+    "tfidf": 573.0185222410423
   },
   {
     "word": "path",
-    "tfidf": 637.4026258636314
+    "tfidf": 604.1663155217108
+  },
+  {
+    "word": "options",
+    "tfidf": 621.7705076380682
+  },
+  {
+    "word": "attr",
+    "tfidf": 629.6483684324577
+  },
+  {
+    "word": "data",
+    "tfidf": 630.4665986539852
+  },
+  {
+    "word": "type",
+    "tfidf": 655.009592136442
   },
   {
     "word": "vnode",
     "tfidf": 694.4116590858882
   },
   {
+    "word": "code",
+    "tfidf": 695.6264183311745
+  },
+  {
     "word": "props",
-    "tfidf": 737.7686514394277
+    "tfidf": 770.8736550296585
   },
   {
     "word": "context",
-    "tfidf": 819
-  },
-  {
-    "word": "component",
-    "tfidf": 1003.1043344399371
-  },
-  {
-    "word": "key",
-    "tfidf": 1057
+    "tfidf": 844
   },
   {
     "word": "el",
-    "tfidf": 1158.1126715030027
+    "tfidf": 1055.7515995026233
+  },
+  {
+    "word": "key",
+    "tfidf": 1081
+  },
+  {
+    "word": "component",
+    "tfidf": 1098.392807801369
   },
   {
     "word": "tag",
-    "tfidf": 1259.2967368649151
+    "tfidf": 1188.5305528729934
   },
   {
     "word": "node",
-    "tfidf": 1883.7907163230282
+    "tfidf": 2179.457810864207
   }
 ]

@@ -2,6 +2,7 @@ const fs = require('fs')
 const path = require('path')
 const acorn = require('acorn')
 const flowParser = require('flow-parser')
+const typescriptParser = require('@typescript-eslint/parser')
 const vueTemplateCompiler = require('vue-template-compiler')
 // const acornLoose = require("acorn-loose");
 const walk = require('acorn-walk')
@@ -45,9 +46,23 @@ const _updateName = function(names, name) {
   }
 }
  */
-const extract = function(program) {
+const extract = function(program, scriptType) {
   let ast
-  if (program.indexOf('@flow') !== -1) {
+  if (scriptType === 'typescript') {
+    ast = typescriptParser.parse(program, {
+      range: true,
+      loc: true,
+      tokens: true,
+      comment: true,
+      useJSXTextNode: true,
+      ecmaVersion: 9,
+      sourceType: 'module',
+
+      ecmaFeatures: {
+        jsx: false,
+      },
+    })
+  } else if (program.indexOf('@flow') !== -1) {
     // facebook/flow
     ast = flowParser.parse(program, {
       esproposal_class_instance_fields: true,
@@ -94,6 +109,19 @@ const extract = function(program) {
     DeclareVariable: noop,
     SpreadProperty: noop,
     OpaqueType: noop,
+    // typescript specific AST Type
+    TSNonNullExpression: noop,
+    TSAbstractMethodDefinition: noop,
+    TSEnumDeclaration: noop,
+    TSAsExpression: noop,
+    TSTypeAliasDeclaration: noop,
+    TSInterfaceDeclaration: noop,
+    TSParameterProperty: noop,
+    TSDeclareFunction: noop,
+    TSModuleDeclaration: noop,
+    TSIndexSignature: noop,
+    TSTypeAssertion: noop,
+    TSEmptyBodyFunctionExpression: noop,
   })
 
   walk.simple(
@@ -197,12 +225,9 @@ const extract = function(program) {
         const { type, name } = node.key
         if (type !== 'Identifier') return
         const { typeAnnotation } = node
-        if (!typeAnnotation.typeAnnotation) {
-          return
-        }
-        if (!typeAnnotation.typeAnnotation.id) {
-          return
-        }
+        if (!typeAnnotation) return
+        if (!typeAnnotation.typeAnnotation) return
+        if (!typeAnnotation.typeAnnotation.id) return
         if (typeAnnotation.typeAnnotation.id.type !== 'Identifier') return
 
         if (typeAnnotation.typeAnnotation.id.name.indexOf('Function') !== -1) {
@@ -218,12 +243,15 @@ const extract = function(program) {
   return names
 }
 
+// TODO : refactoring parser logic
 const extractFromFile = function(file) {
   const program = fs.readFileSync(file, 'utf-8')
   const extname = path.extname(file)
   if (extname === '.vue') {
     const SFCDescriptor = vueTemplateCompiler.parseComponent(program)
     return extract(SFCDescriptor.script.content)
+  } else if (extname === '.ts') {
+    return extract(program, 'typescript')
   } else if (extname === '.js') {
     return extract(program)
   }
