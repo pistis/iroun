@@ -41,7 +41,6 @@
     "lodash": "^4.17.11",
     "mkdirp": "^0.5.1",
     "natural": "^0.6.3",
-    "node-tfidf": "0.0.2",
     "ora": "^3.4.0",
     "rimraf": "^2.6.3",
     "stopwords-json": "^1.2.0",
