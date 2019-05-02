@@ -1,6 +1,117 @@
 const stopwordsJson = require('stopwords-json')
-// https://www.w3schools.in/javascript-tutorial/keywords/
-// TODO : HTML, CSS reserved keywords
+
+const JSObjectPropertyMethods = [
+  'Array',
+  'Date',
+  'eval',
+  'function',
+  'hasOwnProperty',
+  'Infinity',
+  'isFinite',
+  'isNaN',
+  'isPrototypeOf',
+  'length',
+  'Math',
+  'NaN',
+  'name',
+  'Number',
+  'Object',
+  'prototype',
+  'String',
+  'toString',
+  'undefined',
+  'valueOf',
+]
+const otherReservedKeywords = [
+  'alert',
+  'all',
+  'anchor',
+  'anchors',
+  'area',
+  'assign',
+  'blur',
+  'button',
+  'checkbox',
+  'clearInterval',
+  'clearTimeout',
+  'clientInformation',
+  'close',
+  'closed',
+  'confirm',
+  'constructor',
+  'crypto',
+  'decodeURI',
+  'decodeURIComponent',
+  'defaultStatus',
+  'document',
+  'element',
+  'elements',
+  'embed',
+  'embeds',
+  'encodeURI',
+  'encodeURIComponent',
+  'escape',
+  'event',
+  'fileUpload',
+  'focus',
+  'form',
+  'forms',
+  'frame',
+  'innerHeight',
+  'innerWidth',
+  'layer',
+  'layers',
+  'link',
+  'location',
+  'mimeTypes',
+  'navigate',
+  'navigator',
+  'frames',
+  'frameRate',
+  'hidden',
+  'history',
+  'image',
+  'images',
+  'offscreenBuffering',
+  'open',
+  'opener',
+  'option',
+  'outerHeight',
+  'outerWidth',
+  'packages',
+  'pageXOffset',
+  'pageYOffset',
+  'parent',
+  'parseFloat',
+  'parseInt',
+  'password',
+  'pkcs11',
+  'plugin',
+  'prompt',
+  'propertyIsEnum',
+  'radio',
+  'reset',
+  'screenX',
+  'screenY',
+  'scroll',
+  'secure',
+  'select',
+  'self',
+  'setInterval',
+  'setTimeout',
+  'status',
+  'submit',
+  'taint',
+  'text',
+  'textarea',
+  'top',
+  'unescape',
+  'untaint',
+  'window',
+  '',
+  '',
+  '',
+]
 const ECMAReservedKeywords = [
   'abstract',
   'arguments',
@@ -68,12 +179,12 @@ const ECMAReservedKeywords = [
 ]
 
 const stopwords = new Map()
-stopwordsJson.en.forEach((word) => {
-  stopwords.set(word.toLowerCase(), true)
-})
-
-ECMAReservedKeywords.forEach((word) => {
-  stopwords.set(word.toLowerCase(), true)
-})
+stopwordsJson.en
+  .concat(ECMAReservedKeywords)
+  .concat(JSObjectPropertyMethods)
+  .concat(otherReservedKeywords)
+  .forEach((word) => {
+    stopwords.set(word.toLowerCase(), true)
+  })
 
 module.exports = stopwords

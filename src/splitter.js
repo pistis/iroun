@@ -50,6 +50,9 @@ const splitSnakeCase = function(name) {
 const split = function(name) {
   if (!name) return []
   if (name.indexOf('_') !== -1) {
+    if (name.indexOf('_') === 0) {
+      return split(name.substr(1))
+    }
     return splitSnakeCase(name)
   } else if (/^[a-z]/.test(name)) {
     return splitCamelCase(name)

@@ -1,7 +1,7 @@
 const fs = require('fs')
 const natural = require('natural')
 const _ = require('lodash')
-const { resolvePath } = require('./util')
+const { resolvePath, saveFile } = require('./util')
 
 const TfIdf = natural.TfIdf
 const tfidf = new TfIdf()
@@ -40,6 +40,7 @@ const words = fs.readFileSync(source, 'utf-8').split(' ')
 
 const wordMap = {}
 words.forEach((word) => {
+  word = word.toLowerCase() // remove dup word
   wordMap[word] = {
     word: word,
     freq: ((wordMap[word] && wordMap[word]['freq']) || 0) + 1,
@@ -69,7 +70,8 @@ let topicWord = _.map(wordMap, (value, key) => {
 topicWord = topicWord.sort((a, b) => {
   return a['tfidf'] - b['tfidf']
 })
-console.log(topicWord)
+// console.log(topicWord)
+saveFile(resolvePath('./topic.txt'), JSON.stringify(topicWord, null, 2))
 
 // _.forEach(wordMap, (value, key) => {
 //   console.log(value)

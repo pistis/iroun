@@ -26,6 +26,18 @@ describe('split test', () => {
       expect(words).toContain('snake')
       expect(words).toContain('case')
     })
+    test('start underbar and camel case', () => {
+      const words = split('_computedWatchers')
+      expect(words.length).toBe(2)
+      expect(words).toContain('computed')
+      expect(words).toContain('Watchers')
+    })
+    test('start two underbar and camel case', () => {
+      const words = split('__computedWatchers')
+      expect(words.length).toBe(2)
+      expect(words).toContain('computed')
+      expect(words).toContain('Watchers')
+    })
   })
   // camelCase
   describe('splitCamelCase test', () => {
