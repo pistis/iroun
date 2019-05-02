@@ -7,27 +7,15 @@ const mkdirp = require('mkdirp')
 
 // https://github.com/collections/front-end-javascript-frameworks
 const javascriptFrameworks = [
-  { url: 'https://github.com/marko-js/marko', name: 'marko' },
-  { url: 'https://github.com/MithrilJS/mithril.js', name: 'mithril.js' },
-  { url: 'https://github.com/angular/angular', name: 'angular' },
-  { url: 'https://github.com/emberjs/ember.js', name: 'ember.js' },
   { url: 'https://github.com/knockout/knockout', name: 'knockout' },
-  { url: 'https://github.com/tastejs/todomvc', name: 'todomvc' },
-  { url: 'https://github.com/spine/spine', name: 'spine' },
-  { url: 'https://github.com/vuejs/vue', name: 'vue' },
+  { url: 'https://github.com/marko-js/marko', name: 'marko' },
+  { url: 'https://github.com/matreshkajs/matreshka', name: 'matreshka' },
+  { url: 'https://github.com/optimizely/nuclear-js', name: 'nuclear-js' },
   { url: 'https://github.com/Polymer/polymer', name: 'polymer' },
   { url: 'https://github.com/facebook/react', name: 'react' },
-  { url: 'https://github.com/matreshkajs/matreshka', name: 'matreshka' },
-  { url: 'https://github.com/aurelia/framework', name: 'framework' },
-  { url: 'https://github.com/optimizely/nuclear-js', name: 'nuclear-js' },
-  { url: 'https://github.com/jashkenas/backbone', name: 'backbone' },
-  { url: 'https://github.com/dojo/dojo', name: 'dojo' },
-  { url: 'https://github.com/jorgebucaran/hyperapp', name: 'hyperapp' },
   { url: 'https://github.com/riot/riot', name: 'riot' },
-  { url: 'https://github.com/Daemonite/material', name: 'material' },
-  { url: 'https://github.com/Polymer/lit-element', name: 'lit-element' },
-  { url: 'https://github.com/aurelia/aurelia', name: 'aurelia' },
   { url: 'https://github.com/sveltejs/svelte', name: 'svelte' },
+  { url: 'https://github.com/vuejs/vue', name: 'vue' },
 ]
 
 const cloneRepository = function(repoUrl, targetPath) {

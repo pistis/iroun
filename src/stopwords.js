@@ -68,9 +68,9 @@ const ECMAReservedKeywords = [
 ]
 
 const stopwords = new Map()
-// stopwordsJson.en.forEach((word) => {
-//   stopwords.set(word.toLowerCase(), true)
-// })
+stopwordsJson.en.forEach((word) => {
+  stopwords.set(word.toLowerCase(), true)
+})
 
 ECMAReservedKeywords.forEach((word) => {
   stopwords.set(word.toLowerCase(), true)

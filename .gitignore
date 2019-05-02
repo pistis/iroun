@@ -64,3 +64,4 @@ typings/
 examples
 report/*
 .resources
+.idea
