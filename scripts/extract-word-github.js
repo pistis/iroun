@@ -2,21 +2,16 @@ const { makeWordFile } = require('./extract-word')
 
 const repositories = [
   {
-    path:
-      '../.resources/react/packages/react/src',
+    path: '../.resources/react/packages/react/src',
     output: '../database/words/react.txt',
   },
   {
-    path:
-      '../.resources/react/packages/react-dom/src',
-    output:
-      '../database/words/react-dom.txt',
+    path: '../.resources/react/packages/react-dom/src',
+    output: '../database/words/react-dom.txt',
   },
   {
-    path:
-      '../.resources/react/packages/react-events/src',
-    output:
-      '../database/words/react-events.txt',
+    path: '../.resources/react/packages/react-events/src',
+    output: '../database/words/react-events.txt',
   },
   {
     path: '../.resources/vue/src',
@@ -36,13 +31,11 @@ const repositories = [
   },
   {
     path: '../.resources/nuclear-js/src',
-    output:
-      '../database/words/nuclear-js.txt',
+    output: '../database/words/nuclear-js.txt',
   },
   {
     path: '../.resources/matreshka/src',
-    output:
-      '../database/words/matreshka.txt',
+    output: '../database/words/matreshka.txt',
   },
   {
     path: '../.resources/marko/src',
