@@ -1,515 +1,515 @@
-template
-node
-props
-info
-inst
-property
-path
-idx
-data
-base
-host
-prop
-effect
-properties
-binding
-module
-ev
-paths
-effects
-type
-item
-observer
-mixin
-mouse
-changed
-notify
-mutable
-instance
-fn
-behaviors
-el
-dom
-root
-index
-parts
-callback
-proto
-method
-id
-dir
-target
-content
-debouncer
-literal
-css
-style
-styles
-touch
-attribute
-render
-children
-start
-list
-selector
-part
-set
-run
-current
-dynamic
-ready
-pending
-forward
-klass
-splices
-args
-create
-add
-uri
-flush
-count
-clients
-connected
-nodes
-items
-handler
-movefn
-chunk
-api
-upfn
-url
-edit
-initialize
-selected
-attr
-parse
-templatize
-listener
-model
-arg
-child
-handle
-queue
-sig
-dash
-time
-microtask
-effective
-computed
-trigger
-ctor
-exclude
-legacy
-listeners
-cancel
-shady
-disconnected
-mutations
-polymer
-read
-state
-source
-change
-dy
-composed
-dx
-detail
-stamp
-passive
-linked
-observers
-invalid
-detached
-lifecycle
-attributes
-apply
-end
-prevent
-camel
-html
-gesture
-canceller
-ct
-preventer
-templatizer
-unscoped
-ret
-dedupe
-storage
-debouncers
-sidx
-modules
-mode
-splice
-observe
-negate
-compute
-filter
-options
-map
-doc
-action
-register
-remove
-hide
-compound
-bubbles
-finalize
-imports
-display
-matches
-accessor
-track
-ensure
-async
-include
-user
-bindings
-attached
-dep
-owner
-pd
-upgrade
-timer
-buttons
-setup
-distances
-started
-replacment
-fire
-labels
-reflect
-job
-recognizer
-created
-multi
-custom
-find
-context
-expression
-previous
-len
-sort
-dependencies
-ignore
-disabled
-update
-obj
-kind
-client
-generated
-deep
-accessors
-flatten
-dot
-delay
-distributed
-opts
-iprop
-bl
-handled
-fxs
-repeat
-gestures
-mousedown
-decided
-propagate
-ta
-gobj
-wildcard
-show
-behavior
-signature
-colon
-serializing
-direction
-touchend
-noted
-emits
-deselect
-touchstart
-key
-bound
-bind
-deps
-resolve
-added
-removed
-configurable
-process
-limit
-query
-registered
-extra
-fns
-debounce
-stack
-serialize
-wrapped
-store
-scheduled
-click
-temp
-log
-enable
-north
-west
-extension
-orig
-transform
-defaults
-insertion
-toggle
-initial
-sync
-deserialize
-optional
-descendant
-flow
-strict
-schedule
-rx
-en
-notifying
-reflected
-opt
-recog
-ddy
-hosting
-templatized
-fx
-ran
-sanitize
-polymertextcontent
-policy
-links
-observed
-optimizations
-enqueue
-unlisten
-unmanaged
-slots
-teardown
-acc
-wait
-structured
-deduping
-slctr
-applications
-row
-hidetemplatechildren
-marshal
-disable
-rtl
-shared
-leave
-invalidate
-finalized
-micro
-hprop
-slot
-replace
-events
-namespace
-wrap
-argument
-shadow
-dispatch
-registrations
-instances
-point
-detach
-calc
-enabled
-finished
-local
-suffix
-extended
-unset
-cancelable
-curr
-min
-href
-task
-selection
-listen
-activate
-active
-pre
-regex
-bracket
-normalize
-moves
-distance
-attach
-flattened
-define
-search
-move
-nested
-reg
-auto
-insert
-ids
-raw
-prefix
-matching
-check
-config
-methods
-input
-original
-str
-timeout
-copy
-push
-variable
-stringarg
-numberarg
-variablearg
-methodclosed
-methodclosedbinding
-polymerdisplay
-pointerstate
-bcr
-label
-sc
-labellable
-clicked
-literals
-subtree
-shim
-restamp
-ident
-operations
-squote
-dquote
-destination
-calculate
-equals
-assetpath
-chunking
-abs
-fc
-edits
-pool
-ops
-index1
-index2
-isnt
-supports
-cb
-animation
-idle
-period
-character
-jscompiler
-renameproperty
-lc
-ratio
-logf
-points
-unlink
-connect
-disconnect
-vals
-hbl
-light
-mutation
-polymerreplaced
-ip
-translate3d
-distribute
-labelled
-pathname
-cn
-prepare
-webkit
-tc
-records
-synthetic
-gs
-lastmove
-capital
-untrack
-translate
-built
-ddx
-elt
-recognizers
-dump
-secondlast
-firstopeningbinding
-downup
-firstcharacterbinding
-touchmove
-firstcolon
-hover
-colonnotifyevent
-colonnotifyeventfirstclosingbinding
-tap
-firstclosingbinding
-error
-result
-logger
-column
-warn
-white
-strip
-outer
-configure
-arr
-increment
-escaped
-initialized
-counter
-evaluator
-setter
-unobserve
-normalized
-impl
-merge
-moved
-helper
-replaced
-ancestor
-unshift
-shift
-meta
-pop
-upper
-request
-save
-notification
-refresh
-full
-message
-chain
-skip
-evaluate
-scope
-callbacks
-attrs
-extensions
-begin
-tag
-empty
-clear
-prev
-left
-wrapper
-generate
-split
-container
-types
-rendered
-output
-extend
-space
-parser
-version
-fragment
-writable
-values
-names
-call
+1974 template
+1596 node
+1517 props
+1500 info
+1406 inst
+1370 property
+1220 path
+1112 idx
+1020 data
+843 base
+776 host
+768 prop
+755 effect
+730 properties
+646 binding
+643 module
+524 ev
+463 paths
+461 effects
+422 type
+420 item
+406 mixin
+406 observer
+398 mouse
+390 changed
+378 notify
+377 mutable
+370 instance
+360 fn
+356 behaviors
+355 el
+354 dom
+351 root
+340 index
+337 parts
+331 callback
+330 id
+330 method
+330 proto
+321 dir
+319 content
+319 target
+314 debouncer
+309 style
+309 css
+309 literal
+304 styles
+293 touch
+290 attribute
+283 render
+281 children
+280 start
+271 list
+270 selector
+270 part
+270 set
+267 run
+260 current
+253 ready
+253 dynamic
+253 pending
+251 splices
+251 forward
+251 klass
+250 args
+250 create
+240 add
+237 flush
+237 uri
+236 count
+230 connected
+230 clients
+224 nodes
+212 items
+210 handler
+209 chunk
+209 api
+209 movefn
+209 upfn
+203 url
+203 initialize
+203 edit
+200 selected
+189 attr
+189 parse
+188 templatize
+182 model
+182 listener
+177 child
+177 handle
+177 arg
+168 queue
+167 time
+167 effective
+167 microtask
+167 sig
+167 dash
+154 computed
+154 trigger
+152 ctor
+152 listeners
+152 exclude
+152 legacy
+152 cancel
+146 polymer
+146 disconnected
+146 shady
+146 mutations
+140 read
+130 state
+126 source
+126 change
+125 linked
+125 composed
+125 stamp
+125 detail
+125 passive
+125 dx
+125 dy
+118 invalid
+118 detached
+118 lifecycle
+118 observers
+118 apply
+118 attributes
+118 end
+112 camel
+112 prevent
+106 html
+104 sidx
+104 debouncers
+104 templatizer
+104 gesture
+104 storage
+104 dedupe
+104 ret
+104 canceller
+104 preventer
+104 ct
+104 unscoped
+101 modules
+101 filter
+101 compute
+101 observe
+101 mode
+101 splice
+101 negate
+100 map
+100 options
+98 doc
+98 action
+94 register
+90 remove
+84 display
+84 bubbles
+84 hide
+84 finalize
+84 imports
+84 compound
+84 include
+84 ensure
+84 owner
+84 attached
+84 async
+84 matches
+84 accessor
+84 bindings
+84 track
+84 dep
+84 user
+83 multi
+83 created
+83 pd
+83 reflect
+83 fire
+83 job
+83 replacment
+83 upgrade
+83 setup
+83 distances
+83 timer
+83 labels
+83 recognizer
+83 buttons
+83 started
+82 custom
+82 find
+80 context
+70 expression
+70 previous
+70 sort
+70 disabled
+70 dependencies
+70 len
+70 ignore
+70 update
+70 obj
+67 dot
+67 delay
+67 generated
+67 flatten
+67 accessors
+67 deep
+67 client
+67 kind
+62 deselect
+62 show
+62 repeat
+62 behavior
+62 direction
+62 distributed
+62 bl
+62 serializing
+62 propagate
+62 fxs
+62 noted
+62 colon
+62 signature
+62 wildcard
+62 mousedown
+62 touchstart
+62 touchend
+62 ta
+62 handled
+62 opts
+62 gestures
+62 gobj
+62 decided
+62 emits
+62 iprop
+60 key
+59 bind
+59 configurable
+59 bound
+59 process
+59 resolve
+59 added
+59 removed
+59 deps
+56 debounce
+56 wrapped
+56 limit
+56 registered
+56 serialize
+56 query
+56 fns
+56 stack
+56 extra
+56 store
+56 scheduled
+50 toggle
+50 transform
+50 log
+50 insertion
+50 enable
+50 defaults
+50 orig
+50 temp
+50 extension
+50 north
+50 west
+50 click
+47 initial
+42 sync
+42 deserialize
+42 descendant
+42 optional
+42 strict
+42 schedule
+42 flow
+41 links
+41 teardown
+41 micro
+41 hidetemplatechildren
+41 templatized
+41 observed
+41 row
+41 marshal
+41 unlisten
+41 slctr
+41 wait
+41 rtl
+41 opt
+41 disable
+41 finalized
+41 invalidate
+41 unmanaged
+41 enqueue
+41 notifying
+41 reflected
+41 hosting
+41 fx
+41 ran
+41 structured
+41 shared
+41 leave
+41 slot
+41 slots
+41 ddy
+41 recog
+41 en
+41 acc
+41 deduping
+41 applications
+41 rx
+41 sanitize
+41 policy
+41 optimizations
+41 hprop
+41 polymertextcontent
+40 replace
+35 wrap
+35 argument
+35 namespace
+35 events
+33 selection
+33 task
+33 detach
+33 curr
+33 instances
+33 finished
+33 listen
+33 local
+33 active
+33 cancelable
+33 shadow
+33 activate
+33 enabled
+33 normalize
+33 dispatch
+33 regex
+33 bracket
+33 pre
+33 point
+33 calc
+33 suffix
+33 min
+33 unset
+33 distance
+33 moves
+33 extended
+33 href
+33 registrations
+28 insert
+28 attach
+28 auto
+28 define
+28 nested
+28 raw
+28 search
+28 flattened
+28 move
+28 ids
+28 reg
+23 check
+23 copy
+23 methods
+23 config
+23 str
+23 push
+23 input
+23 variable
+23 prefix
+23 matching
+23 original
+23 timeout
+20 restamp
+20 lc
+20 assetpath
+20 chunking
+20 ratio
+20 isnt
+20 pool
+20 vals
+20 distribute
+20 light
+20 subtree
+20 translate3d
+20 logf
+20 hbl
+20 cn
+20 tc
+20 elt
+20 webkit
+20 destination
+20 points
+20 ip
+20 records
+20 shim
+20 prepare
+20 built
+20 unlink
+20 capital
+20 literals
+20 ident
+20 squote
+20 dquote
+20 fc
+20 firstopeningbinding
+20 firstcharacterbinding
+20 firstcolon
+20 colonnotifyevent
+20 colonnotifyeventfirstclosingbinding
+20 firstclosingbinding
+20 stringarg
+20 numberarg
+20 variablearg
+20 methodclosed
+20 methodclosedbinding
+20 operations
+20 calculate
+20 equals
+20 edits
+20 ops
+20 index1
+20 index2
+20 cb
+20 animation
+20 idle
+20 period
+20 character
+20 jscompiler
+20 renameproperty
+20 connect
+20 disconnect
+20 mutation
+20 labelled
+20 synthetic
+20 untrack
+20 downup
+20 touchmove
+20 hover
+20 tap
+20 supports
+20 clicked
+20 labellable
+20 sc
+20 label
+20 bcr
+20 pointerstate
+20 recognizers
+20 gs
+20 secondlast
+20 lastmove
+20 ddx
+20 translate
+20 abs
+20 pathname
+20 dump
+20 polymerreplaced
+20 polymerdisplay
+20 error
+20 result
+16 request
+16 merge
+16 logger
+16 warn
+16 arr
+16 unobserve
+16 normalized
+16 impl
+16 helper
+16 replaced
+16 meta
+16 save
+16 notification
+16 upper
+16 pop
+16 shift
+16 unshift
+16 setter
+16 evaluator
+16 counter
+16 initialized
+16 escaped
+16 outer
+16 strip
+16 white
+16 column
+16 moved
+16 ancestor
+16 increment
+16 configure
+14 clear
+14 full
+14 refresh
+14 generate
+14 message
+14 chain
+14 scope
+14 tag
+14 wrapper
+14 evaluate
+14 begin
+14 empty
+14 prev
+14 extensions
+14 attrs
+14 callbacks
+14 left
+14 skip
+11 rendered
+11 extend
+11 version
+11 fragment
+11 output
+11 types
+11 values
+11 parser
+11 space
+11 split
+11 container
+11 writable
+10 names
+8 call

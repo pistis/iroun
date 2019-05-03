@@ -1,469 +1,469 @@
-node
-context
-binding
-data
-key
-callback
-model
-dom
-bindings
-nodes
-template
-component
-observable
-dispose
-computed
-options
-index
-target
-handler
-result
-view
-update
-item
-dependency
-fn
-current
-change
-config
-child
-removed
-container
-html
-id
-subscribable
-accessor
-set
-elem
-comment
-info
-end
-map
-property
-timeout
-values
-dependencies
-params
-children
-callbacks
-prop
-error
-subscription
-mapping
-state
-script
-defer
-virtual
-regex
-apply
-remove
-write
-notify
-previous
-async
-add
-events
-handle
-engine
-selection
-underlying
-disposal
-insert
-big
-entry
-args
-selected
-instance
-attr
-store
-cache
-owner
-tracking
-descendants
-bound
-style
-count
-root
-mapped
-bind
-extend
-parse
-process
-proto
-obj
-items
-create
-evaluator
-predicate
-contents
-type
-version
-complete
-compare
-start
-attach
-provider
-changed
-input
-query
-ko
-tag
-verified
-max
-clean
-ancestor
-parsed
-java
-dirty
-attribute
-definition
-existing
-tags
-continuous
-evaluation
-checked
-latest
-registered
-unwrapped
-div
-hasfocus
-memoize
-memo
-distance
-css
-rendered
-doc
-limit
-expando
-pure
-method
-source
-writable
-loaders
-candidate
-loading
-original
-initial
-move
-display
-order
-raw
-added
-stale
-sleeping
-rewritten
-unbalanced
-dependent
-tmpl
-queue
-syntax
-sibling
-accessors
-sml
-json
-diff
-action
-requested
-collection
-templates
-evaluate
-components
-read
-detection
-lower
-properties
-extenders
-register
-cloned
-depth
-overrides
-subscriptions
-match
-begin
-render
-disposed
-literal
-pending
-range
-names
-cached
-prepend
-subscribe
-possibly
-matching
-width
-wrapped
-message
-updates
-content
-adding
-val
-validators
-rewriting
-toggle
-clone
-cleaned
-operation
-primitive
-prefix
-internal
-fragment
-list
-returns
-suppress
-loaded
-func
-loader
-matched
-synchronous
-jquery
-precompiled
-preprocess
-execute
-ensure
-unset
-memos
-combined
-task
-empty
-ignore
-scheduled
-tasks
-peek
-updating
-throttle
-init
-push
-save
-namespace
-evaluated
-types
-resolve
-param
-fields
-call
-output
-inherit
-registry
-activate
-real
-url
-writeable
-north
-clear
-tok
-memoized
-compiled
-validator
-subscribables
-definitions
-attached
-min
-destroyed
-category
-replace
-symbol
-random
-validate
-cyclic
-find
-onreadystatechange
-include
-click
-unmemoize
-division
-point
-append
-stack
-insertion
-schedule
-unique
-cleanable
-previously
-edit
-placeholder
-caption
-mark
-allowed
-notification
-subscribers
-evaluateimmediate
-deletions
-additions
-elems
-offset
-moved
-cancel
-ordered
-custom
-bubble
-refresh
-markup
-written
-classes
-obs
-ie7
-arrays
-wrap
-hack
-len
-strings
-ie6
-indexer
-space
-replacer
-post
-objects
-visited
-west
-mode
-plain
-lookup
-pre
-expression
-token
-js
-alias
-assignment
-words
-reserved
-hide
-debounce
-equal
-capture
-delayed
-candidates
-descendant
-body
-keys
-mutated
-mutate
-track
-disabled
-entries
-handlers
-shortcut
-observables
-focused
-callreadthenenddependencydetection
-callreadwithdependencydetection
-copy
-kowhen
-respond
-updater
-subs
-finish
-total
-orig
-active
-record
-saved
-outer
-multiple
-memoization
-processing
-extra
-marks
-attributes
-generate
-run
-early
-chars
-referenced
-hex
-considered
-max8
-moves
-aborted
-filtered
-user
-agent
-construct
-load
-replacement
-unregister
-fixed
-retain
-sources
-check
-anonymous
-invoke
-vm
-back
-fired
-amd
-actively
-graph
-recurse
-sort
-topological
-auto
-issue
-frag
-simple
-table
-tbody
-tr
-require
-needed
-visible
-factory
-retained
-destroy
-single
-deleted
-dummy
-found
-comments
-execution
-checkable
-extensions
-indexes
-distinct
-filter
-waiting
-fix
-trim
-starts
-contained
-rewrite
-errors
-visit
-trigger
-unwrap
-force
-correctly
-writers
-stringify
-position
-symbols
-initialized
-toks
-str
-small
-keyword
-nested
-workaround
-specials
-escaped
-extender
-stored
-field
-matches
-notified
-partial
-identifier
-included
-zoom
-utils
-hook
-unmatched
-matrix
-comparison
-normalise
-structure
-optionally
-closing
-remaining
-tokens
-visitor
+2770 node
+1130 context
+1110 binding
+970 data
+820 key
+810 callback
+670 model
+660 dom
+620 bindings
+610 nodes
+588 template
+510 component
+500 observable
+490 dispose
+470 computed
+430 options
+420 index
+370 target
+350 handler
+330 result
+320 view
+291 update
+280 item
+260 dependency
+250 fn
+240 current
+240 change
+210 child
+210 removed
+210 config
+200 subscribable
+200 html
+200 container
+200 id
+190 accessor
+190 elem
+190 set
+170 info
+170 map
+170 end
+170 comment
+166 property
+160 timeout
+150 children
+150 values
+150 params
+150 dependencies
+140 script
+140 mapping
+140 callbacks
+140 prop
+140 error
+140 subscription
+140 state
+130 virtual
+130 apply
+130 remove
+130 write
+130 defer
+130 regex
+120 async
+120 notify
+120 events
+120 handle
+120 selection
+120 previous
+120 add
+120 underlying
+120 engine
+110 args
+110 selected
+110 entry
+110 insert
+110 big
+110 disposal
+101 instance
+100 descendants
+100 bound
+100 bind
+100 root
+100 cache
+100 attr
+100 owner
+100 style
+100 mapped
+100 count
+100 tracking
+100 store
+90 extend
+90 create
+90 evaluator
+90 predicate
+90 parse
+90 items
+90 process
+90 obj
+90 proto
+90 contents
+83 type
+83 version
+80 complete
+80 start
+80 provider
+80 input
+80 changed
+80 compare
+80 ko
+80 query
+80 attach
+70 ancestor
+70 verified
+70 parsed
+70 java
+70 tag
+70 max
+70 dirty
+70 clean
+65 attribute
+65 definition
+60 checked
+60 unwrapped
+60 hasfocus
+60 doc
+60 registered
+60 distance
+60 expando
+60 memo
+60 memoize
+60 limit
+60 evaluation
+60 pure
+60 latest
+60 existing
+60 div
+60 continuous
+60 rendered
+60 tags
+60 css
+53 source
+53 method
+50 accessors
+50 queue
+50 rewritten
+50 writable
+50 raw
+50 display
+50 initial
+50 added
+50 dependent
+50 move
+50 sml
+50 loading
+50 original
+50 loaders
+50 candidate
+50 order
+50 stale
+50 sleeping
+50 tmpl
+50 syntax
+50 sibling
+50 unbalanced
+41 json
+40 evaluate
+40 register
+40 requested
+40 range
+40 literal
+40 match
+40 depth
+40 read
+40 cloned
+40 lower
+40 components
+40 begin
+40 detection
+40 overrides
+40 disposed
+40 extenders
+40 properties
+40 diff
+40 pending
+40 subscriptions
+40 templates
+40 action
+40 render
+40 collection
+35 names
+30 subscribe
+30 possibly
+30 content
+30 internal
+30 func
+30 preprocess
+30 init
+30 message
+30 prefix
+30 namespace
+30 save
+30 updating
+30 empty
+30 unset
+30 adding
+30 val
+30 validators
+30 rewriting
+30 clone
+30 operation
+30 fragment
+30 loaded
+30 loader
+30 cached
+30 synchronous
+30 memos
+30 combined
+30 ignore
+30 peek
+30 throttle
+30 evaluated
+30 suppress
+30 returns
+30 primitive
+30 updates
+30 push
+30 tasks
+30 scheduled
+30 task
+30 ensure
+30 execute
+30 precompiled
+30 jquery
+30 list
+30 cleaned
+30 toggle
+30 wrapped
+30 width
+30 matching
+30 prepend
+30 matched
+29 types
+29 param
+29 resolve
+29 fields
+23 call
+20 validate
+20 allowed
+20 inherit
+20 real
+20 validator
+20 cyclic
+20 stack
+20 ordered
+20 len
+20 classes
+20 written
+20 bubble
+20 cancel
+20 caption
+20 placeholder
+20 previously
+20 include
+20 destroyed
+20 hack
+20 refresh
+20 moved
+20 arrays
+20 min
+20 edit
+20 north
+20 west
+20 find
+20 writeable
+20 pre
+20 division
+20 strings
+20 tok
+20 unique
+20 custom
+20 registry
+20 clear
+20 subscribables
+20 definitions
+20 symbol
+20 random
+20 unmemoize
+20 append
+20 mark
+20 evaluateimmediate
+20 obs
+20 lookup
+20 plain
+20 output
+20 visited
+20 objects
+20 replacer
+20 space
+20 indexer
+20 offset
+20 additions
+20 deletions
+20 subscribers
+20 notification
+20 schedule
+20 onreadystatechange
+20 compiled
+20 memoized
+20 activate
+20 mode
+20 wrap
+20 markup
+20 elems
+20 cleanable
+20 click
+20 replace
+20 attached
+20 post
+20 ie6
+20 ie7
+20 insertion
+20 point
+20 category
+20 url
+17 token
+17 expression
+11 alias
+11 reserved
+11 words
+11 assignment
+11 js
+10 topological
+10 sort
+10 recurse
+10 vm
+10 considered
+10 updater
+10 handlers
+10 descendant
+10 notified
+10 stored
+10 body
+10 disabled
+10 shortcut
+10 focused
+10 saved
+10 multiple
+10 filtered
+10 user
+10 agent
+10 fired
+10 auto
+10 needed
+10 visible
+10 retained
+10 deleted
+10 dummy
+10 execution
+10 indexes
+10 waiting
+10 position
+10 initialized
+10 small
+10 matrix
+10 moves
+10 comparison
+10 hook
+10 specials
+10 keyword
+10 str
+10 toks
+10 writers
+10 rewrite
+10 extensions
+10 factory
+10 frag
+10 issue
+10 amd
+10 back
+10 fixed
+10 unregister
+10 load
+10 aborted
+10 max8
+10 hex
+10 chars
+10 generate
+10 extra
+10 memoization
+10 outer
+10 active
+10 respond
+10 callreadwithdependencydetection
+10 callreadthenenddependencydetection
+10 observables
+10 candidates
+10 delayed
+10 equal
+10 debounce
+10 extender
+10 graph
+10 visit
+10 entries
+10 nested
+10 keys
+10 mutated
+10 mutate
+10 track
+10 copy
+10 kowhen
+10 subs
+10 finish
+10 total
+10 orig
+10 record
+10 processing
+10 marks
+10 attributes
+10 run
+10 early
+10 referenced
+10 construct
+10 replacement
+10 retain
+10 sources
+10 check
+10 anonymous
+10 invoke
+10 actively
+10 hide
+10 simple
+10 table
+10 tbody
+10 tr
+10 require
+10 destroy
+10 single
+10 found
+10 comments
+10 checkable
+10 distinct
+10 filter
+10 fix
+10 trim
+10 starts
+10 contained
+10 errors
+10 trigger
+10 unwrap
+10 force
+10 correctly
+10 stringify
+10 symbols
+10 workaround
+10 escaped
+10 field
+10 matches
+10 partial
+10 identifier
+10 included
+10 zoom
+10 utils
+10 unmatched
+10 normalise
+10 structure
+10 optionally
+10 closing
+10 capture
+10 remaining
+5 tokens
+5 visitor

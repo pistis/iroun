@@ -1,260 +1,260 @@
-options
-key
-item
-node
-def
-selector
-handler
-callback
-context
-path
-obj
-keys
-delegated
-extended
-names
-change
-data
-reg
-binder
-args
-index
-matreshka
-evt
-mediator
-remove
-binding
-trigger
-info
-result
-source
-events
-deep
-method
-bindings
-calc
-nodes
-target
-prop
-set
-listener
-arr
-arg
-dom
-added
-add
-create
-removed
-str
-merged
-symbol
-delay
-id
-space
-split
-init
-bracket
-checks
-left
-props
-items
-rendered
-html
-random
-common
-sources
-ctx
-bind
-process
-previous
-container
-renderer
-model
-skip
-debounce
-selected
-original
-listed
-rest
-members
-error
-val
-property
-sync
-delegate
-optional
-iterator
-symbols
-map
-dot
-unbind
-exec
-pull
-beforechange
-asterisk
-mediate
-recreate
-retain
-tree
-order
-prefix
-values
-methods
-full
-rerender
-orders
-fill
-universal
-library
-pseudo
-switcher
-bound
-attribute
-update
-instance
-namespace
-variable
-custom
-parse
-parser
-attr
-type
-returns
-arrays
-chain
-test
-sandbox
-mq
-dollar
-protect
-selectors
-splice
-instantiate
-binders
-restore
-alt
-esc
-prefies
-ctrl
-dont
-listen
-listened
-call
-json
-render
-input
-fn
-latest
-copy
-content
-changed
-func
-sort
-define
-prevent
-stop
-propagation
-modified
-entries
-search
-concat
-accessor
-global
-promise
-checked
-track
-recursive
-attrs
-enumerable
-diff
-deps
-descendants
-parts
-mod
-configurable
-token
-argument
-proto
-output
-check
-push
-start
-fragment
-matching
-found
-child
-protector
-progress
-html2node
-optgroup
-splitted
-thead
-report
-v2
-mk
-polyfill
-sel
-sorting
-brackers
-cheap
-jset
-exist
-removing
-legend
-setter
-colgroup
-tfoot
-detatch
-undelegate
-shift
-col
-temporary
-expected
-exact
-regs
-missing
-unshift
-tracked
-td
-bubbles
-cancelable
-v1
-tokens
-tr
-tbody
-hack
-pure
-logic
-paths
-needed
-adding
-wrapper
-win
-disabled
-rendering
-caption
-separator
-flag
-scope
-writable
-strict
-silent
-descendant
-multiple
-checkable
-single
-existing
-replace
-exports
-dirty
-attributes
-list
-wrap
-handlers
-force
-apply
-timeout
-errors
-find
-current
-parsed
+1920 options
+1710 key
+1370 item
+1280 node
+1055 def
+948 selector
+740 handler
+690 callback
+550 context
+520 obj
+520 path
+470 keys
+437 delegated
+423 extended
+411 names
+399 change
+390 data
+373 reg
+372 binder
+350 args
+340 index
+338 evt
+338 matreshka
+321 mediator
+310 remove
+309 binding
+296 trigger
+280 info
+280 result
+256 source
+240 events
+237 deep
+233 method
+231 bindings
+220 calc
+220 prop
+220 nodes
+220 target
+210 set
+206 listener
+203 arr
+180 arg
+180 dom
+170 add
+170 added
+170 removed
+170 create
+160 str
+154 symbol
+154 merged
+152 delay
+150 id
+140 init
+140 split
+140 space
+118 checks
+118 bracket
+115 props
+115 left
+110 html
+110 items
+110 rendered
+103 random
+103 common
+103 sources
+101 ctx
+100 process
+100 container
+100 bind
+100 previous
+90 debounce
+90 model
+90 renderer
+90 skip
+90 original
+90 selected
+84 members
+84 listed
+84 rest
+80 error
+80 val
+77 property
+77 delegate
+77 iterator
+77 sync
+77 optional
+77 symbols
+70 map
+67 dot
+67 recreate
+67 mediate
+67 pull
+67 asterisk
+67 exec
+67 unbind
+67 beforechange
+64 order
+64 retain
+64 tree
+60 methods
+60 prefix
+60 values
+51 rerender
+51 full
+50 pseudo
+50 fill
+50 orders
+50 switcher
+50 universal
+50 library
+50 bound
+46 instance
+46 update
+46 attribute
+40 parse
+40 namespace
+40 variable
+40 custom
+40 attr
+40 parser
+38 type
+38 test
+38 arrays
+38 returns
+38 chain
+33 dollar
+33 mq
+33 splice
+33 sandbox
+33 restore
+33 dont
+33 ctrl
+33 alt
+33 selectors
+33 protect
+33 instantiate
+33 binders
+33 listened
+33 listen
+33 esc
+33 prefies
+31 call
+31 json
+30 fn
+30 func
+30 render
+30 copy
+30 input
+30 changed
+30 content
+30 latest
+25 accessor
+25 define
+25 configurable
+25 enumerable
+25 global
+25 diff
+25 sort
+25 concat
+25 search
+25 entries
+25 modified
+25 track
+25 recursive
+25 checked
+25 prevent
+25 stop
+25 propagation
+25 promise
+25 parts
+25 mod
+25 attrs
+25 deps
+25 descendants
+23 token
+20 matching
+20 output
+20 check
+20 start
+20 push
+20 found
+20 argument
+20 proto
+20 fragment
+20 child
+16 setter
+16 mk
+16 html2node
+16 legend
+16 thead
+16 td
+16 col
+16 optgroup
+16 colgroup
+16 tfoot
+16 splitted
+16 sel
+16 exist
+16 polyfill
+16 v1
+16 v2
+16 missing
+16 expected
+16 cheap
+16 unshift
+16 removing
+16 sorting
+16 report
+16 shift
+16 tracked
+16 progress
+16 temporary
+16 protector
+16 brackers
+16 jset
+16 detatch
+16 undelegate
+16 regs
+16 exact
+16 bubbles
+16 cancelable
+15 tokens
+12 writable
+12 needed
+12 wrapper
+12 tr
+12 caption
+12 tbody
+12 win
+12 scope
+12 paths
+12 rendering
+12 adding
+12 separator
+12 silent
+12 pure
+12 multiple
+12 single
+12 hack
+12 flag
+12 logic
+12 strict
+12 checkable
+12 descendant
+12 disabled
+10 list
+10 wrap
+10 apply
+10 timeout
+10 find
+10 current
+10 errors
+10 force
+10 parsed
+10 dirty
+10 exports
+10 replace
+10 handlers
+10 existing
+10 attributes

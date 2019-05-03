@@ -71,11 +71,10 @@ const sources = [
 
 sources.forEach((source, i) => {
   tfidf.addFileSync(resolvePath(source.input), 'utf8', source.name)
-  saveFile(
-    resolvePath(source.output),
-    tfidf
-      .listTerms(i)
-      .map((term) => term.term)
-      .join('\n')
-  )
+  const terms = tfidf.listTerms(i)
+  const weightTerms = terms.map((term) => {
+    return `${parseInt(term.tfidf * 10)} ${term.term}`
+  })
+
+  saveFile(resolvePath(source.output), weightTerms.join('\n'))
 })
