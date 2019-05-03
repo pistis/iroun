@@ -1,3 +1,4 @@
+// need to excute update-github-repositories.js
 const { makeWordFile } = require('./extract-word')
 
 const repositories = [

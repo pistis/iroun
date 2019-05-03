@@ -176,11 +176,13 @@ const ECMAReservedKeywords = [
   'super',
 ]
 
+const conventionalKeywords = ['el', 'res', 'req', 'key', 'value', 'id', 'ref', 'msg', 'set', 'get']
 const stopwords = new Map()
 stopwordsJson.en
   .concat(ECMAReservedKeywords)
   .concat(JSObjectPropertyMethods)
   .concat(otherReservedKeywords)
+  .concat(conventionalKeywords)
   .forEach((word) => {
     stopwords.set(word.toLowerCase(), true)
   })

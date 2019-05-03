@@ -2,12 +2,7 @@ const fs = require('fs')
 const path = require('path')
 const stopwords = require('../src/stopwords')
 const walk = require('acorn-walk')
-const {
-  resolvePath,
-  getFilesOfDirectory,
-  getJavascriptFileList,
-  saveFile,
-} = require('./util')
+const { resolvePath, getFilesOfDirectory, getJavascriptFileList, saveFile } = require('./util')
 const { extractFromFile } = require('../src/extractor')
 const { split } = require('../src/splitter')
 
@@ -16,9 +11,7 @@ const makeWordFile = function(dir, output) {
   let fileList = getFilesOfDirectory(resolvePath(dir))
   fileList = getJavascriptFileList(fileList)
 
-  console.log(
-    `\n===== Start anaysis ${fileList.length} file list in [${dir}] =====`
-  )
+  console.log(`\n===== Start anaysis ${fileList.length} file list in [${dir}] =====`)
 
   let words = []
   const errors = []
