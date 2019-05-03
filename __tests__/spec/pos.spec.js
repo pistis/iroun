@@ -24,4 +24,11 @@ describe('getPOS test', () => {
     const pos = await getPOS(['make'])
     expect(pos.verbs.length).toBe(1)
   })
+
+  test('noun & verbs word', async () => {
+    expect.assertions(2)
+    const pos = await getPOS(['render'])
+    expect(pos.nouns.length).toBe(1)
+    expect(pos.verbs.length).toBe(1)
+  })
 })
