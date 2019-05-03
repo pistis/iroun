@@ -38,7 +38,7 @@ tfidf.addFileSync(resolvePath('../database/words/vue.txt'))
 const source = resolvePath('../database/words/vue.txt')
 const words = fs.readFileSync(source, 'utf-8').split(' ')
 
-const wordMap = {}
+let wordMap = {}
 words.forEach((word) => {
   word = word.toLowerCase() // remove dup word
   wordMap[word] = {
@@ -47,20 +47,38 @@ words.forEach((word) => {
   }
 })
 
-// word freq map
-// console.log(wordMap)
-// const rankLimit = 10
-// const highFreqWordMap = _.map(wordMap, (value, key) => {
-//   console.log(value, key)
-//   if (value['']) return value
-// })
+console.log(`total word count is ${Object.keys(wordMap).length}`)
+const topRankLimit = parseInt(Object.keys(wordMap).length * 0.25)
+// extract top rank by limit
+let topWords = _.map(wordMap, (value, key) => {
+  return {
+    word: value['word'],
+    freq: value['freq'],
+  }
+})
+topWords = topWords.sort((a, b) => {
+  return b['freq'] - a['freq']
+})
+
+topWords = topWords.slice(0, topRankLimit)
+console.log(`Top ranks word count is ${topWords.length}`)
+
+// revise wordmap
+wordMap = {}
+_.forEach(topWords, (word) => {
+  wordMap[word.word] = {
+    word: word.word,
+    freq: word.freq,
+  }
+})
+
 _.forEach(wordMap, (value, key) => {
   tfidf.tfidfs(key, function(i, measure) {
     let tmpWord = wordMap[key]
     tmpWord['tfidf'] = (tmpWord['tfidf'] || 0) + measure
-    // console.log('document #' + i + ' is ' + measure)
   })
 })
+
 let topicWord = _.map(wordMap, (value, key) => {
   return {
     word: value['word'],
@@ -70,19 +88,8 @@ let topicWord = _.map(wordMap, (value, key) => {
 topicWord = topicWord.sort((a, b) => {
   return a['tfidf'] - b['tfidf']
 })
-// console.log(topicWord)
-saveFile(resolvePath('./topic.txt'), JSON.stringify(topicWord, null, 2))
-
-// _.forEach(wordMap, (value, key) => {
-//   console.log(value)
-// })
-// for (let word of wordMap) {
-//   // console.log(JSON.stringify(word, null, 2))
-//   tfidf.tfidfs(word[0], function(i, measure) {
-//     let tmpWord = wordMap.get(word[0])
-//     tmpWord['tfidf'] = (tmpWord['tfidf'] || 0) + measure
-//     // console.log('document #' + i + ' is ' + measure)
-//   })
-// }
-
-// console.log(wordMap)
+console.log(topicWord)
+topicWord = topicWord.map((word, i) => {
+  return `${topicWord.length - i} ${word.word}`
+})
+saveFile(resolvePath('./topic.txt'), topicWord.join('\n'))

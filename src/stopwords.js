@@ -109,8 +109,6 @@ const otherReservedKeywords = [
   'untaint',
   'window',
   '',
-  '',
-  '',
 ]
 const ECMAReservedKeywords = [
   'abstract',
