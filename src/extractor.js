@@ -1,10 +1,12 @@
 const fs = require('fs')
 const path = require('path')
+// const acornLoose = require('acorn-loose')
 const acorn = require('acorn')
+const acornParser = acorn.Parser.extend(require('acorn-jsx')())
 const flowParser = require('flow-parser')
 const typescriptParser = require('@typescript-eslint/parser')
 const vueTemplateCompiler = require('vue-template-compiler')
-// const acornLoose = require("acorn-loose");
+
 const walk = require('acorn-walk')
 
 const _updateName = function(names, name) {
@@ -59,7 +61,7 @@ const extract = function(program, scriptType) {
       sourceType: 'module',
 
       ecmaFeatures: {
-        jsx: false,
+        jsx: true,
       },
     })
   } else if (program.indexOf('@flow') !== -1) {
@@ -71,13 +73,20 @@ const extract = function(program, scriptType) {
       esproposal_export_star_as: true,
       esproposal_optional_chaining: true,
       esproposal_nullish_coalescing: true,
-      tokens: false,
+      tokens: true,
       types: true,
     })
   } else {
-    ast = acorn.parse(program, {
+    ast = acornParser.parse(program, {
       sourceType: 'module',
       ecmaVersion: 9,
+      allowReserved: true,
+      allowReturnOutsideFunction: true,
+      allowImportExportEverywhere: true,
+      allowAwaitOutsideFunction: true,
+      allowHashBang: true,
+      ranges: true,
+      preserveParens: true,
     })
   }
 
@@ -122,6 +131,8 @@ const extract = function(program, scriptType) {
     TSIndexSignature: noop,
     TSTypeAssertion: noop,
     TSEmptyBodyFunctionExpression: noop,
+    // jsx
+    JSXElement: noop,
   })
 
   walk.simple(
@@ -164,15 +175,9 @@ const extract = function(program, scriptType) {
       // extract variable name
       VariableDeclarator(node, state) {
         const { type, name } = node.id
-        if (
-          type === 'Identifier' &&
-          (node.init && node.init.type.indexOf('Function') === -1)
-        ) {
+        if (type === 'Identifier' && (node.init && node.init.type.indexOf('Function') === -1)) {
           _updateName(variableNames, name)
-        } else if (
-          type === 'Identifier' &&
-          (node.init && node.init.type.indexOf('Function') !== -1)
-        ) {
+        } else if (type === 'Identifier' && (node.init && node.init.type.indexOf('Function') !== -1)) {
           _updateName(methodNames, name)
         }
       },
