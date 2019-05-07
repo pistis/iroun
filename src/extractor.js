@@ -131,6 +131,13 @@ const extract = function(program, scriptType) {
     TSIndexSignature: noop,
     TSTypeAssertion: noop,
     TSEmptyBodyFunctionExpression: noop,
+    TSExportAssignment: noop,
+    TSImportEqualsDeclaration: noop,
+    DeclareClass: noop,
+    DeclareFunction: noop,
+    Import: noop,
+    DeclareModuleExports: noop,
+    TSNamespaceExportDeclaration: noop,
     // jsx
     JSXElement: noop,
   })
