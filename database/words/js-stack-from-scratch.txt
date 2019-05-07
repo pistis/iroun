@@ -1,0 +1,1 @@
+glob markdownlint config files result err result result ignore files config
