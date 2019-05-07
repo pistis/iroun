@@ -1,0 +1,2 @@
+37 result
+27 glob

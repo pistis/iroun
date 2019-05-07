@@ -20,6 +20,8 @@ Calculation
 - Small value: a word that is not characteristic of the document
  */
 // need to execute extract-word-github.js, extract-word-iroun.js
+const fs = require('fs')
+const path = require('path')
 const natural = require('natural')
 const _ = require('lodash')
 const { resolvePath, saveFile } = require('./util')
@@ -29,73 +31,21 @@ const { filter } = require('p-iteration')
 const TfIdf = natural.TfIdf
 const tfidf = new TfIdf()
 
-const sources = [
-  {
-    name: 'iroun',
-    input: '../database/words/iroun.txt',
-    output: '../database/topic-words/iroun.txt',
-  },
-  {
-    name: 'knockout',
-    input: '../database/words/knockout.txt',
-    output: '../database/topic-words/knockout.txt',
-  },
-  {
-    name: 'marko',
-    input: '../database/words/marko.txt',
-    output: '../database/topic-words/marko.txt',
-  },
-  {
-    name: 'matreshka',
-    input: '../database/words/matreshka.txt',
-    output: '../database/topic-words/matreshka.txt',
-  },
-  {
-    name: 'nuclear-js',
-    input: '../database/words/nuclear-js.txt',
-    output: '../database/topic-words/nuclear-js.txt',
-  },
-  {
-    name: 'polymer',
-    input: '../database/words/polymer.txt',
-    output: '../database/topic-words/polymer.txt',
-  },
-  {
-    name: 'react-dom',
-    input: '../database/words/react-dom.txt',
-    output: '../database/topic-words/react-dom.txt',
-  },
-  {
-    name: 'react-events',
-    input: '../database/words/react-events.txt',
-    output: '../database/topic-words/react-events.txt',
-  },
-  {
-    name: 'react',
-    input: '../database/words/react.txt',
-    output: '../database/topic-words/react.txt',
-  },
-  {
-    name: 'riot',
-    input: '../database/words/riot.txt',
-    output: '../database/topic-words/riot.txt',
-  },
-  {
-    name: 'svelte',
-    input: '../database/words/svelte.txt',
-    output: '../database/topic-words/svelte.txt',
-  },
-  {
-    name: 'vue',
-    input: '../database/words/vue.txt',
-    output: '../database/topic-words/vue.txt',
-  },
-  {
-    name: 'angular-core',
-    input: '../database/words/angular-core.txt',
-    output: '../database/topic-words/angular-core.txt',
-  },
-]
+const wordsDir = resolvePath('../database/words')
+const wordsFiles = fs.readdirSync(wordsDir).filter((file) => {
+  return fs.statSync(path.join(wordsDir, file)).isFile()
+})
+
+const sources = wordsFiles
+  .filter((file) => file.match(/.txt$/g))
+  .map((file) => {
+    const subject = file.substr(0, file.indexOf('.txt'))
+    return {
+      name: subject,
+      input: path.join(wordsDir, file),
+      output: resolvePath(`../database/topic-words/${subject}.txt`),
+    }
+  })
 
 async function taggingNounPos(terms) {
   const filteredTerms = await filter(terms, async (term) => {
@@ -107,7 +57,7 @@ async function taggingNounPos(terms) {
 }
 
 async function genWordsWithWeight() {
-  console.time('calculate TF-IDF')
+  console.time('calculate topic words using TF-IDF')
   sources.forEach((source, i) => {
     tfidf.addFileSync(resolvePath(source.input), 'utf8', source.name)
   })
@@ -123,7 +73,7 @@ async function genWordsWithWeight() {
 
     saveFile(resolvePath(source.output), termsWithWeight.join('\n'))
   })
-  console.timeEnd('calculate TF-IDF')
+  console.timeEnd('calculate topic words using TF-IDF')
 }
 
 genWordsWithWeight()
