@@ -61,7 +61,7 @@ typings/
 .next
 
 .tmp
-examples
+examples-local
 report/*
 .resources
 .idea

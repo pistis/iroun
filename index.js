@@ -1,5 +1,5 @@
-const { extract } = require('./src/extractor')
+const { extractFromFile } = require('./src/extractor')
 
 module.exports = {
-  extract,
+  extractFromFile,
 }

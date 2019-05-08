@@ -3,6 +3,9 @@
   "version": "0.2.0",
   "description": "A JavaScript-based name analyzer for all javascript developers in the world.",
   "main": "src/index.js",
+  "bin": {
+    "iroun": "./bin/index.js"
+  },
   "scripts": {
     "test": "jest"
   },
