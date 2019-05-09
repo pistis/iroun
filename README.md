@@ -1,4 +1,8 @@
 # iroun
+[![npm](https://img.shields.io/npm/v/iroun.svg)](https://www.npmjs.com/package/iroun)
+[![npm](https://img.shields.io/npm/dt/iroun.svg)](https://www.npmjs.com/package/iroun)
+[![GitHub license](https://img.shields.io/github/license/pistis/iroun.svg)](https://github.com/pistis/iroun/blob/master/LICENSE)
+
 A JavaScript-based name analyzer for all javascript developers in the world.  
 
 ![iroun-word-art-0.2.0](./resources/image/iroun-word-art-0.2.0.png)
