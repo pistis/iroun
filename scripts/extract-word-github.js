@@ -1,4 +1,8 @@
-// need to excute update-github-repositories.js
+/**
+ * This script analyzes all the source code that exists in '.resource'.
+ * The target of the analysis is the name of the source code.
+ * The final output will be a text file for each project in the 'dataset/words/' directory.
+ */
 const fs = require('fs')
 const path = require('path')
 const _ = require('lodash')

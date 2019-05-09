@@ -1,3 +1,11 @@
+/**
+ * This script clones the github repository into the '.resource' directory.
+ * The repository address refers to 'top100-stars-github-repo.json'.
+ * 1. Create a '.resource' directory.
+ * 2. Run the script.
+ * - $ node clone-github-repositories.js
+ * 3. This script does not clone any existing repository.
+ */
 const fs = require('fs')
 const rimraf = require('rimraf')
 const mkdirp = require('mkdirp')
@@ -38,6 +46,7 @@ const progressTimer = setInterval(() => {
   }
 }, 100)
 
+// NOTE: Uncommenting and running will delete all '.resource' and replicate all github repositories from scratch.
 // rimraf(resolvePath('../.resources'), function(result) {
 //   mkdirp(resolvePath('../.resources'), function(err) {
 //     if (err) console.error(err)

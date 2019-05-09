@@ -1,3 +1,20 @@
+/**
+ * This script analyzes all Javascript source code for a specific project.
+ * Exceptions are as follows:
+ *
+ * Additional Information
+ * - There is already a dataset analyzing 100 github javascript based open source projects with many stars. (dataset/words directory)
+ * - The error rate due to file parsing failure is about 1%. (This part will be reinforced continuously.)
+ *
+ * Ignored directory name. (exact matching)
+ * - dist,test,_test_,__test__,tests,_tests_,__tests__,example,examples,node_modules,bower_components
+ *
+ * Ignored file name. (include word)
+ * - test, spec, min.js
+ *
+ * Source code type to analyze
+ * - .js, .vue, .ts
+ */
 const fs = require('fs')
 const path = require('path')
 const stopwords = require('../src/stopwords')
@@ -44,7 +61,7 @@ const makeWordFile = function(dir, output) {
   if (errors.length > 1) {
     console.log(`Error Files : ${errors.length}`)
     // console.log(JSON.stringify(errors))
-    console.log(`Error AST Types : ${JSON.stringify(walk.errorTypes)}`)
+    // console.log(`Error AST Types : ${JSON.stringify(walk.errorTypes)}`)
   }
 
   // filter stopwords

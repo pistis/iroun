@@ -1,7 +1,10 @@
+/**
+ * This script uses the search API provided by github to get top 100 Javascript-based open source project repository information with high star values.
+ * - @see top100-stars-github-repo.json
+ */
 const axios = require('axios')
 const { resolvePath, saveFile } = require('./util')
 
-// top 100 github repo
 axios
   .get('https://api.github.com/search/repositories?q=js+language:javascript&sort=stars&order=desc&page=1&per_page=100')
   .then((response) => {

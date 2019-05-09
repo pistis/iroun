@@ -1,4 +1,9 @@
 /**
+ * This script creates a topic word dataset.
+ * 1. Use a dataset of all the word files used in the name of the project source code created with 'extract-word-github.js'.
+ * 2. Apply the TF-IDF text mining technique to score the most characteristic words in each project.
+ * 
+ * A text file is created for each project in the 'dataset / topic-words' directory.
 TF (term frequency)
 - Definition: The frequency of occurrence of the word in the document.
 
@@ -19,7 +24,7 @@ Calculation
 - Large value: Characteristic words of the document
 - Small value: a word that is not characteristic of the document
  */
-// need to execute extract-word-github.js, extract-word-iroun.js
+
 const fs = require('fs')
 const path = require('path')
 const natural = require('natural')
