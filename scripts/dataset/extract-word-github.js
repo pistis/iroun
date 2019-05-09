@@ -6,7 +6,7 @@
 const fs = require('fs')
 const path = require('path')
 const _ = require('lodash')
-const { resolvePath } = require('./util')
+const { resolvePath } = require('../util')
 const { makeWordFile } = require('./extract-word')
 
 const resourceDir = resolvePath('../.resources')

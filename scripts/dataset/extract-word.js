@@ -1,4 +1,5 @@
 /**
+ * ** For building internal data (including console.log, sync version) **
  * This script analyzes all Javascript source code for a specific project.
  * Exceptions are as follows:
  *
@@ -17,15 +18,18 @@
  */
 const fs = require('fs')
 const path = require('path')
-const stopwords = require('../src/stopwords')
+const stopwords = require('../../src/stopwords')
 const walk = require('acorn-walk')
-const { resolvePath, getFilesOfDirectory, getJavascriptFileList, saveFile } = require('./util')
-const { extractFromFile } = require('../src/extractor')
-const { split } = require('../src/splitter')
+const { resolvePath, getFilesOfDirectory, getJavascriptFileList, saveFile } = require('../util')
+const { extractFromFile } = require('../../src/extractor')
+const { split } = require('../../src/splitter')
 
-async function extractWord(dir) {
+const makeWordFile = function(dir, output) {
+  console.time(dir)
   let fileList = getFilesOfDirectory(resolvePath(dir))
   fileList = getJavascriptFileList(fileList)
+
+  console.log(`\n===== Start anaysis ${fileList.length} file list in [${dir}] =====`)
 
   let words = []
   const errors = []
@@ -47,6 +51,7 @@ async function extractWord(dir) {
       addWords(names.argumentNames)
       addWords(names.attributeNames)
     } catch (e) {
+      // console.log(file, e)
       errors.push({
         file: file,
         msg: e,
@@ -54,20 +59,23 @@ async function extractWord(dir) {
     }
   })
 
-  const result = {
-    originalWordLength: words.length,
+  if (errors.length > 1) {
+    console.log(`Error Files : ${errors.length}`)
+    // console.log(JSON.stringify(errors))
+    // console.log(`Error AST Types : ${JSON.stringify(walk.errorTypes)}`)
   }
+
   // filter stopwords
+  console.log(`Original Word List ${words.length}`)
   words = words.filter((word) => {
     return !stopwords.has(word.toLowerCase())
   })
+  console.log(`Filtered/Saved Word List ${words.length}`)
+  saveFile(resolvePath(output), words.join(' '))
 
-  result.extractWordLength = words.length
-  result.wordText = words.join(' ')
-  result.errorFiles = errors.map((error) => error.file)
-  return result
+  console.timeEnd(dir)
 }
 
 module.exports = {
-  extractWord,
+  makeWordFile,
 }

@@ -1,33 +1,95 @@
 #!/usr/bin/env node
 const program = require('commander')
 const ora = require('ora')
+const delay = require('delay')
+const _ = require('lodash')
+const { analyzeWord, analyzeTopicWord } = require('../scripts/analyze-topic-word')
+const { resolvePath, saveFile } = require('../scripts/util')
 
 program.version('0.2.0', '-v, --version')
-program.option('-d, --directory-path <type>', 'set javascript source code absolute directory path.')
+program.option('-n, --project-name <type>', 'set project name.')
+program.option('-s, --source-directory-path <type>', 'set javascript source code absolute directory path.')
+program.option('-o, --output-directory-path <type>', 'set output absolute directory path.')
 program.on('--help', function() {
   console.log('')
   console.log('Examples:')
-  console.log('  $ iroun -d "absolute directory path."')
+  console.log('  $ iroun -n "project name" -s "source absolute directory path" -o "output absolute directory path"')
 })
 
 program.parse(process.argv)
 
-if (!program.directoryPath) {
-  console.log('set the source code directory.')
+if (!program.sourceDirectoryPath || !program.outputDirectoryPath || !program.projectName) {
+  console.log('set project name and source code/output directory.')
   console.log('')
   console.log('Examples:')
-  console.log('  $ iroun -d "absolute directory path."')
+  console.log('  $ iroun -n "project name" -s "source absolute directory path" -o "output absolute directory path"')
   process.exit()
 }
 
-const spinner = ora({
-  text: 'Analyzing...',
-  spinner: 'arrow3',
-}).start()
-setTimeout(function() {
-  if (program.directoryPath) {
-    // if finish analsys
-    spinner.stop()
-    console.log('Topic Words Dataset is ...')
-  }
-}, 3000)
+async function run() {
+  const spinner = ora({
+    text: `Extract word of "${program.sourceDirectoryPath}"`,
+    spinner: 'arrow3',
+  }).start()
+
+  await delay(1000)
+
+  const result = await analyzeWord(program.sourceDirectoryPath)
+
+  spinner.succeed(
+    `Extracted Word Information [Original Word Count: ${result.originalWordLength}], [Sanitized Word Count: ${
+      result.extractWordLength
+    }]`
+  )
+
+  spinner.start(`Analyze word of "${program.sourceDirectoryPath}"`)
+  await delay(1000)
+
+  // @ref terms format (natural npm package)
+  // {
+  //   term: 'term',
+  //   tf: 'tf',
+  //   idf: 'idf',
+  //   tfidf: 'tdidf'
+  // }
+  const terms = await analyzeTopicWord(result.wordText, 'iroun')
+
+  // for wordcloud input text file
+  terms.forEach((term) => {
+    term.freq = term.tfidf < 1 ? 1 : parseInt(term.tfidf)
+  })
+
+  const wordCloudInput = terms.map((term) => {
+    return `${term.freq} ${term.term}`
+  })
+
+  const outputWordCloud = resolvePath(
+    `${program.outputDirectoryPath}/topic-${program.projectName}-word-for-wordclouds.com.txt`
+  )
+  saveFile(outputWordCloud, wordCloudInput.join('\n'))
+
+  // for wordart input text file
+  const wordArtInput = terms
+    .map((term) => {
+      return _.range(term.freq)
+        .map(() => term.term)
+        .join(' ')
+    })
+    .join(' ')
+
+  const outputWordArt = resolvePath(
+    `${program.outputDirectoryPath}/topic-${program.projectName}-word-for-wordart.com.txt`
+  )
+  saveFile(outputWordArt, wordArtInput)
+
+  const succeedText = `Analysis completed\n
+  1. Copy all the text in the output file\n
+  2. You can create your own word cloud image at wordclouds.com or wordart.com.\n
+    - for wordclouds.com : ${outputWordCloud}
+    - for wordart.com : ${outputWordArt}
+  `
+  spinner.succeed(succeedText)
+  spinner.stop()
+}
+
+run()

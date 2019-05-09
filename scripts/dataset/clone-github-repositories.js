@@ -9,7 +9,7 @@
 const fs = require('fs')
 const rimraf = require('rimraf')
 const mkdirp = require('mkdirp')
-const { resolvePath } = require('./util')
+const { resolvePath } = require('../util')
 const ProgressBar = require('progress')
 const spawn = require('child_process').spawn
 
@@ -35,7 +35,7 @@ const cloneRepository = function(repoUrl, targetPath) {
 
 const cloneRepositories = async function() {
   repos.forEach((repo) => {
-    cloneRepository(repo.clone_url, resolvePath(`../.resources/${repo.name}`))
+    cloneRepository(repo.clone_url, resolvePath(`../../.resources/${repo.name}`))
   })
 }
 

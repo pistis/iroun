@@ -3,7 +3,7 @@
  * - @see top100-stars-github-repo.json
  */
 const axios = require('axios')
-const { resolvePath, saveFile } = require('./util')
+const { resolvePath, saveFile } = require('../util')
 
 axios
   .get('https://api.github.com/search/repositories?q=js+language:javascript&sort=stars&order=desc&page=1&per_page=100')

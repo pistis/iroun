@@ -32,6 +32,7 @@ const _ = require('lodash')
 const { resolvePath, saveFile } = require('./util')
 const { getPOS } = require('../src/pos')
 const { filter } = require('p-iteration')
+const { extractWord } = require('./extract-word')
 
 const TfIdf = natural.TfIdf
 const tfidf = new TfIdf()
@@ -41,14 +42,13 @@ const wordsFiles = fs.readdirSync(wordsDir).filter((file) => {
   return fs.statSync(path.join(wordsDir, file)).isFile()
 })
 
-const sources = wordsFiles
+const datasets = wordsFiles
   .filter((file) => file.match(/.txt$/g))
   .map((file) => {
     const subject = file.substr(0, file.indexOf('.txt'))
     return {
       name: subject,
       input: path.join(wordsDir, file),
-      output: resolvePath(`../dataset/topic-words/${subject}.txt`),
     }
   })
 
@@ -61,24 +61,31 @@ async function taggingNounPos(terms) {
   return filteredTerms
 }
 
-async function genWordsWithWeight() {
-  console.time('calculate topic words using TF-IDF')
-  sources.forEach((source, i) => {
-    tfidf.addFileSync(resolvePath(source.input), 'utf8', source.name)
+/**
+ * 1. Analyze source (extracted word text).
+ * 2. Use 100 github projects as the base dataset (for calculating the document word TF-IDF).
+ * 3. Extract the topic-word of the project.
+ * @param {*} source source word string
+ * @param {*} sourceName project name
+ */
+async function analyzeTopicWord(source, sourceName) {
+  datasets.forEach((dataset, i) => {
+    tfidf.addFileSync(resolvePath(dataset.input), 'utf8', dataset.name)
   })
 
-  sources.forEach(async (source, i) => {
-    let terms = tfidf.listTerms(i)
+  tfidf.addDocument(source, sourceName)
 
-    terms = await taggingNounPos(terms)
+  let terms = tfidf.listTerms(datasets.length)
 
-    const termsWithWeight = terms.map((term) => {
-      return `${parseInt(term.tfidf * 10)} ${term.term}`
-    })
+  terms = await taggingNounPos(terms)
 
-    saveFile(resolvePath(source.output), termsWithWeight.join('\n'))
-  })
-  console.timeEnd('calculate topic words using TF-IDF')
+  return terms
 }
 
-genWordsWithWeight()
+async function analyzeWord(sourceFile) {
+  return await extractWord(sourceFile)
+}
+module.exports = {
+  analyzeWord,
+  analyzeTopicWord,
+}
