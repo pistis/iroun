@@ -32,7 +32,7 @@ $ iroun -n "your project name" -s "your project source root directory path" -o "
 ##### Output Examples
 Word Clouds
 > It is made up of words and weights that mean weights.  
-> You just copy this text and paste it at wordclouds.com.  
+> You just copy this text and paste it at [wordclouds.com](https://www.wordclouds.com/).  
 
 ```
 $ open /{your output path}/topic-{project name}-word-for-wordclouds.com.txt
@@ -51,7 +51,7 @@ $ open /{your output path}/topic-{project name}-word-for-wordclouds.com.txt
 
 Word Art
 > It is a text file in which the word is repeated as much as the weight.  
-> You just copy and paste this text into wordart.com.  
+> You just copy and paste this text into [wordart.com](https://wordart.com/).  
 
 ```bash
 $ open /{your output path}/topic-{project name}-word-for-wordart.com.txt
