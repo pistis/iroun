@@ -1,100 +1,62 @@
 # iroun
-A JavaScript-based name analyzer for all javascript developers in the world.
+A JavaScript-based name analyzer for all javascript developers in the world.  
+
+![iroun-word-art-0.2.0](./resources/image/iroun-word-art-0.2.0.png)
+
+## Why is it fun?
+
+Topic Word  
+1. It is easy to see which words I use a lot in my Javascript project and whether they are really characteristic words that can represent my project.  
+2. You can easily identify the characteristic words of well-made open source projects as well as my project.  
+3. Provides output to create a cool word cloud image.  
 
 ## Installation
-
-    npm install iroun
+```bash
+$ npm install -g iroun
+```
 
 ## Usage
-### Usage library
-```js
-const { extract } = require('iroun')
+### Features
+#### 1. Analyze Topic Word
+> With the help of 'iroun' you can make a nice word cloud in wordart.
 
-const names = extract(`${path}`)  // javascript file path
-console.log(JSON.stringify(names, null, 2))
-```
-```json
-output is
-{
-   "classNames":{
-      "Store":1
-   },
-   "methodNames":{
-      "commit":1,
-      "dispatch":1,
-      "subscribe":1,
-      ...
-   },
-   "variableNames":{
-      "Vue":1,
-      "store":1,
-      "state":2,
-      ...
-   },
-   "parameterNames":{
-      "plugin":1,
-      "sub":5,
-      "handler":3,
-      ...
-   },
-   "argumentNames":{
-      "Vue":2,
-      "store":14,
-      "type":6,
-      ...
-   },
-   "attributeNames":{
-      "_committing":3,
-      "_actions":2,
-      "_actionSubscribers":1,
-      ...
-   }
-}
+##### How to
+```bash
+$ iroun -n "your project name" -s "your project source root directory path" -o "your output directory path"
 ```
 
-### Making the word cloud
-> This is sample code for a single Javascript file.
-> You can extract the names of all your project files and create word clouds!
+##### Output Examples
+Word Clouds
+> It is made up of words and weights that mean weights.  
+> You just copy this text and paste it at wordclouds.com.  
 
-```js
-const { extract } = require('iroun')
-
-const names = extract(`${path}`)  // javascript file path
-
-const nameAndFrequency = Object.create(null)
-const updateName = function (name) {
-  nameAndFrequency[name] = (nameAndFrequency[name] || 0) + 1;
-};
-
-for (let kind in names) {
-  for (let name in names[kind]) {
-    updateName(name)
-  }
-}
-
-const list = []
-for (let name in nameAndFrequency) {
-  list.push(`${name} ${nameAndFrequency[name]}`)
-}
-console.log(list.join('\n'))
-// Output is ...
-// Store 1
-// commit 2
-// dispatch 2
-// subscribe 1
-// subscribeAction 1
-// watch 1
-// replaceState 1
-// registerModule 1
-// unregisterModule 1
-// hotUpdate 1
-// _withCommit 1
+```
+$ open /{your output path}/topic-{project name}-word-for-wordclouds.com.txt
+40 names
+23 declaration
+21 program
+18 parameter
+16 expression
+16 split
+12 method
+12 property
+11 word
+10 variable
+...
 ```
 
-Using [VueWordCloud](https://seregpie.github.io/VueWordCloud/) created by [SeregPie](https://github.com/SeregPie), you can create a word-cloud.
-Copy and paste the output.
+Word Art
+> It is a text file in which the word is repeated as much as the weight.  
+> You just copy and paste this text into wordart.com.  
 
-![making-the-word-cloud](./making-the-word-cloud.png)
+```bash
+$ open /{your output path}/topic-{project name}-word-for-wordart.com.txt
+names names names names names names names names names names names names names names names names names names names names names names names names names names names names names names names names names names names names names names names names declaration declaration declaration declaration declaration declaration declaration declaration declaration declaration declaration declaration declaration declaration declaration declaration declaration declaration declaration declaration declaration declaration declaration program program program program program program program program program program program program program program program program program program program .....
+```
+
+## CONTRIBUTING
+The project is still in its infancy and we are constantly wondering what meaningful information we can get by analyzing well-crafted open source projects.  
+If have any ideas, please feel free to register issue.  
 
 ## License
 
