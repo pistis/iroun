@@ -17,7 +17,7 @@ const repoList = fs.readdirSync(resourceDir).filter((file) => {
 const repositories = repoList.map((file) => {
   return {
     path: path.join(resourceDir, file),
-    output: resolvePath(`../database/words/${file}.txt`),
+    output: resolvePath(`../dataset/words/${file}.txt`),
   }
 })
 

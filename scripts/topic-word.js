@@ -36,7 +36,7 @@ const { filter } = require('p-iteration')
 const TfIdf = natural.TfIdf
 const tfidf = new TfIdf()
 
-const wordsDir = resolvePath('../database/words')
+const wordsDir = resolvePath('../dataset/words')
 const wordsFiles = fs.readdirSync(wordsDir).filter((file) => {
   return fs.statSync(path.join(wordsDir, file)).isFile()
 })
@@ -48,7 +48,7 @@ const sources = wordsFiles
     return {
       name: subject,
       input: path.join(wordsDir, file),
-      output: resolvePath(`../database/topic-words/${subject}.txt`),
+      output: resolvePath(`../dataset/topic-words/${subject}.txt`),
     }
   })
 
