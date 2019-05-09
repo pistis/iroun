@@ -24,7 +24,8 @@ $ npm install -g iroun
 #### 1. Analyze Topic Word
 > With the help of 'iroun' you can make a nice word cloud in wordart.
 
-**Topic word extraction algorithm**
+**Topic word extraction algorithm**  
+
 *Word extraction (This process is performed on about 100 github open source.)*
 1. After parsing all the js, vue, and ts files in the project, create an AST.
 2. Extract the names of Class, Method, Variable, Parameter, Argument, and Attribute from AST.
