@@ -24,6 +24,19 @@ $ npm install -g iroun
 #### 1. Analyze Topic Word
 > With the help of 'iroun' you can make a nice word cloud in wordart.
 
+**Topic word extraction algorithm**
+*Word extraction (This process is performed on about 100 github open source.)*
+1. After parsing all the js, vue, and ts files in the project, create an AST.
+2. Extract the names of Class, Method, Variable, Parameter, Argument, and Attribute from AST.
+3. Separate words from names (camelCase, PascalCase, snake_case, etc ...)
+4. Filter out words whose pos(parts of speech) are nouns.
+5. Filter the stopwords. (english stopwords, javascript reserved keywords)
+6. Save the resulting words into a text file with a space separator.
+
+*Topic word selection*
+1. Extract feature words by applying word frequency and TF-IDF text mining algorithm based on extracted word text data.
+2. Save the feature word as a text file.
+
 ##### How to
 ```bash
 $ iroun -n "your project name" -s "your project source root directory path" -o "your output directory path"
