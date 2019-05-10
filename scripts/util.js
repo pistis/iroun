@@ -39,7 +39,13 @@ const getFilesOfDirectory = function(dir, filelist = []) {
 const getJavascriptFileList = function(fileList) {
   return fileList
     .filter((file) => file.match(/\.js$|.vue$|.ts$/g))
-    .filter((file) => file.indexOf('test') === -1 && file.indexOf('spec') === -1 && file.indexOf('min.js') === -1)
+    .filter(
+      (file) =>
+        file.indexOf('test') === -1 &&
+        file.indexOf('spec') === -1 &&
+        file.indexOf('min.js') === -1 &&
+        file.indexOf('.min') === -1
+    )
 }
 
 const saveFile = function(file, text) {
