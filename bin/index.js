@@ -37,7 +37,13 @@ async function run() {
 
   await delay(1000)
 
-  const result = await analyzeWord(resolvePathArgv(program.sourceDirectoryPath))
+  let result
+  try {
+    result = await analyzeWord(resolvePathArgv(program.sourceDirectoryPath))
+  } catch (e) {
+    spinner.fail(`Extracted word task failure, ${e}`)
+    process.exit()
+  }
 
   spinner.succeed(
     `Extracted Word Information [Original Word Count: ${result.originalWordLength}], [Sanitized Word Count: ${
@@ -55,7 +61,13 @@ async function run() {
   //   idf: 'idf',
   //   tfidf: 'tdidf'
   // }
-  const terms = await analyzeTopicWord(result.wordText, 'iroun')
+  let terms
+  try {
+    terms = await analyzeTopicWord(result.wordText, program.projectName)
+  } catch (e) {
+    spinner.fail(`Analyze word task failure, ${e}`)
+    process.exit()
+  }
 
   // for wordcloud input text file
   terms.forEach((term) => {
@@ -69,7 +81,12 @@ async function run() {
   const outputWordCloud = resolvePathArgv(
     `${program.outputDirectoryPath}/topic-${program.projectName}-word-for-wordclouds.com.txt`
   )
-  saveFile(outputWordCloud, wordCloudInput.join('\n'))
+  try {
+    saveFile(outputWordCloud, wordCloudInput.join('\n'))
+  } catch (e) {
+    spinner.fail(`Analyze word task failure, ${e}`)
+    process.exit()
+  }
 
   // for wordart input text file
   const wordArtInput = terms
@@ -83,7 +100,12 @@ async function run() {
   const outputWordArt = resolvePathArgv(
     `${program.outputDirectoryPath}/topic-${program.projectName}-word-for-wordart.com.txt`
   )
-  saveFile(outputWordArt, wordArtInput)
+  try {
+    saveFile(outputWordArt, wordArtInput)
+  } catch (e) {
+    spinner.fail(`Analyze word task failure, ${e}`)
+    process.exit()
+  }
 
   const succeedText = `Analysis completed\n
   1. Copy all the text in the output file\n
