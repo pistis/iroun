@@ -4,7 +4,8 @@
   "description": "A JavaScript-based name analyzer for all javascript developers in the world.",
   "main": "src/index.js",
   "bin": {
-    "iroun": "./bin/index.js"
+    "iroun": "./bin/index.js",
+    "iroun-test": "./examples-local/pathtest.js"
   },
   "scripts": {
     "test": "jest"

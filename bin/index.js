@@ -1,19 +1,22 @@
 #!/usr/bin/env node
 const program = require('commander')
+const path = require('path')
 const ora = require('ora')
 const delay = require('delay')
 const _ = require('lodash')
 const { analyzeWord, analyzeTopicWord } = require('../scripts/analyze-topic-word')
 const { resolvePath, saveFile } = require('../scripts/util')
 
+const resolvePathArgv = (file) => path.resolve(process.cwd(), file)
+
 program.version('0.2.0', '-v, --version')
 program.option('-n, --project-name <type>', 'set project name.')
-program.option('-s, --source-directory-path <type>', 'set javascript source code absolute directory path.')
-program.option('-o, --output-directory-path <type>', 'set output absolute directory path.')
+program.option('-s, --source-directory-path <type>', 'set javascript source code directory path.')
+program.option('-o, --output-directory-path <type>', 'set output directory path.')
 program.on('--help', function() {
   console.log('')
   console.log('Examples:')
-  console.log('  $ iroun -n "project name" -s "source absolute directory path" -o "output absolute directory path"')
+  console.log('  $ iroun -n "project name" -s "source directory path" -o "output directory path"')
 })
 
 program.parse(process.argv)
@@ -22,19 +25,19 @@ if (!program.sourceDirectoryPath || !program.outputDirectoryPath || !program.pro
   console.log('set project name and source code/output directory.')
   console.log('')
   console.log('Examples:')
-  console.log('  $ iroun -n "project name" -s "source absolute directory path" -o "output absolute directory path"')
+  console.log('  $ iroun -n "project name" -s "source directory path" -o "output directory path"')
   process.exit()
 }
 
 async function run() {
   const spinner = ora({
-    text: `Extract word of "${program.sourceDirectoryPath}"`,
+    text: `Extract word of "${resolvePathArgv(program.sourceDirectoryPath)}"`,
     spinner: 'arrow3',
   }).start()
 
   await delay(1000)
 
-  const result = await analyzeWord(program.sourceDirectoryPath)
+  const result = await analyzeWord(resolvePathArgv(program.sourceDirectoryPath))
 
   spinner.succeed(
     `Extracted Word Information [Original Word Count: ${result.originalWordLength}], [Sanitized Word Count: ${
@@ -42,7 +45,7 @@ async function run() {
     }]`
   )
 
-  spinner.start(`Analyze word of "${program.sourceDirectoryPath}"`)
+  spinner.start(`Analyze word of "${resolvePathArgv(program.sourceDirectoryPath)}"`)
   await delay(1000)
 
   // @ref terms format (natural npm package)
@@ -63,7 +66,7 @@ async function run() {
     return `${term.freq} ${term.term}`
   })
 
-  const outputWordCloud = resolvePath(
+  const outputWordCloud = resolvePathArgv(
     `${program.outputDirectoryPath}/topic-${program.projectName}-word-for-wordclouds.com.txt`
   )
   saveFile(outputWordCloud, wordCloudInput.join('\n'))
@@ -77,7 +80,7 @@ async function run() {
     })
     .join(' ')
 
-  const outputWordArt = resolvePath(
+  const outputWordArt = resolvePathArgv(
     `${program.outputDirectoryPath}/topic-${program.projectName}-word-for-wordart.com.txt`
   )
   saveFile(outputWordArt, wordArtInput)
