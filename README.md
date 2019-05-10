@@ -5,7 +5,7 @@
 
 A JavaScript-based name analyzer for all javascript developers in the world.  
 
-![iroun-word-art-0.2.0](./resources/image/iroun-word-art-0.2.0.png)
+![iroun-word-art-0.3.0](./resources/image/iroun-word-art-0.3.0.png)
 
 ## Why is it fun?
 
