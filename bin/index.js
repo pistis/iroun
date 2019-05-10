@@ -4,37 +4,45 @@ const path = require('path')
 const ora = require('ora')
 const delay = require('delay')
 const _ = require('lodash')
+const rimraf = require('rimraf')
+const mkdirp = require('mkdirp')
+
 const { analyzeWord, analyzeTopicWord } = require('../scripts/analyze-topic-word')
-const { resolvePath, saveFile } = require('../scripts/util')
+const { saveFile, cloneRepository } = require('../scripts/util')
 
 const resolvePathArgv = (file) => path.resolve(process.cwd(), file)
 
+const printHelp = function() {
+  console.log('')
+  console.log('Examples 1:')
+  console.log('  $ iroun -n "project name" -s "source directory path" -o "output directory path"')
+  console.log('Examples 2:')
+  console.log('  $ iroun -n "project name" -r "git repository url" -o "output directory path"')
+}
 program.version('0.2.0', '-v, --version')
 program.option('-n, --project-name <type>', 'set project name.')
 program.option('-s, --source-directory-path <type>', 'set javascript source code directory path.')
+program.option('-r, --git-repository-url <type>', 'set git repository url.')
 program.option('-o, --output-directory-path <type>', 'set output directory path.')
-program.on('--help', function() {
-  console.log('')
-  console.log('Examples:')
-  console.log('  $ iroun -n "project name" -s "source directory path" -o "output directory path"')
-})
+program.on('--help', printHelp)
 
 program.parse(process.argv)
 
-if (!program.sourceDirectoryPath || !program.outputDirectoryPath || !program.projectName) {
+if (
+  !program.outputDirectoryPath ||
+  !program.projectName ||
+  (!program.sourceDirectoryPath && !program.gitRepositoryUrl)
+) {
   console.log('set project name and source code/output directory.')
-  console.log('')
-  console.log('Examples:')
-  console.log('  $ iroun -n "project name" -s "source directory path" -o "output directory path"')
+  printHelp()
+  process.exit()
+} else if (program.sourceDirectoryPath && program.gitRepositoryUrl) {
+  console.log('set either the source code directory path or the git repository url.')
   process.exit()
 }
 
-async function run() {
-  const spinner = ora({
-    text: `Extract word of "${resolvePathArgv(program.sourceDirectoryPath)}"`,
-    spinner: 'arrow3',
-  }).start()
-
+async function analyze() {
+  spinner.start(`Extract word of "${resolvePathArgv(program.sourceDirectoryPath)}"`)
   await delay(1000)
 
   let result
@@ -116,5 +124,28 @@ async function run() {
   spinner.succeed(succeedText)
   spinner.stop()
 }
+
+async function run() {
+  if (program.gitRepositoryUrl) {
+    try {
+      spinner.start(`Clone '${program.gitRepositoryUrl}'`)
+      const output = resolvePathArgv(`./${program.projectName}`)
+      rimraf.sync(output)
+      mkdirp.sync(output)
+      program.sourceDirectoryPath = await cloneRepository(program.gitRepositoryUrl, output)
+      spinner.succeed(`Cloned ${program.gitRepositoryUrl}, Path is : ${output}]`)
+    } catch (e) {
+      spinner.fail(`Clone '${program.gitRepositoryUrl}' failure, status is ${e}`)
+      process.exit()
+    }
+  }
+
+  analyze()
+}
+
+const spinner = ora({
+  text: 'Start analyze topic words',
+  spinner: 'arrow3',
+}).start()
 
 run()

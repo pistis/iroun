@@ -1,5 +1,6 @@
 const fs = require('fs')
 const path = require('path')
+const spawn = require('child_process').spawn
 
 const resolvePath = (file) => path.resolve(__dirname, file)
 
@@ -55,9 +56,22 @@ const saveFile = function(file, text) {
   })
 }
 
+const cloneRepository = async function(repoUrl, targetPath) {
+  return new Promise((resolve, reject) => {
+    const git = spawn('git', ['clone', repoUrl, '--progress', targetPath])
+    git.on('close', function(status) {
+      if (status === 0) {
+        resolve(targetPath)
+      } else {
+        reject(status)
+      }
+    })
+  })
+}
 module.exports = {
   resolvePath,
   getFilesOfDirectory,
   getJavascriptFileList,
   saveFile,
+  cloneRepository,
 }
