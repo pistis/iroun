@@ -41,6 +41,8 @@ $ npm install -g iroun
 ##### How to
 ```bash
 $ iroun -n "your project name" -s "your project source root directory path" -o "your output directory path"
+or
+$ iroun -n "your project name" -r "public git repository url" -o "your output directory path"
 ```
 
 ##### Output Examples
