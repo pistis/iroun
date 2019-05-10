@@ -1,11 +1,10 @@
 {
   "name": "iroun",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "A JavaScript-based name analyzer for all javascript developers in the world.",
   "main": "src/index.js",
   "bin": {
-    "iroun": "./bin/index.js",
-    "iroun-test": "./examples-local/pathtest.js"
+    "iroun": "./bin/index.js"
   },
   "scripts": {
     "test": "jest"
