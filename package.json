@@ -49,6 +49,7 @@
     "axios": "^0.18.0",
     "commander": "^2.20.0",
     "delay": "^4.2.0",
+    "eslint": "^5.16.0",
     "flow-parser": "^0.98.1",
     "lodash": "^4.17.11",
     "mkdirp": "^0.5.1",
@@ -62,7 +63,6 @@
     "wordpos": "^1.2.0"
   },
   "devDependencies": {
-    "eslint": "^5.16.0",
     "jest": "^24.8.0",
     "progress": "^2.0.3"
   },
