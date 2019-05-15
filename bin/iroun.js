@@ -36,13 +36,10 @@ const program = require('commander')
 
 program.version(require('../package').version).usage('<command> [options]')
 program
-  .command('analyze <project-name>')
+  .command('analyze <name>')
   .description('analyze a your project powered by iroun-cli-service')
   .action((name, cmd) => {
-    // if need option
     // const options = cleanArgs(cmd)
-    // console.log(options)
-
     if (minimist(process.argv.slice(3))._.length > 1) {
       console.log(
         chalk.yellow(
