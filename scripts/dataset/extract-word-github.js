@@ -6,8 +6,9 @@
 const fs = require('fs')
 const path = require('path')
 const _ = require('lodash')
-const { resolvePath } = require('../util')
 const { makeWordFile } = require('./extract-word')
+
+const resolvePath = (file) => path.resolve(__dirname, file)
 
 const resourceDir = resolvePath('../../.resources')
 const repoList = fs.readdirSync(resourceDir).filter((file) => {
