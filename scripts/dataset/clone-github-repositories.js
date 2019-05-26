@@ -7,13 +7,15 @@
  * 3. This script does not clone any existing repository.
  */
 const fs = require('fs')
+const path = require('path')
 const rimraf = require('rimraf')
 const mkdirp = require('mkdirp')
-const { resolvePath } = require('../util')
 const ProgressBar = require('progress')
 const spawn = require('child_process').spawn
 
-const repoFile = resolvePath('./data/top100-stars-github-repo.json')
+const resolvePath = (file) => path.resolve(__dirname, file)
+
+const repoFile = resolvePath('./data/top-stars-github-repo.json')
 const repos = JSON.parse(fs.readFileSync(repoFile, 'utf-8'))
 
 const progressBar = new ProgressBar('  downloading [:bar] :percent :etas :title', {
