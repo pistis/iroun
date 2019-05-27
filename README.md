@@ -21,7 +21,7 @@ $ npm install -g iroun
 
 ## Usage
 ### Features
-#### 1. Analyze Topic Word
+1. Analyze Topic Word
 > With the help of 'iroun' you can make a nice word cloud in wordart.
 
 **Topic word extraction algorithm**  
@@ -38,12 +38,15 @@ $ npm install -g iroun
 1. Extract feature words by applying word frequency and TF-IDF text mining algorithm based on extracted word text data.
 2. Save the feature word as a text file.
 
-##### How to
+**How to**
 ```bash
-$ iroun -n "your project name" -s "your project source root directory path" -o "your output directory path"
-or
-$ iroun -n "your project name" -r "public git repository url" -o "your output directory path"
+$ iroun analyze
 ```
+**step 1 : Run the interactive cli and analyze the topic-word of the project (github opensource).**
+![step 1](https://user-images.githubusercontent.com/4979560/58429974-88f17300-80e2-11e9-8692-b43dd5151c00.gif)
+
+**step 2 : Copy the topic-word file and go to wordart.com to create wordcloud.**
+![step 2](https://user-images.githubusercontent.com/4979560/58429979-8ee75400-80e2-11e9-8294-15db3c08d6e6.gif)
 
 ##### Output Examples
 Word Clouds
