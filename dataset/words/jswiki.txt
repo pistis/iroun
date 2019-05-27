@@ -1,0 +1,1 @@
+column Width gutter Width duration

@@ -6,10 +6,11 @@
 const fs = require('fs')
 const path = require('path')
 const _ = require('lodash')
-const { resolvePath } = require('../util')
 const { makeWordFile } = require('./extract-word')
 
-const resourceDir = resolvePath('../.resources')
+const resolvePath = (file) => path.resolve(__dirname, file)
+
+const resourceDir = resolvePath('../../.resources')
 const repoList = fs.readdirSync(resourceDir).filter((file) => {
   return fs.statSync(path.join(resourceDir, file)).isDirectory()
 })
@@ -17,7 +18,7 @@ const repoList = fs.readdirSync(resourceDir).filter((file) => {
 const repositories = repoList.map((file) => {
   return {
     path: path.join(resourceDir, file),
-    output: resolvePath(`../dataset/words/${file}.txt`),
+    output: resolvePath(`../../dataset/words/${file}.txt`),
   }
 })
 

@@ -1,0 +1,502 @@
+[
+  {
+    "name": "sql.js",
+    "clone_url": "https://github.com/kripken/sql.js.git",
+    "stargazers_count": 5475
+  },
+  {
+    "name": "chokidar",
+    "clone_url": "https://github.com/paulmillr/chokidar.git",
+    "stargazers_count": 5409
+  },
+  {
+    "name": "agenda",
+    "clone_url": "https://github.com/agenda/agenda.git",
+    "stargazers_count": 5394
+  },
+  {
+    "name": "webpack-dev-server",
+    "clone_url": "https://github.com/webpack/webpack-dev-server.git",
+    "stargazers_count": 5390
+  },
+  {
+    "name": "deck.js",
+    "clone_url": "https://github.com/imakewebthings/deck.js.git",
+    "stargazers_count": 5372
+  },
+  {
+    "name": "Knwl.js",
+    "clone_url": "https://github.com/benhmoore/Knwl.js.git",
+    "stargazers_count": 5347
+  },
+  {
+    "name": "lozad.js",
+    "clone_url": "https://github.com/ApoorvSaxena/lozad.js.git",
+    "stargazers_count": 5284
+  },
+  {
+    "name": "snabbt.js",
+    "clone_url": "https://github.com/daniel-lundin/snabbt.js.git",
+    "stargazers_count": 5225
+  },
+  {
+    "name": "zombie",
+    "clone_url": "https://github.com/assaf/zombie.git",
+    "stargazers_count": 5221
+  },
+  {
+    "name": "Lettering.js",
+    "clone_url": "https://github.com/davatron5000/Lettering.js.git",
+    "stargazers_count": 5186
+  },
+  {
+    "name": "peerflix",
+    "clone_url": "https://github.com/mafintosh/peerflix.git",
+    "stargazers_count": 5170
+  },
+  {
+    "name": "json-editor",
+    "clone_url": "https://github.com/jdorn/json-editor.git",
+    "stargazers_count": 5150
+  },
+  {
+    "name": "aws-sdk-js",
+    "clone_url": "https://github.com/aws/aws-sdk-js.git",
+    "stargazers_count": 5150
+  },
+  {
+    "name": "node-jscs",
+    "clone_url": "https://github.com/jscs-dev/node-jscs.git",
+    "stargazers_count": 5127
+  },
+  {
+    "name": "js-code-to-svg-flowchart",
+    "clone_url": "https://github.com/Bogdan-Lyashenko/js-code-to-svg-flowchart.git",
+    "stargazers_count": 5084
+  },
+  {
+    "name": "seamless-immutable",
+    "clone_url": "https://github.com/rtfeldman/seamless-immutable.git",
+    "stargazers_count": 5036
+  },
+  {
+    "name": "poisontap",
+    "clone_url": "https://github.com/samyk/poisontap.git",
+    "stargazers_count": 5024
+  },
+  {
+    "name": "waterline",
+    "clone_url": "https://github.com/balderdashy/waterline.git",
+    "stargazers_count": 5001
+  },
+  {
+    "name": "hogan.js",
+    "clone_url": "https://github.com/twitter/hogan.js.git",
+    "stargazers_count": 4994
+  },
+  {
+    "name": "node-formidable",
+    "clone_url": "https://github.com/felixge/node-formidable.git",
+    "stargazers_count": 4944
+  },
+  {
+    "name": "vue-lazyload",
+    "clone_url": "https://github.com/hilongjw/vue-lazyload.git",
+    "stargazers_count": 4931
+  },
+  {
+    "name": "js-assessment",
+    "clone_url": "https://github.com/rmurphey/js-assessment.git",
+    "stargazers_count": 4930
+  },
+  {
+    "name": "webdriverio",
+    "clone_url": "https://github.com/webdriverio/webdriverio.git",
+    "stargazers_count": 4928
+  },
+  {
+    "name": "jsplumb",
+    "clone_url": "https://github.com/jsplumb/jsplumb.git",
+    "stargazers_count": 4883
+  },
+  {
+    "name": "nideshop-mini-program",
+    "clone_url": "https://github.com/tumobi/nideshop-mini-program.git",
+    "stargazers_count": 4882
+  },
+  {
+    "name": "jss",
+    "clone_url": "https://github.com/cssinjs/jss.git",
+    "stargazers_count": 4878
+  },
+  {
+    "name": "LokiJS",
+    "clone_url": "https://github.com/techfort/LokiJS.git",
+    "stargazers_count": 4872
+  },
+  {
+    "name": "thinkjs",
+    "clone_url": "https://github.com/thinkjs/thinkjs.git",
+    "stargazers_count": 4862
+  },
+  {
+    "name": "vue-strap",
+    "clone_url": "https://github.com/yuche/vue-strap.git",
+    "stargazers_count": 4828
+  },
+  {
+    "name": "heatmap.js",
+    "clone_url": "https://github.com/pa7/heatmap.js.git",
+    "stargazers_count": 4819
+  },
+  {
+    "name": "jszip",
+    "clone_url": "https://github.com/Stuk/jszip.git",
+    "stargazers_count": 4801
+  },
+  {
+    "name": "cubism",
+    "clone_url": "https://github.com/square/cubism.git",
+    "stargazers_count": 4788
+  },
+  {
+    "name": "kraken-js",
+    "clone_url": "https://github.com/krakenjs/kraken-js.git",
+    "stargazers_count": 4745
+  },
+  {
+    "name": "flexsearch",
+    "clone_url": "https://github.com/nextapps-de/flexsearch.git",
+    "stargazers_count": 4737
+  },
+  {
+    "name": "mean",
+    "clone_url": "https://github.com/meanjs/mean.git",
+    "stargazers_count": 4732
+  },
+  {
+    "name": "morgan",
+    "clone_url": "https://github.com/expressjs/morgan.git",
+    "stargazers_count": 4712
+  },
+  {
+    "name": "aphrodite",
+    "clone_url": "https://github.com/Khan/aphrodite.git",
+    "stargazers_count": 4680
+  },
+  {
+    "name": "elevator.js",
+    "clone_url": "https://github.com/tholman/elevator.js.git",
+    "stargazers_count": 4674
+  },
+  {
+    "name": "nodal",
+    "clone_url": "https://github.com/keithwhor/nodal.git",
+    "stargazers_count": 4603
+  },
+  {
+    "name": "FlowType.JS",
+    "clone_url": "https://github.com/simplefocus/FlowType.JS.git",
+    "stargazers_count": 4573
+  },
+  {
+    "name": "stellar.js",
+    "clone_url": "https://github.com/markdalgleish/stellar.js.git",
+    "stargazers_count": 4572
+  },
+  {
+    "name": "collect.js",
+    "clone_url": "https://github.com/ecrmnn/collect.js.git",
+    "stargazers_count": 4551
+  },
+  {
+    "name": "ShareJS",
+    "clone_url": "https://github.com/josephg/ShareJS.git",
+    "stargazers_count": 4517
+  },
+  {
+    "name": "TermKit",
+    "clone_url": "https://github.com/unconed/TermKit.git",
+    "stargazers_count": 4497
+  },
+  {
+    "name": "move.js",
+    "clone_url": "https://github.com/visionmedia/move.js.git",
+    "stargazers_count": 4496
+  },
+  {
+    "name": "sir-trevor-js",
+    "clone_url": "https://github.com/madebymany/sir-trevor-js.git",
+    "stargazers_count": 4487
+  },
+  {
+    "name": "react-map-gl",
+    "clone_url": "https://github.com/uber/react-map-gl.git",
+    "stargazers_count": 4484
+  },
+  {
+    "name": "nwb",
+    "clone_url": "https://github.com/insin/nwb.git",
+    "stargazers_count": 4477
+  },
+  {
+    "name": "styled-jsx",
+    "clone_url": "https://github.com/zeit/styled-jsx.git",
+    "stargazers_count": 4455
+  },
+  {
+    "name": "vue-i18n",
+    "clone_url": "https://github.com/kazupon/vue-i18n.git",
+    "stargazers_count": 4450
+  },
+  {
+    "name": "Administrative-divisions-of-China",
+    "clone_url": "https://github.com/modood/Administrative-divisions-of-China.git",
+    "stargazers_count": 4443
+  },
+  {
+    "name": "alasql",
+    "clone_url": "https://github.com/agershun/alasql.git",
+    "stargazers_count": 4437
+  },
+  {
+    "name": "jsfuck",
+    "clone_url": "https://github.com/aemkei/jsfuck.git",
+    "stargazers_count": 4428
+  },
+  {
+    "name": "derby",
+    "clone_url": "https://github.com/derbyjs/derby.git",
+    "stargazers_count": 4417
+  },
+  {
+    "name": "hello.js",
+    "clone_url": "https://github.com/MrSwitch/hello.js.git",
+    "stargazers_count": 4386
+  },
+  {
+    "name": "mapbox-gl-js",
+    "clone_url": "https://github.com/mapbox/mapbox-gl-js.git",
+    "stargazers_count": 4373
+  },
+  {
+    "name": "bricks.js",
+    "clone_url": "https://github.com/callmecavs/bricks.js.git",
+    "stargazers_count": 4365
+  },
+  {
+    "name": "alertify.js",
+    "clone_url": "https://github.com/fabien-d/alertify.js.git",
+    "stargazers_count": 4362
+  },
+  {
+    "name": "BackstopJS",
+    "clone_url": "https://github.com/garris/BackstopJS.git",
+    "stargazers_count": 4351
+  },
+  {
+    "name": "Medium.js",
+    "clone_url": "https://github.com/jakiestfu/Medium.js.git",
+    "stargazers_count": 4348
+  },
+  {
+    "name": "jstree",
+    "clone_url": "https://github.com/vakata/jstree.git",
+    "stargazers_count": 4340
+  },
+  {
+    "name": "lightgallery.js",
+    "clone_url": "https://github.com/sachinchoolur/lightgallery.js.git",
+    "stargazers_count": 4328
+  },
+  {
+    "name": "MQTT.js",
+    "clone_url": "https://github.com/mqttjs/MQTT.js.git",
+    "stargazers_count": 4320
+  },
+  {
+    "name": "vue-multiselect",
+    "clone_url": "https://github.com/shentao/vue-multiselect.git",
+    "stargazers_count": 4318
+  },
+  {
+    "name": "css-in-js",
+    "clone_url": "https://github.com/MicheleBertoli/css-in-js.git",
+    "stargazers_count": 4309
+  },
+  {
+    "name": "jscodeshift",
+    "clone_url": "https://github.com/facebook/jscodeshift.git",
+    "stargazers_count": 4278
+  },
+  {
+    "name": "jsnes",
+    "clone_url": "https://github.com/bfirsh/jsnes.git",
+    "stargazers_count": 4268
+  },
+  {
+    "name": "elemental",
+    "clone_url": "https://github.com/elementalui/elemental.git",
+    "stargazers_count": 4244
+  },
+  {
+    "name": "granim.js",
+    "clone_url": "https://github.com/sarcadass/granim.js.git",
+    "stargazers_count": 4239
+  },
+  {
+    "name": "accounting.js",
+    "clone_url": "https://github.com/openexchangerates/accounting.js.git",
+    "stargazers_count": 4233
+  },
+  {
+    "name": "analytics.js",
+    "clone_url": "https://github.com/segmentio/analytics.js.git",
+    "stargazers_count": 4229
+  },
+  {
+    "name": "node-config",
+    "clone_url": "https://github.com/lorenwest/node-config.git",
+    "stargazers_count": 4199
+  },
+  {
+    "name": "rendr",
+    "clone_url": "https://github.com/rendrjs/rendr.git",
+    "stargazers_count": 4187
+  },
+  {
+    "name": "tiptap",
+    "clone_url": "https://github.com/scrumpy/tiptap.git",
+    "stargazers_count": 4159
+  },
+  {
+    "name": "benchmark.js",
+    "clone_url": "https://github.com/bestiejs/benchmark.js.git",
+    "stargazers_count": 4128
+  },
+  {
+    "name": "responsive-nav.js",
+    "clone_url": "https://github.com/viljamis/responsive-nav.js.git",
+    "stargazers_count": 4125
+  },
+  {
+    "name": "Dexie.js",
+    "clone_url": "https://github.com/dfahlander/Dexie.js.git",
+    "stargazers_count": 4101
+  },
+  {
+    "name": "backpack",
+    "clone_url": "https://github.com/jaredpalmer/backpack.git",
+    "stargazers_count": 4097
+  },
+  {
+    "name": "react-google-maps",
+    "clone_url": "https://github.com/tomchentw/react-google-maps.git",
+    "stargazers_count": 4090
+  },
+  {
+    "name": "nodegit",
+    "clone_url": "https://github.com/nodegit/nodegit.git",
+    "stargazers_count": 4076
+  },
+  {
+    "name": "node-fetch",
+    "clone_url": "https://github.com/bitinn/node-fetch.git",
+    "stargazers_count": 4042
+  },
+  {
+    "name": "jspaint",
+    "clone_url": "https://github.com/1j01/jspaint.git",
+    "stargazers_count": 4041
+  },
+  {
+    "name": "TiddlyWiki5",
+    "clone_url": "https://github.com/Jermolene/TiddlyWiki5.git",
+    "stargazers_count": 4012
+  },
+  {
+    "name": "textAngular",
+    "clone_url": "https://github.com/textAngular/textAngular.git",
+    "stargazers_count": 4004
+  },
+  {
+    "name": "framework",
+    "clone_url": "https://github.com/totaljs/framework.git",
+    "stargazers_count": 3953
+  },
+  {
+    "name": "zoom.js",
+    "clone_url": "https://github.com/fat/zoom.js.git",
+    "stargazers_count": 3951
+  },
+  {
+    "name": "objection.js",
+    "clone_url": "https://github.com/Vincit/objection.js.git",
+    "stargazers_count": 3938
+  },
+  {
+    "name": "jsmpeg",
+    "clone_url": "https://github.com/phoboslab/jsmpeg.git",
+    "stargazers_count": 3937
+  },
+  {
+    "name": "vuelidate",
+    "clone_url": "https://github.com/vuelidate/vuelidate.git",
+    "stargazers_count": 3927
+  },
+  {
+    "name": "log4js-node",
+    "clone_url": "https://github.com/log4js-node/log4js-node.git",
+    "stargazers_count": 3926
+  },
+  {
+    "name": "jswiki",
+    "clone_url": "https://github.com/bebraw/jswiki.git",
+    "stargazers_count": 3922
+  },
+  {
+    "name": "linaria",
+    "clone_url": "https://github.com/callstack/linaria.git",
+    "stargazers_count": 3918
+  },
+  {
+    "name": "learn-json-web-tokens",
+    "clone_url": "https://github.com/dwyl/learn-json-web-tokens.git",
+    "stargazers_count": 3915
+  },
+  {
+    "name": "tty.js",
+    "clone_url": "https://github.com/chjj/tty.js.git",
+    "stargazers_count": 3901
+  },
+  {
+    "name": "vue-loader",
+    "clone_url": "https://github.com/vuejs/vue-loader.git",
+    "stargazers_count": 3900
+  },
+  {
+    "name": "jsbin",
+    "clone_url": "https://github.com/jsbin/jsbin.git",
+    "stargazers_count": 3883
+  },
+  {
+    "name": "echo-chamber-js",
+    "clone_url": "https://github.com/tessalt/echo-chamber-js.git",
+    "stargazers_count": 3882
+  },
+  {
+    "name": "Imager.js",
+    "clone_url": "https://github.com/BBC-News/Imager.js.git",
+    "stargazers_count": 3880
+  },
+  {
+    "name": "resumable.js",
+    "clone_url": "https://github.com/23/resumable.js.git",
+    "stargazers_count": 3874
+  },
+  {
+    "name": "body-parser",
+    "clone_url": "https://github.com/expressjs/body-parser.git",
+    "stargazers_count": 3858
+  }
+]
