@@ -35,7 +35,7 @@ Word Clouds
 > You just copy this text and paste it at [wordclouds.com](https://www.wordclouds.com/).  
 
 ```
-$ open /{your output path}/topic-{project name}-word-for-wordclouds.com.txt
+$ open {your current directory}/topic-word-for-wordclouds.com.txt
 40 names
 23 declaration
 21 program
@@ -54,7 +54,7 @@ Word Art
 > You just copy and paste this text into [wordart.com](https://wordart.com/).  
 
 ```bash
-$ open /{your output path}/topic-{project name}-word-for-wordart.com.txt
+$ open {your current directory}/topic-word-for-wordart.com.txt
 names names names names names names names names names names names names names names names names names names names names names names names names names names names names names names names names names names names names names names names names declaration declaration declaration declaration declaration declaration declaration declaration declaration declaration declaration declaration declaration declaration declaration declaration declaration declaration declaration declaration declaration declaration declaration program program program program program program program program program program program program program program program program program program program .....
 ```
 
