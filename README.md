@@ -64,7 +64,7 @@ names names names names names names names names names names names names names na
 
 **Topic word extraction algorithm**  
 
-*Word extraction (This process is performed on about 100 github open source.)*
+*Word extraction*
 1. After parsing all the js, vue, and ts files in the project, create an AST.
 2. Extract the names of Class, Method, Variable, Parameter, Argument, and Attribute from AST.
 3. Separate words from names (camelCase, PascalCase, snake_case, etc ...)
