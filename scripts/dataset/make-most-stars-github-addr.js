@@ -9,7 +9,7 @@ const { saveFile } = require('../util')
 const resolvePath = (file) => path.resolve(__dirname, file)
 
 axios
-  .get('https://api.github.com/search/repositories?q=js+language:javascript&sort=stars&order=desc&page=2&per_page=100')
+  .get('https://api.github.com/search/repositories?q=js+language:javascript&sort=stars&order=desc&page=3&per_page=100')
   .then((response) => {
     const data = response.data
 

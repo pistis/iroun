@@ -6,7 +6,10 @@
     "iroun": "./bin/iroun.js"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "make:githubrepoinfo": "node scripts/dataset/make-most-stars-github-addr.js",
+    "clone:opensource": "node scripts/dataset/clone-github-repo.js",
+    "extract:word:opensource": "node --max-old-space-size=8192 scripts/dataset/extract-word-github.js"
   },
   "repository": {
     "type": "git",
