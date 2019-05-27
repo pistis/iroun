@@ -36,9 +36,9 @@ const program = require('commander')
 
 program.version(require('../package').version).usage('<command> [options]')
 program
-  .command('analyze <name>')
+  .command('analyze')
   .description('analyze a your project powered by iroun-cli-service')
-  .action((name, cmd) => {
+  .action((cmd) => {
     // const options = cleanArgs(cmd)
     if (minimist(process.argv.slice(3))._.length > 1) {
       console.log(
@@ -48,7 +48,7 @@ program
       )
     }
 
-    require('../lib/analyze')(name)
+    require('../lib/analyze')()
   })
 
 program.arguments('<command>').action((cmd) => {
