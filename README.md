@@ -76,6 +76,7 @@ names names names names names names names names names names names names names na
 1. Extract feature words by applying word frequency and TF-IDF text mining algorithm based on extracted word text data.
 2. Save the feature word as a text file.
 
+*[TF-IDF comparison document dataset](dataset/words)*
 
 ## CONTRIBUTING
 The project is still in its infancy and we are constantly wondering what meaningful information we can get by analyzing well-crafted open source projects.  
