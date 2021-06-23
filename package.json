@@ -48,7 +48,7 @@
     "acorn-jsx": "^5.0.1",
     "acorn-loose": "^6.0.0",
     "acorn-walk": "^6.1.1",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "commander": "^2.20.0",
     "didyoumean": "^1.2.1",
     "eslint": "^5.16.0",
